@@ -1,0 +1,64 @@
+CONTRATO DE PRESTACIÓN DE SERVICIOS PROFESIONALES
+En la Ciudad de México, a 8 de Septiembre de 2025, comparecen por una parte  Hexagon Media S.A.P.I. de C.V. , con RFC  HME1808154G8 , a quien en lo sucesivo se le denominará EL CLIENTE, y por la otra parte Sara Elvira Portillo Gómez, con RFC POGS8601244D4, a quien en lo sucesivo se le denominará EL PROFESIONAL, y manifiestan que celebran el presente contrato de prestación de servicios profesionales de conformidad con las siguientes:
+DECLARACIONES
+EL CLIENTE declara que cuenta con la capacidad legal para celebrar este contrato y que requiere los servicios profesionales descritos en la cláusula primera.
+EL PROFESIONAL declara que cuenta con la capacidad legal, experiencia y conocimientos técnicos para prestar los servicios objeto de este contrato de manera independiente y autónoma.
+CLÁUSULAS
+PRIMERA. OBJETO DEL CONTRATO. EL PROFESIONAL se obliga a prestar a EL CLIENTE los servicios profesionales de consultoría en marketing, ventas y producto, conforme a las especificaciones, plazos y entregables detallados en el Anexo 1 (Alcance del Proyecto), el cual forma parte integrante de este contrato.
+SEGUNDA. Plazo. Este contrato tendrá una duración del 8 de septiembre de 2025 al 30 de enero de 2026.
+TERCERA. HONORARIOS Y FORMA DE PAGO. Por los servicios prestados, EL CLIENTE pagará a EL PROFESIONAL la cantidad de  $ 187,500 mil  (Ciento ochenta y siete mil quinientos  pesos 00/100 M.N. ) , más  impuestos aplicables , conforme al siguiente calendario de pagos:
+100% a la entrega final y aceptación del proyecto. Los pagos se efectuarán por transferencia bancaria a la cuenta en NuBank CLABE: 638180010166038874 dentro de los [5] días siguientes a la recepción de la factura correspondiente.
+CUARTA. OBLIGACIONES DEL PROFESIONAL. a) Ejecutar los servicios con profesionalismo, diligencia y en los plazos pactados. b) Proporcionar informes periódicos de avance según se acuerde. c) Mantener confidencialidad sobre la información del proyecto conforme a la Cláusula Sexta.
+QUINTA. PROPIEDAD INTELECTUAL Y PORTAFOLIO. EL CLIENTE reconoce que los entregables desarrollados por EL PROFESIONAL en el marco del presente contrato han sido recibidos y aceptados a su entera satisfacción.
+EL PROFESIONAL cede en favor de EL CLIENTE, de manera total, exclusiva y definitiva, todos los derechos patrimoniales de autor sobre los resultados, prototipos, materiales y entregables generados en ejecución de este contrato, incluyendo los derechos de reproducción, distribución, transformación, comunicación pública y explotación comercial.
+La presente cesión surtirá efectos únicamente a partir del pago total de los honorarios pactados conforme a la Cláusula Tercera del presente contrato.
+La cesión se realiza para todo el mundo y por todo el plazo de protección legal que corresponda conforme a la legislación aplicable.
+EL PROFESIONAL conserva sus derechos morales conforme a la ley y autoriza expresamente a EL CLIENTE a utilizar, adaptar y explotar los entregables sin limitación alguna.
+EL PROFESIONAL podrá hacer referencia al trabajo realizado en el marco del presente contrato (incluyendo prototipo, estrategia y diseño) exclusivamente para fines de portafolio profesional y currículum, sin divulgar información confidencial.
+PROFESIONAL tiene el permiso de hacer referencia a mi trabajo en TernariA (prototipo, estrategia y diseño) exclusivamente para fines de mi portafolio profesional y CV.
+SEXTA. CONFIDENCIALIDAD. Las partes se obligan a mantener en estricta confidencialidad toda la información técnica, comercial o estratégica compartida durante la vigencia del contrato y por un periodo de [2 años] posterior a su terminación, salvo autorización expresa de la otra parte.
+SÉPTIMA. AUSENCIA DE RELACIÓN LABORAL. Este contrato genera una relación estrictamente civil y profesional. EL PROFESIONAL prestará sus servicios con autonomía técnica y organizativa, sin subordinación jurídica respecto de EL CLIENTE. EL PROFESIONAL será responsable de sus propias obligaciones fiscales, de seguridad social y laborales.
+OCTAVA. TERMINACIÓN ANTICIPADA. Cualquiera de las partes podrá terminar este contrato por incumplimiento grave de la otra, notificándolo por escrito con [15 días] de anticipación. EL CLIENTE pagará los servicios prestados hasta la fecha de terminación.
+NOVENA. RESPONSABILIDAD. La responsabilidad del PROFESIONAL se limitará al monto total de los honorarios pactados. No habrá responsabilidad por daños indirectos o lucro cesante.
+DÉCIMA. LEY APLICABLE Y JURISDICCIÓN. Este contrato se regirá por las leyes de México. Para cualquier controversia, las partes se someten expresamente a la jurisdicción de las Tribunales de la Ciudad de México, renunciando a cualquier otro fuero.
+Leído que fue el presente contrato y enteradas las partes de su contenido y alcances, lo firman por duplicado en la Ciudad de México, a los 30 días del mes de Enero de 2026.
+EL CLIENTE : Carlos Eduardo Carbia Enríquez RFC:  CAEC800212CJ5
+EL PROFESIONAL :  Sara Elvira Portillo Gómez
+RFC: POGS8601244D4
+ANEXO 1: ALCANCE DEL PROYECTO - una entrega: Septiembre 8 de 2025 a 30 Enero de 2026.
+Prototipo Cursor
+Módulos TernariA - AS-IS sin servicios posteriores
+Contacto
+Comunicación
+UX
+Pantallas 4 módulos
+Modulos
+Definición 4 módulos
+Definición
+TernariA
+TernariA
+Comunicación
+TernariA
+Deck inversionistas
+Seguros
+Pres final comercial
+Travel
+Pres Comercial Iteración Travel
+Banca
+Pres Comercial Iteración Banca
+Farma
+Pres Comercial Iteración Farma
+Farma
+Pres Comercial Iteración Farma
+Retail
+Pres Comercial Iteración Retail
+Servicios
+Pres Comercial Iteración Servicios
+Televisa
+Versión iteración onboarding
+Televisa
+Ideación agente
+Televisa
+Propuesta comercial
+Televisa
+Procesos discovery

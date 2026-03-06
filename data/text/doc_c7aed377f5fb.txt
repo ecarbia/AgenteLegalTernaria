@@ -1,0 +1,688 @@
+CONTRATO MAESTRO DE SUSCRIPCIÓN Y SERVICIOS (MSA)
+Partes
+Este Contrato Maestro de Suscripción y Servicios (“MSA”) se celebra el ___ de ________ de 2025, entre:
+HEXAGON MEDIA, S.A.P.I. de C.V., sociedad anónima promotora de inversión de capital variable, inscrita en el Registro Federal de Contribuyentes con clave HME1808154G8, con domicilio en Calle Club Cuicacalli No. 62, Colonia Ciudad Satélite, Naucalpan de Juárez, Estado de México, C.P. 53100 (el “Proveedor”); y
+[Razón Social del Cliente] (“Cliente”), sociedad debidamente constituida bajo las leyes de México, con RFC [RFC Cliente] y domicilio en [Domicilio Cliente].
+Proveedor y Cliente podrán denominarse, conjunta o separadamente, la “Parte” o las “Partes”.
+Definiciones
+Los términos con mayúscula inicial tendrán el significado indicado a continuación o en el presente MSA.
+“Plataforma”: La solución de software como servicio, incluidos módulos, interfaces, APIs y la infraestructura de AWS subyacente.
+“Servicios”: conjuntamente Servicios SaaS y Servicios Profesionales (implementación, soporte, consultoría), salvo que se especifique lo contrario Servicios de consultoría, configuración, desarrollo, capacitación o soporte descritos en cada Orden de Servicio (SOW) así como en el detalle técnicos descritos en el Detalle de Motores LLM y Cobertura de Licenciamiento de cada SOW ( Schedules ).
+“Documentación”: Manuales, guías de integración, políticas de uso aceptable (PUA) y demás materiales que el Proveedor ponga a disposición del Cliente.
+“Orden de Servicio” o “SOW”: Documento suscrito por las Partes que describe alcance, hitos, tarifas y entregables específicos, regido por este MSA.
+“Información Confidencial”: Tiene el significado previsto en el Convenio de Confidencialidad (NDA) celebrado entre las Partes.
+“Exhibits”:
+Exhibit  A Descripción del Servicio;
+Exhibit B SLA y Contactos de Notificación;
+Exhibit C Matriz de Responsabilidad Compartida AWS;
+Exhibit D Acuerdo de Tratamiento de Datos Personales (DPA)
+Declaraciones
+La plataforma  ha sido desarrollada y  es  propiedad de  Hexagon Media, S.A.P.I. de C.V.  y por ende,  retiene todos los derechos, títulos e intereses sobre e sta , incluidos todos los códigos, la tecnología, los procesos y todas las obras derivadas y mejoras de  la misma . Todos los derechos que no se conceden expresamente al Cliente en virtud del presente documento, están reservados para Hexagon  Media .
+La Plataforma  unifica los datos empresariales del Cliente en una capa gobernada y segura, integrando diversas fuentes de información (bases de datos estructurados y no estructurados) para habilitar el despliegue de soluciones de inteligencia artificial. Para efectos del presente Contrato, dichas fuentes de datos , soluciones de inteligencia artificial  y /o  las herramientas de visualización o análisis que se conecten a través de  La Plataforma  se denominarán conjuntamente “las Herramientas”.
+Hexagon  Media  no es propietario de l as herramientas específicamente de infraestructura (AWS), Modelos de Lenguage Largo (LLM) o conexiones externas al desarrollo de la plataforma.
+Las Partes están válidamente constituida y en pleno estado de existencia conforme a las leyes aplicables;
+Las Partes cuentan con todas las facultades y autorizaciones corporativas necesarias para celebrar y ejecutar el presente MSA, y la persona firmante posee poder suficiente que no le ha sido revocado ni limitado;
+Toda la información y documentos proporcionados para la celebración del presente MSA son veraces y completos;
+La celebración y ejecución de este MSA no viola contrato ni disposición legal alguna que le resulte aplicable.
+Objeto y Alcance
+El Proveedor otorga al Cliente, durante la Vigencia y sujeto al cumplimiento de este MSA, derecho de uso no exclusivo, revocable, durante la vigencia del MSA, para acceder y usar la Plataforma. Esta licencia faculta al Cliente a:
+Cargar, procesar y analizar sus propios datos;
+Configurar y ejecutar agentes de IA y consultar resultados;
+Visualizar, exportar y descargar reportes;
+Permitir el acceso a Usuarios Autorizados bajo su responsabilidad;
+Integrar la Plataforma con aplicaciones de terceros mediante las APIs documentadas.
+El Proveedor prestará los Servicios Profesionales especificados en cada SOW.
+Contraprestación
+Condiciones de Pago.
+El Cliente pagará las tarifas indicadas en cada SOW dentro de los treinta (30) días naturales posteriores a la aceptación por escrito del entregable  correspondiente (“NET 30 ACEPTACIÓN”), la cual no podrá ser retenida o demorada sin causa razonable.
+El Proveedor emitirá la factura respectiva dentro de los cinco (5) días hábiles siguientes a la aceptación. El plazo NET 30 ACEPTACIÓN iniciará a partir de la fecha de recepción de la factura válida.
+Si el Cliente no emite aceptación ni objeción razonada dentro de los cinco (5) días hábiles posteriores a la entrega, el entregable se considerará aceptado tácitamente.
+Tarifas.
+El Cliente pagará las tarifas indicadas en cada SOW.
+Las cantidades que se expresan en el SOW no incluyen impuestos correspondientes.
+Los saldos insolutos devengarán intereses moratorios equivalentes a la TIIE a 28 días + 3 % anual, calculados sobre el saldo vencido por día de atraso, sin exceder la tasa máxima permitida por la legislación mexicana aplicable.
+En caso de que el Cliente sea residente en el extranjero, éste retendrá el impuesto que corresponda conforme al artículo 167 de la Ley del Impuesto sobre la Renta y entregará al Proveedor el comprobante de retención dentro del plazo legal. En caso que la contraprestación se consideré como exportación, se aplicará la tarifa 0% de I.V.A. y deberá haber un mecanismo de comprobación CFDI.Hexagon  Media  se obliga a enviar, dentro de los primeros 5 (cinco) días naturales, la factura que corresponda al mes en curso y el Cliente se obliga a cubrir la totalidad de la Contraprestación mensual, más impuestos aplicables, durante ese mismo mes.
+Cuando el Cliente decida renovar la Licencia previa terminación de la misma, las Partes expresamente acuerdan que la Contraprestación será revisada y se generará  un nuevo SOW  que se incluirá como anexo al presente.
+El retraso en la obligación de pago será considerado como un incumplimiento a lo pactado en este Contrato y consecuentemente, Hexagon  Media  podrá unilateralmente suspender sus credenciales sin que ello constituya incumplimiento o rescisión del Contrato por su parte.
+Soporte Técnico
+Para que el Cliente haga uso del  La Plataforma , Hexagon  Media  se compromete :
+A configurar las credenciales del Cliente; y
+A  configurar los accesos del Cliente con el  La Plataforma . Estos servicios son   de configuración para que  La Plataforma  pueda ser utilizad a .
+Hexagon Media garantiza la originalidad y buen funcionamiento del La Plataforma. Sin embargo, no garantiza que esté libre de errores, bugs o vulnerabilidades; por lo que, brindará de forma gratuita, durante la vigencia del Contrato, el soporte técnico que sea necesario para que La Plataforma pueda ser utilizada de forma regular y bajo los SLA definidos en el Exhibit B.
+En tal sentido, Hexagon Media se compromete a dar respuesta a cualquier consulta o reporte de falla dentro de los 5 (cinco) días hábiles siguientes a que el  reporte sea presentado a la dirección de correo electrónico support@ XXX.XXX  y en https:// XXX /servicedesk/customer/portals. El reporte debe incluir la fecha y hora, descripción de la falla, nombre, correo electrónico y teléfono de la persona que reporta la falla. Hexagon Media contará con un plazo máximo de 5 (cinco) días hábiles para corregir y reparar cualquier tipo de error o falla en la Plataforma, al menos que informe que requiere tiempo adicional. Hexagon Media enviará un reporte acerca de la reparación realizada.
+Usuarios Autorizados y Restricciones de Uso
+El Cliente podrá autorizar el uso de la Plataforma a sus empleados y contratistas (“Usuarios Autorizados”) siempre que estos acepten la PUA y el Cliente responda solidariamente por su actuación. Se prohíbe:
+Re vender, sublicenciar o permitir el acceso a terceros no autorizados;
+Realizar ingeniería inversa, descompilar o intentar derivar el código fuente de la Plataforma;Interferir con la seguridad o estabilidad de la Plataforma o la infraestructura de AWS;
+Utilizar la Plataforma para actividades ilícitas, spam, phishing o violación de derechos de terceros;
+Entrenar modelos de IA no autorizados en la SOW;
+Cualquier uso prohibido en la PUA del Proveedor .
+Vigencia,  Renovación  y Terminación
+Vigencia. Este MSA entra en vigor en la fecha de firma y permanecerá vigente por tres (3) años, renovándose automáticamente por periodos iguales.
+Renovación . Cualquiera de las Partes podrá oponerse a la renovación notificando con 60 días naturales de antelación.
+Terminación por Incumplimiento. Cualquiera de las Partes podrá terminar este MSA si la otra incurre en incumplimiento sustancial y no lo corrige dentro de 30 días posteriores a la notificación escrita.
+Efectos. A la terminación, el Cliente cesará todo uso de la Plataforma. El Proveedor entregará una copia de los datos del Cliente dentro de 30 días y los suprimirá definitivamente al término de dicho plazo .
+Niveles de Servicio y Seguridad
+SLA. El Proveedor garantiza los niveles de servicio indicados en el Exhibit B. Para los componentes provistos por AWS, se aplicarán los SLA de AWS (esquema “pass through”  y el modelo de responsabilidad compartida de AWS ).
+Seguridad. El Proveedor opera conforme a ISO 27001 e ISO 27018. Las obligaciones respectivas se detallan en el Exhibit C.
+Incidentes. El Proveedor notificará al Cliente sin demora indebida y, en todo caso, dentro de 24 horas posteriores a la confirmación de un incidente que comprometa Datos del Cliente.
+Política de Retención de Embeddings y Artefactos Derivados.
+Los  embeddings, vectores y pesos fine tuned  generados con Datos del Cliente se conservarán por un periodo máximo de  tres (3) años , contados  a partir de la fecha de su creación o de la última actualización del modelo, lo que ocurra más reciente.
+A solicitud escrita del Cliente, el Proveedor procederá a la  eliminación anticipada  de dichos artefactos o bien a su entrega en formato interoperable (p.ej. ficheros  *.pt  o  *.safetensors  comprimidos) dentro de un plazo de treinta (30) días naturales.
+La eliminación se realizará mediante procedimientos de sobrescritura o destrucción criptográfica certificados y se documentará mediante constancia expedida por el Proveedor.
+Transcurrido el periodo máximo sin solicitud de renovación o entrega, el Proveedor eliminará los artefactos de forma automática y notificará al Cliente dentro de los diez (10) días naturales siguientes.
+Propiedad Intelectual y Retroalimentación
+El Proveedor conserva todos los derechos sobre la Plataforma. El Cliente conserva sus Datos. El Cliente concede  derecho de uso no exclusivo, revocable, durante la vigencia del MSA  y  libre de regalías, para usar cualquier comentario o sugerencia con el fin de mejorar la Plataforma.
+Los entregables desarrollados específicamente para el Cliente serán de su propiedad e incluirán la cesión de derechos patrimoniales en términos del artículo 83 de la Ley Federal del Derecho de Autor, salvo pacto distinto en la SOW .
+Confidencialidad
+Las Partes se obligan por el NDA celebrado el ___ de ______ de 2025, el cual se incorpora por referencia.  Protección de Datos Personales y Privacidad
+El Proveedor actuará como Encargado y el Cliente como Responsable conforme a la LFPDPPP y su Reglamento .
+En caso de conflicto, prevalecerá el DPA (Exhibit D)
+No se transferirá dato personal alguno mientras no se firme el DPA (Exhibit D).
+El Cliente publicará un Aviso de Privacidad y obtendrá consentimientos conforme a los artículos 8 y 16 de la LFPDPPP, incluyendo mecanismos de oposición u opt out.
+Obligaciones del Proveedor como Encargado (art. 50 Reglamento LFPDPPP). El Proveedor declara comprender y aceptar las obligaciones que, en su carácter de Encargado, le impone el artículo 50 del Reglamento de la LFPDPPP, comprometiéndose expresamente a:
+Tratar los Datos Personales únicamente conforme a las instrucciones documentadas del Cliente;
+Abstenerse de tratar los datos para finalidades distintas a las instruidas por el Cliente;
+Implementar medidas de seguridad administrativas, técnicas y físicas en términos de los artículos 59 y 60 del Reglamento;
+Guardar confidencialidad respecto de los Datos Personales tratados;
+Suprimir o devolver los Datos Personales al Cliente una vez cumplido el servicio, salvo obligación legal de conservación;
+No transferir Datos Personales a terceros salvo con la autorización previa y por escrito del Cliente o en los supuestos del artículo 37 de la Ley;
+Proporcionar las evidencias necesarias para que el Cliente pueda acreditar el cumplimiento de las obligaciones anteriores, incluyendo reportes SOC 2, ISO 27001 o equivalentes; y
+Notificar al Cliente, sin dilación indebida y en un plazo no mayor a veinticuatro (24) horas, cualquier vulneración de seguridad que comprometa Datos Personale s.
+Transferencia Internacional y Consentimiento Expreso.
+Consentimiento.  El Cliente, en su carácter de Responsable, declara haber obtenido de los Titulares de los Datos Personales el  consentimiento expreso  para las transferencias internacionales necesarias para la prestación de los Servicios, de conformidad con los Lineamientos 29 y 30 sobre Aviso de Privacidad.
+Excepción contractual (art. 37 V LFPDPPP).  En la medida en que resulte aplicable, las Partes reconocen que la transferencia internacional se encuentra amparada por la excepción prevista en el artículo 37 fracción V de la LFPDPPP, al ser necesaria para el mantenimiento y cumplimiento de la relación jurídica derivada de este MSA.
+Prioridad normativa.  Si las autoridades mexicanas emiten criterios o lineamientos posteriores sobre mecanismos de transferencia, las Partes se comprometen a modificarlos de mutuo acuerdo en un plazo no mayor a cuarenta y cinco (45) días naturales.
+Garantías
+La Plataforma se proporciona “TAL CUAL”, salvo la garantía expresa de funcionamiento sustancial conforme a la Documentación. El remedio exclusivo del Cliente será la corrección oportuna del defecto.
+Uso Informativo y Exención de Responsabilidad por Resultados del Modelo.
+El Cliente reconoce que el   Agente de IA y la Plataforma generan resultados de carácter meramente informativo ,  derivados de algoritmos estadísticos y modelos de lenguaje, los cuales   no constituyen asesoría profesional, legal, financiera o de cualquier otra índole .
+El Proveedor trabajará para la plena satisfacción de el Cliente, sin embargo, cualquier  decisión adoptada por el Cliente con base en dichos resultados será   bajo su exclusiva responsabilidad .  El Proveedor no garantiza la exactitud, exhaustividad ni idoneidad de las respuestas generadas y  no será responsable  por pérdidas directas o indirectas, lucro cesante, daños emergentes o cualquier otro perjuicio derivado del uso de la información producida por el modelo, salvo dolo o mala fe debidamente acreditados.
+El Cliente se obliga a   validar de forma independiente   la veracidad y pertinencia de los resultados antes de utilizarlos en sus procesos críticos de negocio.
+Indemnización
+El Proveedor indemnizará al Cliente por reclamaciones de  Propiedad Intelectual (PI)  conforme a la  cláusula  10 .
+Procedimiento: notificación en 10 días hábiles, control de defensa por la Parte indemnizadora y cooperación razonable. No se celebrará acuerdo que imponga obligaciones a la Parte indemnizada sin su consentimiento escrito.
+El Cliente indemnizará al Proveedor   por uso indebido de la Plataforma, datos que infrinjan derechos o incumplimiento de leyes.
+El Cliente defenderá, sacará en paz y a salvo e indemnizará al Proveedor, sus afiliadas y sub procesadores, frente a cualquier reclamación, acción, daño, responsabilidad o gasto (incluidos honorarios razonables de abogados) que se derive o esté relacionado con:
+Datos del Cliente o Contenido cargado  a la Plataforma que infrinja derechos de propiedad intelectual, derechos de autor, marcas, derechos de imagen, datos personales o cualquier otra normativa aplicable;
+Uso no autorizado  de la Plataforma por parte de Usuarios Autorizados o terceros bajo el control del Cliente; y
+Incumplimiento por parte del Cliente de las leyes vigentes, de este MSA o de la Política de Uso Aceptable.
+El Proveedor notificará al Cliente dentro de los diez (10) días hábiles siguientes de recibir la reclamación, otorgará control razonable de la defensa al Cliente y cooperará en la medida en que sea necesario, a costa del Cliente.
+Limitación de Responsabilidad
+NINGUNA DE LAS PARTES SERÁ RESPONSABLE EN VIRTUD DEL PRESENTE CONTRATO DE NINGÚN DAÑO INDIRECTO, ESPECIAL, INCIDENTAL Y/O CONSECUENTE; PÉRDIDA DE GANANCIA, NEGOCIOS Y/O INGRESOS; COSTOS DE ADQUISICIÓN DE SERVICIOS SUSTITUTIVOS; Y/O FALTA DE DISPONIBILIDAD O DAÑOS A LOS DATOS, INDEPENDIENTEMENTE DE LA FORMA EN QUE SE HAYAN CAUSADO Y EN VIRTUD DE CUALQUIER TEORÍA DE RESPONSABILIDAD, INCLUIDA LA NEGLIGENCIA, AUN CUANDO LA PARTE SUPIERA O DEBIERA HABER SABIDO QUE ESOS DAÑOS ERAN POSIBLES CON EXCEPCIÓN DE LAS RECLAMACIONES DERIVADAS DE (I) UNA VIOLACIÓN POR CUALQUIERA DE LAS PARTES DE SUS OBLIGACIONES DE CONFIDENCIALIDAD EN VIRTUD DEL PRESENTE CONTRATO, Y/O (II) SEA CONSECUENCIA DE LA NEGLIGENCIA GRAVE O DE LA CONDUCTA DOLOSA DE CUALQUIERA DE LAS PARTES. EN NINGÚN CASO LA RESPONSABILIDAD TOTAL DE CUALQUIERA DE LAS PARTES, POR LAS RECLAMACIONES TOTALES DERIVADAS DEL PRESENTE CONTRATO, EXCEDERÁ DE LA CANTIDAD PAGADA O POR PAGAR POR EL CLIENTE EN VIRTUD DEL PRESENTE CONTRATO EN LOS DOCE MESES ANTERIORES A LA FECHA EFECTIVA DE LA NOTIFICACIÓN DE DICHA RECLAMACIÓN.
+Fuerza Mayor
+Ninguna de las Partes será responsable por incumplimiento al presente Contrato que sea motivado por caso fortuito o fuerza mayor. No obstante lo anterior, la existencia de caso fortuito o fuerza mayor no serán motivo para que la Parte afectada no pague oportunamente las cantidades o cumpla con las obligaciones consignadas en el presente Contrato, previas a la aparición del caso fortuito o fuerza mayor.
+La Parte afectada por tal situación notificará a la otra por escrito en un plazo que no deberá exceder de los 10 (diez) días naturales siguientes a que se tenga conocimiento sobre la existencia de un caso fortuito o de fuerza mayor.
+En el supuesto de que las consecuencias de caso fortuito o fuerza mayor persista por más de 10 (diez) días naturales a partir de que la Parte afectada notifique de su existencia, cualquiera de las Partes podrá dar por terminado el presente contrato mediante aviso por escrito a la otra Parte con 5 (cinco) días naturales de anticipación y sin necesidad de que medie resolución judicial para tal efecto.
+Cumplimiento Normativo y Anticorrupción
+Cada Parte cumplirá con la LFPDPPP,  LFPPI 2020 , LGRA, LFDA, la Ley Federal para la Prevención e Identificación de Operaciones con Recursos de Procedencia Ilícita, las listas de sanciones OFAC y, cuando aplique, la FCPA. Ninguna Parte ofrecerá ni aceptará sobornos, ya sea a funcionarios públicos o a particulares, para obtener ventajas indebidas.
+Avisos
+Los avisos se enviarán conforme a los datos de contacto establecidos en el Exhibit B y se considerarán recibidos según los medios allí descritos. Cambios surtirán efecto 5 días hábiles después de la notificación.
+Relación de Contratistas Independientes
+La relación entre Hexagon  Media  y el Cliente es de licenciante y licenciatario. El presente Contrato no crea una relación de mandante y mandatario, agente, comitente y comisionista, patrón/patrón sustituto y empleado, socio y asociado entre el Cliente y Hexagon  Media . Ninguna de las Partes estará facultada para representar y obligar a la otra de manera alguna, y cada una de las Partes será responsable exclusivamente de sus propios actos.
+Auditoría
+El Cliente podrá auditar, una vez al año, el cumplimiento del Proveedor en materia de seguridad y privacidad, previa notificación con 30 días y sin afectar operaciones.
+Medidas Cautelares
+Conforme al artículo 213 de la Ley Federal de Protección a la Propiedad Industrial, la Parte afectada podrá solicitar medidas precautorias sin necesidad de garantía.
+Ley Aplicable y Solución de Controversias
+Derecho aplicable. Este Contrato se regirá e interpretará por las leyes aplicables de los Estados Unidos Mexicanos.
+Jurisdicción. Para la resolución de cualquier disputa, controversia, reclamación o diferencia que surja de o se relacione con el presente Contrato, las Partes se someten expresamente a la jurisdicción de los Tribunales de la Ciudad de México, renunciando a cualquier otro fuero presente o futuro que pudiera corresponderle en virtud de sus domicilios presentes o futuros o por cualquier otra causa ; no obstante, las Partes podrán optar por arbitraje CCI o CIAM para disputas superiores a USD 1,000,000.
+Miscelánea
+Notificaciones. Para notificar el cumplimiento de las obligaciones estipuladas en el presente instrumento, o para cualquier otra cuestión relacionada con el mismo, la notificación se hará :
+para Hexagon  Media , en el correo electrónico  XXX@XXX.XXX , con acuse de recibo, y en su defecto en el domicilio ubicado en  XXX ; y
+para el Cliente, en el correo electrónico, con acuse de recibo, que indique en  el SOW.
+Acuerdo Íntegro. Este MSA y sus Exhibits constituyen el acuerdo total entre las Partes.
+Modificaciones. Solo serán válidas por escrito y firmadas por ambas Partes.
+C esión. Prohibida sin consentimiento, salvo cambio de control con notificación.
+Divisibilidad. La nulidad de una cláusula no afectará la validez de las restantes.
+Renuncia. La falta de ejercicio de un derecho no implica renuncia.
+Encabezados. Solo referencia; no afectan interpretación.
+Autonomía de Disposiciones. La nulidad, invalidez, ilegalidad o cualquier vicio en cualquiera de las disposiciones del presente Contrato, sólo afectará a dicha disposición, y por lo tanto no afectará a las demás disposiciones aquí pactadas, las cuales conservarán su fuerza obligatoria.
+Contrapartes. Este MSA podrá firmarse en contrapartes, físicas o electrónicas.
+Firma Electrónica. Las Partes reconocen su validez conforme a los artículos 89 y 97 del Código de Comercio; En caso de ser efirma, el proveedor de firma conservará el manifiesto de datos (hash) conforme a la NOM 151 SCFI 2016  y a la  Ley de Firma Electrónica Avanzada (LFEA) y su obligación de resguardo de certificados.
+Publicidad y Uso de Marcas
+Ninguna Parte utilizará el nombre o marcas de la otra con fines publicitarios sin consentimiento previo. El Proveedor podrá mencionar al Cliente como referencia salvo oposición escrita. Los comunicados de prensa requerirán aprobación mutua.
+Firmas
+Por HEXAGON MEDIA, S.A.P.I. de C.V.
+Por [Razón Social del Cliente]
+Nombre:  Jorge Ignacio Gasca Enríquez
+Nombre:
+Cargo:  Apoderado Legal
+Fecha: ___/___/2025
+Cargo:
+Fecha: ___/___/2025
+Exhibit A – Orden de Servicio #1 Agente de IA para TelevisaUnivision – Hexagon Media
+Número de SOW: OS-001-2025
+Fecha de Inicio:  X  de  XXXX  de 2025
+Datos de las Partes y Representaciones
+Parte
+Representante
+Domicilio
+[Razón Social del Cliente]
+Título: Director Ejecutivo de Investigación de Audiencias
+Hexagon Media S.A.P.I. de C.V. (operando como Hexagon Media)
+Jorge Gasca
+Título: Representante Legal
+Ambas partes declaran y garantizan contar con las facultades suficientes para celebrar la presente Orden de Servicio (la “OS”) y obligarse conforme a lo estipulado.
+El  documento   “ Schedule 1 ”  adjunto forma parte integrante del presente Exhibit A y está incorporado por referencia al MSA.
+Alcance del Servicio
+El SOW cubre dos grandes componentes de trabajo:
+Integración de Datos de TelevisaUnivision en La Plataforma:
+Ingesta inicial de fuentes (encuestas, videos de focus groups, reportes internos).
+Normalización de formatos y taxonomías.
+Cifrado AES 256 en tránsito y en reposo con llaves dedicadas.
+Secure Software Development Lifecycle (SDLC) con OWASP
+Configuración de controles de acceso RBAC y auditoría.
+Validación de integridad y calidad (≥ 95 % datos válidos).
+Desarrollo de un Agente de IA para el Área de Investigación:
+Modelo conversacional fine tuned en terminología Televisa.
+Módulo de insights predictivos y scoring de pilotos de contenido.
+Motor de búsqueda con citas verificables.
+Dashboard de monitoreo y métricas de uso.
+La solución se hospedará en AWS, bajo arquitectura multitenant, alineada a ISO 27001/27018, aprovechando SLA de AWS (99.9 % uptime), el Acuerdo de Procesamiento de Datos (DPA) y  las Políticas de Uso Aceptable (PUA)  de  La Plataforma .
+Cronograma
+Mes (2025)
+Actividades Clave
+Responsable Primario
+Entregable
+Agosto
+• Reunión de arranque y validación de objetivos.
+• Inventario y permisos de todas las fuentes de datos.
+• Diseño detallado de arquitectura segura.
+• Clasificación de datos.
+• Mapa de linaje preliminar y flujos de actualización.
+Hexagon Media + TUV
+Diseño de arquitectura aprobado
+Septiembre
+• Desarrollo e implementación de conectores a las fuentes de datos prioritarias.
+• Estrategia de partición, compresión y cifrado ‐ en tránsito/en reposo.
+• Diseño de modelos de agentes de IA.
+• Limpieza, homologación y enriquecimiento de datos.
+• Definición de taxonomías y métricas clave.
+• Análisis exploratorio para confirmar utilidad.
+• Prototipo de interfaz conversacional (mock ups).
+Hexagon Media
+Conectores y prototipo validados
+Octubre
+• Pipelines de datos: deduplicación, normalización, etiquetado.
+• Reglas de calidad (freshness, completeness).
+• Diseño de “lógica de negocio” (medidas, dimensiones, definiciones unificadas de rating, engagement, sentiment).
+• Entrenamiento inicial del agente con terminología Televisa.
+• Implementación de búsqueda con citas verificables.
+• Pruebas automáticas de precisión y coherencia.
+• Hardening de seguridad y auditoría.
+• Pruebas de aceptación junto al equipo de Investigación.
+Hexagon Media
+MVP agente IA listo
+Noviembre
+• Puesta en marcha controlada.
+• Materializar vistas agregadas (features temporales, TF IDF de diálogos, embeddings video texto).
+• Atención dedicada para resolver incidencias y afinar resultados.
+• Ajuste del modelo lingüístico con terminología interna.
+• Implementación del motor de búsqueda con citas verificables.
+• Sesiones de feedback y corrección en caliente.
+• Monitoreo de latencia, uso y errores.
+• Soporte dedicado para incidencias.
+Hexagon Media + TUV
+Piloto operativo
+Diciembre
+• Optimización final y transferencia de conocimiento al equipo interno.
+Ajustes finos con feedback real.
+• Entrenamiento incremental.
+• Transferencia de conocimiento y documentación.
+• Revisión de KPIs y plan de crecimiento 2026.
+Hexagon Media
+Agente IA aceptado y plan 2026
+Tarifas y Plan de Pagos (USD)
+Mes
+Monto (USD)
+Condición de Pago
+Agosto
+34,000
+Factura emitida dentro de 5 días; pago NET 30
+Septiembre
+34,000
+Factura emitida dentro de 5 días; pago NET 30
+Octubre
+34,000
+Factura emitida dentro de 5 días; pago NET 30
+Noviembre
+34,000
+Factura emitida dentro de 5 días; pago NET 30
+Diciembre
+34,000
+Factura emitida dentro de 5 días; pago NET 30
+Total
+170,000
+Pagadero en hitos mensuales
+Mantenimiento posterior: USD 4,000 mensuales a partir de enero 2026 (incluye hosting, soporte L2, parches de seguridad y monitorización).
+Criterios de Aceptación
+Integración completada de 100 % de las fuentes prioritarias definidas en la fase de diseño. Cobertura de datos válidos ≥ 95 %.
+Score F1 de matching de metadatos ≥ 0.85 en pruebas de referencia.
+Precisión conversacional ≥ 90 % en test de 100 consultas definidas por TelevisaUnivision.
+Pen test sin hallazgos críticos (CVSS ≥ 9) y cierre de hallazgos mayores < 30 días.
+Disponibilidad del servicio ≥ 99.5 % durante el piloto.
+Supuestos y Dependencias
+TelevisaUnivision proporcionará acceso seguro a las fuentes de datos antes del 15 de agosto 2025.
+TelevisaUnivision designará un SME (Subject Matter Expert) con al menos 4 h/semana de disponibilidad.
+Cualquier desarrollo fuera de alcance (nuevas integraciones, modelos adicionales) será cotizado aparte.
+Hexagon Media utilizará únicamente servicios aprobados de AWS bajo la región us-east 1 o us-west 2.
+Responsabilidades de Proveedor y Cliente
+Hexagon Media:
+Entregar los hitos conforme al cronograma.
+Proveer infraestructura, licencias y personal experto.
+Notificar cualquier desviación de alcance o riesgo de seguridad.
+TelevisaUnivision:
+Suministrar datos, accesos y feedback oportunamente.
+Aprobar entregables dentro de 5 días hábiles para no afectar el cronograma.
+Cumplir el plan de pagos según lo establecido.
+Términos de la orden
+Condiciones de pago
+Hexagon Media se obliga a enviar, dentro de los primeros 5 (cinco) días naturales, la factura que corresponda al mes en curso y el Cliente se obliga a cubrir la totalidad de la Contraprestación mensual, más impuestos aplicables, durante ese mismo mes. Cualquier variación en la forma de facturación, solicitada por el Cliente, deberá requerirse a Hexagon Media con una anticipación mínima de 30 (treinta) días naturales.
+Todos los pagos que se realicen conforme a la presente Orden de Servicio, se harán mediante transferencia electrónica interbancaria a la siguiente cuenta bancaria:
+Banco: Banco Regional, S.A. (“Banregio”)
+Beneficiario: Hexagon Media S.A.P.I. de C.V.
+Cuenta:   [*]
+CLABE:  [*]
+El retraso en la obligación de pago será considerado como un incumplimiento a lo pactado en el Contrato y esta Orden de Servicio. En ese caso, Hexagon  Media podrá unilateralmente suspender el acceso La Plataforma sin que ello constituya incumplimiento o rescisión del Contrato por su parte.
+Las Partes convienen que de manera individual e independiente cada una de ellas deberá cumplir respectivamente con los impuestos y las obligaciones fiscales que les correspondan, derivados de la celebración de este Contrato, en los términos de las disposiciones legales aplicables. Ninguna de las Partes podrá descontar o deducir en forma alguna el impuesto que pudiese corresponder por el uso de la Plataforma.
+Vigencia y Terminación Anticipada
+Plazo inicial. Los Servicios objeto de la presente Orden de Servicio iniciarán el [fecha de inicio] y concluirán el [fecha de término] (en conjunto, el “Plazo Inicial”). Las Partes reconocen que el desarrollo del Agente de IA requiere un periodo mínimo de cinco (5) meses contados a partir de la fecha de inicio.
+Terminación por falta de resultados. Transcurrido dicho periodo mínimo, si el Cliente considera ,  con base en criterios de desempeño razonables y documentados ,  que los resultados entregados no satisfacen los parámetros funcionales pactados en el Exhibit A, podrá terminar esta Orden de Servicio sin penalidad, mediante notificación escrita con al menos treinta (30) días naturales de antelación a la fecha en que desee que surta efectos la terminación. Durante ese lapso, las Partes deberán:
+completar las tareas en curso hasta donde sea razonablemente posible; y
+liquidar las obligaciones económicas devengadas a la fecha efectiva de terminación.
+Terminación por conveniencia del Proveedor. Hexagon Media podrá rescindir anticipadamente la presente Orden de Servicio por conveniencia, sin responsabilidad alguna, mediante aviso por escrito al Cliente con quince (15) días naturales de antelación. En dicho supuesto:
+Hexagon Media reembolsará al Cliente la parte proporcional de los pagos efectuados y no devengados; y
+Entregará al Cliente cualquier avance o entregable en curso, en el estado en que se encuentren.
+Obligaciones pendientes. La terminación no exime a ninguna de las Partes de:
+el pago de montos adeudados hasta la fecha efectiva de terminación;
+las obligaciones de confidencialidad, protección de datos y propiedad intelectual que, por su naturaleza, deban subsistir.
+No Renovación Automática y Acceso Posterior a la Plataforma
+No renovación automática. Las Partes convienen expresamente que la presente Orden de Servicio no se renovará de forma automática al concluir el Plazo Inicial, salvo que las Partes suscriban por escrito una nueva orden o adenda.
+Suspensión por incumplimiento. Si el Cliente incumple las condiciones del inciso 2.2, Hexagon Media podrá suspender el acceso al Agente de IA previo aviso escrito con un plazo de remediación de quince (15) días naturales.
+Acceso continuado al Agente de IA. No obstante lo anterior, una vez entregado y aceptado el Agente de IA para el área de Investigación de TelevisaUnivision, el Cliente conservará derecho de acceso permanente a dicho Agente dentro de la Plataforma, sujeto a:
+el cumplimiento continuo por parte del Cliente de los Términos de Uso, SLA y demás anexos vigentes del MSA; y
+el pago oportuno de cualquier cargo de mantenimiento, hosting o soporte que las Partes acuerden en un documento separado.
+Firmas
+Por HEXAGON MEDIA, S.A.P.I. de C.V.
+Por [Razón Social del Cliente]
+Nombre:  Jorge Ignacio Gasca Enríquez
+Nombre:
+Cargo:  Apoderado Legal
+Fecha: ___/___/2025
+Cargo:
+Fecha: ___/___/2025
+Schedule 1 – Detalle de Motores LLM y Cobertura de Licenciamiento / Protección de Datos
+(Anexo contractual a la Orden de Servicio – Agente Investigador para TelevisaUnivision)
+Sección
+Detalle
+1. Modelo primario
+o4 mini 2025 04 16
+LLM principal de razonamiento (chat, RAG synthesis) OpenAI  – contrato Enterprise
+(Addendum DP NL 2025, cláusula “no training” activada) Build 2025 04 16
+API id: ft:gpt 4o mini 2025 04 16
+Capacidades clave:
+· Multilingüe (ES EN)
+· Razonamiento tabular & JSON
+· “Function calling” y RAG nativo
+1.1 Modelo para Grader
+gpt 4o mini 2024 07 18
+OpenAI – misma cuenta
+Verisión : 2024 07 18
+Capacidades
+Auto eval de respuestas (accuracy, tone)
+1.2 Modelo Vectorizador
+Qwen3 Embedding 8B
+Vectorizador para corpus IQ VÍDEO / encuestas (para RAG) Alibaba Cloud / Qwen Team
+Apache 2.0 open source
+Versión: Tag v3.0 2025 03
+Capacidades: · Embeddings 1024 D (texto, audio transcript)
+· Optimizado para ES & PT
+1.4 Modelo del Orquestador
+Gemini 2.5 Pro
+Motor del orquestador de agentes (planning, tool calling, multilínea)
+Google Cloud / DeepMind – Vertex AI Enterprise Versión : GA 2025 05 27
+Capacidades:
+· Multimodal (video+texto)
+· Planificación de workflows, JSON structured tool calls
+1.5 Modelo individual
+Gemini 2.5 Flash
+Motor individual de cada agente (respuesta low latency)
+Google Cloud / DeepMind – Vertex AI Enterprise Versión : GA 2025 05 27
+3 5× más rápido que Pro
+2. Motor de contingencia
+Cohere Command R
+• Proveedor: Cohere Inc. (Toronto, CA)
+• Versión: Command R 104B (2025 05 release)
+• Activado solo ante indisponibilidad > 30 min del primario.
+3. Suscripciones y licencias
+3.1 Amazon Web Services
+Enterprise Agreement nº E347 45123 TU (vigente 01 ene 2025 → 31 dic 2027). Incluye:
+Nivel de servicio “Capacity Reservation” (SLA 99.9 %).
+4. Alcance de fine tuning
+• Fine tuning  solo  sobre pesos derivados; pesos base permanecen propiedad del proveedor.
+• Pesos fine tuned y embeddings resultantes serán  obra por encargo  de TU (cláusula 9.2 del MSA).
+• El fine tuning se ejecutará en un  Amazon Elastic Compute Cloud (Amazon EC2)  exclusivo de TU (West US 3).
+5. Seguridad y protección de datos
+• Encriptación en tránsito TLS 1.2+ / en reposo AES 256.
+• Aislamiento de red vía  VPC Nube Privada Virtual ; o.
+• Certificaciones proveedoras: AWS (ISO 27001).
+6. Subprocesadores autorizados
+1. Amazon Web Services  (USA) – hosting y cómputo LLM.
+2. Cohere Inc. (Canadá) – contingencia LLM.
+3. Amazon Web Services (USA) – almacenamiento cifrado de backups de pesos fine tuned.
+7. Gobernanza de cambios
+Cualquier sustitución o versión mayor de motor requerirá  aviso 15 días  y aprobación escrita de TU.
+8. Retención y eliminación
+• • Logs inferenciales: máx. 30 días, anonimizados.
+9. Protección de entrenamiento
+XXX
+Declaración de cumplimiento:   La Plataforma  certifica que mantiene acuerdos de niveles empresariales con los proveedores mencionados, los cuales garantizan la no utilización de los datos de TelevisaUnivision para entrenamiento global, la segregación lógica de la información y el cumplimiento de GDPR, LGPD y LFPDPPP.
+Por HEXAGON MEDIA, S.A.P.I. de C.V.
+Por [Razón Social del Cliente]
+Nombre:  Jorge Ignacio Gasca Enríquez
+Nombre:
+Cargo:  Apoderado Legal
+Fecha: ___/___/2025
+Cargo:
+Fecha: ___/___/2025
+Exhibit B – Acuerdo de Niveles de Servicio (SLA) y Contactos de Notificación
+Relacionado al “ CONTRATO MAESTRO DE SUSCRIPCIÓN Y SERVICIOS (MSA) ” y  a su “ Exhibit A” .
+Definiciones clave
+Disponibilidad: Porcentaje de tiempo en que la instancia de  La Plataforma  está operacional y accesible para el Cliente, excluyendo Mantenimiento Programado.
+Mantenimiento Programado: Ventanas de mantenimiento notificadas con al menos 72 horas de antelación y programadas entre las 00:00 y 04:00 (CDT).
+Incidente de Severidad 1: Indisponibilidad total o pérdida de datos crítica sin alternativa viable.
+Incidente de Severidad 2: Funcionalidad principal degradada o intermitente con impacto significativo en la operación del Cliente.
+Incidente de Severidad 3: Impacto menor, defecto cosmético o pregunta de uso sin interrupción del servicio.
+Crédito de Servicio: Monto en USD a favor del Cliente aplicado en facturas futuras como compensación por incumplimientos de SLA.
+Modelo Pass Back: Transferencia íntegra ('flujo a través') de los créditos de SLA otorgados por AWS a Hexagon Media y trasladados proporcionalmente al Cliente.
+Alcance de Servicios y Métricas de Disponibilidad
+Servicio AWS
+Disponibilidad mínima mensual
+Referencia SLA AWS
+EC2 / ECS (Compute)
+99.99 %
+https://aws.amazon.com/ec2/sla/
+Amazon RDS / Aurora
+99.95 %
+https://aws.amazon.com/rds/sla/
+AWS Lambda
+99.95 %
+https://aws.amazon.com/lambda/sla/
+Amazon S3 (Standard)
+99.9 %
+https://aws.amazon.com/s3/sla/
+Amazon API Gateway
+99.95 %
+https://aws.amazon.com/api-gateway/sla/
+Además de los SLA específicos de AWS anteriores, Hexagon Media garantiza los siguientes niveles de servicio para la Plataforma  La Plataforma :
+Componente  La Plataforma
+Periodo de medición
+Disponibilidad mínima
+Fórmula
+Plataforma – Producción
+Mensual (UTC)
+99.50 %
+(Tiempo Total – Tiempo No Planificado) ÷ Tiempo Total × 100
+APIs Críticas y Agente IA
+Mensual (UTC)
+99.50 %
+Igual a lo anterior
+Créditos por Incumplimiento
+Disponibilidad mensual observada
+Crédito (%)
+Descripción
+≥ 99.0 % y < 99.5 %
+5 %
+Aplicado al cargo mensual correspondiente
+≥ 98.0 % y < 99.0 %
+10 %
+Aplicado al cargo mensual correspondiente
+< 98.0 %
+15 %
+Aplicado al cargo mensual correspondiente
+Para evitar interpretación duplicativa, si un evento de indisponibilidad genera un crédito de SLA conforme a los términos de AWS y dicho crédito se traspasa íntegramente al Cliente (modelo pass back), no se otorgará crédito adicional por el mismo periodo, salvo que el impacto combinado provoque que la Disponibilidad Mensual de  La Plataforma  caiga por debajo de 98 %.
+Procedimiento de Créditos y Pass Back
+El Cliente deberá enviar solicitud  de crédito  escrita a  XXX @ XXX.XXX  dentro de los treinta (30) días naturales siguientes al cierre del mes afectado.
+Hexagon Media confirmará las métricas en un plazo máximo de diez (10) días hábiles empleando logs de AWS CloudWatch  y  AWS Health.
+Una vez validados, los Créditos de Servicio serán aplicados como nota de crédito en la siguiente factura. El monto total de créditos de un mes no excederá el 100 % del cargo mensual.
+Modelo Pass Back: Hexagon Media reembolsa íntegramente al Cliente cualquier crédito SLA que AWS otorgue ,  ya sea en forma de Service Credits o reembolsos ,  dentro del mismo ciclo de facturación. El cálculo será proporcional al impacto en la factura del Cliente.
+Tiempos de Respuesta y Resolución
+Severidad
+Tiempo de respuesta
+Inicio de trabajo en resolución
+Tiempo objetivo de resolución
+Sev 1
+≤ 1 hora (24×7)
+Inmediato y continuo
+≤ 4 horas
+Sev 2
+≤ 2 horas (Lun–Vie 08:00 20:00)
+Dentro de horario laboral
+≤ 24 horas
+Sev 3
+≤ 8 horas hábiles
+Planificado en sprint
+≤ 5 días hábiles
+Mantenimiento Programado
+Las ventanas de mantenimiento se programarán preferentemente entre las 00:00 y 04:00 horas (CDT) y serán notificadas con al menos setenta y dos (72) horas de antelación.
+El tiempo de mantenimiento notificado no contará como Tiempo No Planificado para efectos de disponibilidad.
+Seguridad y Cumplimiento Normativo Mexicano
+Hexagon Media cumple con la Ley Federal de Protección de Datos Personales en Posesión de los Particulares (LFPDPPP) – Art. 20 relativo a medidas de seguridad.
+De conformidad con el Código de Comercio (Art. 76 Bis I) se conservan registros electrónicos y bitácoras de auditoría por al menos cinco (5) años.
+Se implementa sellado de tiempo conforme a la NOM 151 SCFI 2016 para evidenciar integridad de los registros críticos.
+Infraestructura AWS y Shared Responsibility
+La Plataforma  se ejecuta exclusivamente sobre Amazon Web Services. Ambas partes reconocen el «AWS Shared Responsibility Model» (https://aws.amazon.com/compliance/shared-responsibility-model/), en el cual AWS es responsable de la ‘Seguridad de la Nube’ y Hexagon Media de la ‘Seguridad en la Nube’.
+Soporte y Escalamiento
+Nivel
+Descripción
+Canal
+Horario
+Responsable
+L1
+Recepción y registro de incidentes; troubleshooting básico
+Portal de Soporte, Email
+24×7
+Service Desk – Hexagon Media
+L2
+Análisis técnico, resolución de configuraciones, escalamiento a L3
+Email, Videollamada
+Lun–Vie 08:00 20:00 (CDT)
+Equipo de Operaciones
+L3
+Intervención de ingeniería, parches, trabajo con AWS Premium Support
+Teléfono directo, Bridge Call
+24×7 (solo Sev 1)
+Equipo de Ingeniería y CTO
+Canales de contacto de soporte:
+Email:  XXX@XXX.XXX
+Teléfono L1: + 52 55 1234 5678
+Portal: https:// support.hexagon.media
+Contactos para Notificación
+Organización
+Nombre
+Cargo
+Email
+Teléfono
+Hexagon Media
+Eduardo Carbia
+Chief Executive Officer
+ecarbia@hexagon.media
++52 55 9876 5432
+Hexagon Media
+Mauricio Patiño
+Chief Technology Officer
+mpatino @hexagon.media
++52 55 1122 3344
+TelevisaUnivisión
+Por definir
+Director(a) de Investigación
+Por definir
+Por definir
+Las partes podrán actualizar los contactos con notificación escrita al otro lado con al menos cinco (5) días hábiles de antelación.
+Cambio y Aceptación
+Cualquier modificación a este Exhibit B deberá realizarse por escrito y firmada por representantes autorizados de ambas partes.
+Ley Aplicable y Jurisdicción
+Este Acuerdo de Niveles de Servicio se regirá e interpretará de conformidad con las leyes de los Estados Unidos Mexicanos. Para la interpretación y cumplimiento, las partes se someten a la jurisdicción de los tribunales competentes de la Ciudad de México, renunciando a cualquier otro fuero que pudiera corresponderles por razón de su domicilio presente o futuro.
+Referencias
+AWS EC2 SLA – https://aws.amazon.com/ec2/sla/
+AWS RDS SLA – https://aws.amazon.com/rds/sla/
+AWS Lambda SLA – https://aws.amazon.com/lambda/sla/
+AWS S3 SLA – https://aws.amazon.com/s3/sla/
+AWS API Gateway SLA – https://aws.amazon.com/api-gateway/sla/
+AWS Shared Responsibility Model – https://aws.amazon.com/compliance/shared-responsibility-model/
+LFPDPPP – https://www.diputados.gob.mx/LeyesBiblio/pdf/LFPDPPP.pdf
+Código de Comercio – https://www.diputados.gob.mx/LeyesBiblio/pdf/3_140222.pdf
+NOM 151 SCFI 2016 – https://www.dof.gob.mx/nota_detalle.php?codigo=542160
+Exhibit C – Matriz de Responsabilidad Compartida (AWS)
+Relacionado al “ CONTRATO MAESTRO DE SUSCRIPCIÓN Y SERVICIOS (MSA) ” y  a su “ Exhibit A” .
+Introducción
+El presente Exhibit C describe la asignación detallada de responsabilidades de seguridad, cumplimiento y operación entre Amazon Web Services (“AWS”) y Hexagon Media, S.A.P.I. de C.V. (“ La Plataforma ”) conforme al modelo de Responsabilidad Compartida de AWS. Dicho modelo establece que AWS es responsable  DE  la ‘Seguridad de la Nube’ (infraestructura física, redes y virtualización) y que el Cliente/Proveedor de la carga de trabajo es responsable de la ‘Seguridad  EN  la Nube’ (configuración, datos y controles de aplicación). Esta matriz se elabora en cumplimiento de la Ley Federal de Protección de Datos Personales en Posesión de los Particulares (LFPDPPP), el Código de Comercio, la Ley Federal de Protección a la Propiedad Intelectual (LFPI), la Ley General de Responsabilidades Administrativas (LGRA), la Ley Federal de Datos Abiertos (LFDA) y la NOM 151 SCFI 2016, así como los estándares ISO/IEC 27001 e ISO/IEC 27018. Para mayores referencias, puede consultarse el whitepaper oficial de AWS “Shared Responsibility Model” (https://aws.amazon.com/compliance/shared-responsibility-model/).
+Matriz de Responsabilidad
+Capa / Componente
+Responsabilidad de AWS
+Responsabilidad de  La Plataforma
+Referencia Legal / Estándar
+Infraestructura Física (Centros de Datos)
+Diseño y operación de edificios, energía, climatización, seguridad física, control de acceso a recintos.
+Supervisar evidencias de certificaciones (ISO 27001, SOC 1/2) y evaluar informes de auditoría de AWS.
+ISO 27001 A.11; LFPDPPP art. 20
+Red y Perímetro
+Protección DDoS (AWS Shield), firewalls perimetrales,  enrutamiento global seguro.
+Diseñar y mantener VPCs, subredes, NACLs, Security Groups, AWS WAF y AWS Firewall Manager.
+LFPDPPP art. 19; ISO 27033; NOM 151
+Hipervisor y Virtualización
+Gestión de parches del hipervisor, aislamiento entre instancias.
+N/A (sin acceso al hipervisor).
+ISO 27001 A.12.6
+Sistema Operativo del Servidor (Guest OS)
+Patching del host subyacente y firmware.
+Hardening, aplicación de parches y CIS benchmarks de AMIs, escaneos de vulnerabilidad periódicos.
+LFPDPPP arts. 15, 20; ISO 27002 12.6
+Middleware y Contenedores
+Manejo de parches de ECS/Fargate y hosts de contenedores.
+Construcción segura de imágenes, gestión de dependencias, escaneo SCA, runtime protection.
+ISO 27001 A.14; OWASP SAMM
+Plataforma (Aplicación)
+No aplica.
+Desarrollo seguro (SDL), pruebas SAST/DAST, revisiones de código, gestión CI/CD.
+ISO 27034; LFPDPPP art. 50
+Datos del Cliente
+Disponibilidad y durabilidad del almacenamiento (S3, RDS), cifrado server side en reposo (KMS).
+Clasificación, cifrado en tránsito (TLS 1.2+), políticas de retención, copias de seguridad y destrucción segura.
+LFPDPPP arts. 3, 9, 61; ISO 27018; NOM 151
+Acceso de Usuario / IAM
+Plataforma IAM, MFA para root, registro de eventos CloudTrail.
+Definición de roles, políticas de mínimo privilegio, MFA para usuarios, rotación de llaves y credenciales.
+Código de Comercio art. 89; ISO 27002 9.2
+Controles Adicionales (Back ups, KMS, Monitoreo, Pentesting, Auditorías)
+Servicios gestionados (AWS KMS, AWS Backup, CloudWatch, CloudTrail).
+Configuración de planes de respaldo, llaves KMS de cliente, alarmas métricas, ejercicios de pentesting autorizados por AWS, contratos de  auditoría externa SOC 2 Tipo II.
+ISO 27001 A.12.3, A.18; LGRA art. 8
+Controles Adicionales de  La Plataforma
+• Cifrado de datos sensibles (AES 256) ‘at rest’ y TLS 1.2+ ‘in transit’.
+• Respaldos automáticos diarios con retención de 35 días y pruebas de restauración cada trimestre.
+• Gestión de llaves en AWS KMS con almacenamiento en HSM y rotación anual.
+• Monitoreo 24×7 mediante AWS CloudWatch, Datadog y AWS GuardDuty con umbrales de alerta en < 5 min.
+• Pruebas de penetración externas semestrales y remediación ≤ 30 días calendario.
+• Programa de auditoría interna ISO/IEC 27001 con revisión de controles cada 12 meses.
+Notificación de Incidentes y Cumplimiento Normativo
+En caso de que un incidente de seguridad comprometa datos personales regulados por la LFPDPPP,  La Plataforma  notificará a TelevisaUnivisión dentro de las 72 horas siguientes a su detección, conforme al Artículo 20 de la LFPDPPP y al lineamiento segundo de la Guía para Notificaciones de Violaciones de Datos Personales del INAI. La notificación incluirá: (i) naturaleza del incidente, (ii) datos potencialmente afectados, (iii) acciones correctivas inmediatas y (iv) medidas de mitigación futuras.
+Exhibit D – Acuerdo de Tratamiento de Datos Personales (DPA)
+Relacionado al “MSA Helena ONE v5” y la Orden de Servicio #1 (POC Agente IA TelevisaUnivisión – Hexagon Media).
+Introducción y Alcance
+El presente Acuerdo de Tratamiento de Datos Personales (“DPA”) complementa el MSA Helena ONE v5 celebrado entre TelevisaUnivisión, S.A. de C.V. (“Cliente”), en su carácter de Responsable del tratamiento conforme al artículo 8 de la Ley Federal de Protección de Datos Personales en Posesión de los Particulares (“LFPDPPP”), y Hexagon Media, S.A.P.I. de C.V. (“Helena ONE” o “Encargado”), respecto de los servicios de software como servicio (SaaS) e infraestructura en la nube descritos en el SOW #1.  Este DPA establece los términos y condiciones aplicables al tratamiento de Datos Personales que el Encargado realice por cuenta del Responsable de acuerdo con la legislación mexicana, las mejores prácticas internacionales (ISO/IEC 27001, ISO/IEC 27018, NIST SP 800 53) y el AWS Shared Responsibility Model.
+Definiciones
+Datos Personales: Cualquier información concerniente a una persona física identificada o identificable.
+Titular: Persona física a quien corresponden los Datos Personales.
+Tratamiento: Obtención, uso, divulgación o almacenamiento de Datos Personales, por cualquier medio.
+Responsable: Persona física o moral de carácter privado que decide sobre el Tratamiento de Datos Personales.
+Encargado: Persona física o moral que sola o conjuntamente con otras trate Datos Personales por cuenta del Responsable.
+Sub procesador: Tercero contratado por el Encargado para llevar a cabo actividades de Tratamiento.
+Brecha de Seguridad: Cualquier vulneración de seguridad que afecte de forma significativa los Datos Personales almacenados o tratados.
+Roles y Responsabilidades
+El Cliente actúa como Responsable y determina las finalidades del Tratamiento.
+Helena ONE actúa como Encargado y sólo tratará los Datos Personales conforme a las instrucciones documentadas del Cliente y este DPA
+El Encargado se obliga a no usar los Datos Personales para finalidades distintas a las instruidas, ni a transferirlos sin autorización previa y por escrito del Responsable, salvo las excepciones previstas en el artículo 37 de la LFPDPPP.
+Categorías de Datos y Finalidades
+Las categorías y finalidades autorizadas son las siguientes:
+Categoría de Datos
+Ejemplos
+Finalidades
+Identificación
+Nombre, RFC, CURP, ID de empleado
+Alta de usuarios, administración de cuentas
+Contacto
+Correo electrónico, número telefónico
+Comunicaciones y notificaciones de la plataforma
+Perfil / Preferencias
+Historial de navegación, preferencias de idioma
+Personalización de la experiencia de usuario
+Uso de Plataforma
+Logs, dirección IP, metadata
+Análisis de desempeño, detección de fraudes, mejora continua
+Datos de Investigación
+Encuestas, ratings, respuestas de estudios
+Generación de insights de IA y reportes de audiencia
+Cualquier Tratamiento distinto requerirá una modificación formal a este Exhibit.
+5.  Base Legal y Consentimiento
+El Responsable garantiza haber recabado el consentimiento expreso o tácito de los Titulares conforme a los artículos 6 y 8 de la LFPDPPP, o bien contar con otra base de licitud prevista en el artículo 10.
+La Plataforma  proporcionará al Responsable funcionalidades para documentar y gestionar consentimientos y/o exclusiones mediante registro electrónico sellado bajo NOM 151 SCFI 2016.
+Medidas de Seguridad
+Técnicas:
+Cifrado AES 256 de datos en reposo, SHA2-512  y TLS 1.2+ en tránsito.
+Control de acceso basado en roles (RBAC) e IAM con MFA obligatorio.
+Registro y monitoreo continuo (AWS CloudTrail) con conservación mínima de 365 días.
+Backup diario automatizado con retención de 35 días y restauración probada cada trimestre.
+Organizativas:
+Políticas internas de seguridad de la información alineadas a ISO 27001.
+NDA y cláusulas de confidencialidad para todo personal y contratistas.
+Programa anual de capacitación en LFPDPPP y seguridad.
+Pruebas de penetración externas al menos una vez al año con remediación en ≤ 30 días.
+Sub procesadores y Transferencias Internacionales
+El Encargado utiliza los sub procesadores listados a continuación y declara sus certificaciones:
+Sub procesador
+Servicio
+Región/Nodo
+Certificaciones
+Mecanismo Legal
+Amazon Web Services, Inc.
+Infraestructura IaaS
+us east 1; us east 2
+ISO 27001 / 27018, SOC 1 3, CSA STAR
+Cláusula contractual en este DPA
+El Encargado notificará por escrito al Responsable con al menos 30 días de anticipación la adición o sustitución de un sub procesador, ofreciendo derecho de objeción razonable.
+Toda transferencia internacional se sujetará a los artículos 36 y 37 de la LFPDPPP.
+Ejercicio de Derechos ARCO
+El Responsable mantendrá un punto de contacto para titulares en privacidad@televisaunivision.com. El Encargado cooperará para responder solicitudes de Acceso, Rectificación, Cancelación u Oposición (ARCO) remitidas por el  Responsible.
+La Plataforma  proporcionará, dentro de los 10 días hábiles siguientes a la solicitud, la información necesaria para que el Responsable responda en el plazo de 20 días hábiles establecido en el artículo 32 de la LFPDPPP y ejecute la acción solicitada dentro de 15 días hábiles adicionales.
+9. Notificación de Brechas de Seguridad
+El Encargado notificará al Responsable sin demora indebida y, en todo caso, dentro de las 24 horas siguientes a la detección de una Brecha de Seguridad.
+El informe incluirá:
+descripción de la naturaleza de la brecha;
+categorías y número aproximado de Titulares afectados;
+datos comprometidos;
+medidas de contención y mitigación adoptadas; y
+acciones correctivas futuras.
+El Responsable evaluará la necesidad de notificar al INAI conforme a los Lineamientos del artículo 20 de la LFPDPPP.
+Conservación y Eliminación
+Los Datos Personales se conservarán únicamente por el plazo necesario para cumplir con las finalidades establecidas o por disposición legal aplicable.
+A la terminación del servicio o por instrucción escrita del Responsable, el Encargado procederá a la eliminación segura o anonimización irreversible de los Datos Personales en un periodo no mayor a 30 días naturales y entregará certificado digital de destrucción.
+Auditorías y Cumplimiento
+El Encargado permitirá auditorías razonables, presenciales o remotas, una vez por año calendario o cuando ocurra una Brecha de Seguridad grave.
+El Encargado mantendrá vigente su programa de cumplimiento alineado a ISO/IEC 27001 y proporcionará al Responsable informes SOC 2 Tipo II bajo NDA.
+Responsabilidad y Sanciones
+El incumplimiento de las obligaciones contenidas en este DPA podrá dar lugar a las sanciones previstas en los artículos 63 y 64 de la LFPDPPP y a la indemnización de daños y perjuicios conforme al Código Civil Federal .
+Cada parte mantendrá indemne a la otra por cualquier reclamación de terceros derivada de su propio incumplimiento a la normatividad aplicable.
+Orden de Prevalencia
+En caso de contradicción entre el MSA y el presente Exhibit D, prevalecerán las disposiciones de este DPA en lo relacionado al Tratamiento de Datos Personales.
+Vigencia y Firma
+El presente DPA entra en vigor en la fecha de su firma y permanecerá vigente mientras el Encargado trate Datos Personales por cuenta del Responsable.
+Por HEXAGON MEDIA, S.A.P.I. de C.V.
+Por [Razón Social del Cliente]
+Nombre:  Jorge Ignacio Gasca Enríquez
+Nombre:
+Cargo:  Apoderado Legal
+Fecha: ___/___/2025
+Cargo:
+Fecha: ___/___/2025

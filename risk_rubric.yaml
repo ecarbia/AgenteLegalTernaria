@@ -1,0 +1,176 @@
+version: "1.0"
+title: "LegalOps MVP Risk Rubric"
+description: "Reglas base para clasificar riesgo contractual por clausula con salida semaforizada."
+
+scoring:
+  formula: "score = likelihood_x_impact * 5"
+  likelihood_scale:
+    1: "Muy improbable"
+    2: "Improbable"
+    3: "Posible"
+    4: "Probable"
+    5: "Muy probable"
+  impact_scale:
+    1: "Impacto menor"
+    2: "Impacto bajo"
+    3: "Impacto moderado"
+    4: "Impacto alto"
+    5: "Impacto severo"
+  level_thresholds:
+    low:
+      min: 0
+      max: 20
+    medium:
+      min: 21
+      max: 45
+    high:
+      min: 46
+      max: 75
+    critical:
+      min: 76
+      max: 100
+
+global_hard_triggers:
+  - id: G01
+    condition: "Falta total de clausula de confidencialidad en contrato con datos sensibles"
+    force_level: "critical"
+    probable_impact: "Exposicion de informacion confidencial y contingencia reputacional/regulatoria."
+    recommendation_initial: "Incluir NDA/clausula de confidencialidad robusta antes de firma."
+  - id: G02
+    condition: "Indemnizacion unilateral e ilimitada sin reciprocidad"
+    force_level: "critical"
+    probable_impact: "Exposicion economica no acotada."
+    recommendation_initial: "Negociar limites, exclusiones y reciprocidad."
+  - id: G03
+    condition: "Renuncia total de responsabilidad del proveedor por incumplimiento esencial"
+    force_level: "high"
+    probable_impact: "Riesgo de incumplimiento sin remedio efectivo."
+    recommendation_initial: "Agregar responsabilidades minimas y remedios contractuales."
+
+rules_by_clause:
+  parties:
+    base_likelihood: 2
+    base_impact: 3
+    triggers:
+      - id: P01
+        when: "Identidad de parte incompleta o inconsistente"
+        likelihood: 3
+        impact: 4
+        probable_impact: "Nulidad parcial o disputas de exigibilidad."
+        recommendation_initial: "Corregir nombre legal, representante y facultades."
+  object:
+    base_likelihood: 2
+    base_impact: 3
+    triggers:
+      - id: O01
+        when: "Objeto ambiguo o sin entregables medibles"
+        likelihood: 4
+        impact: 4
+        probable_impact: "Conflicto por alcance y cumplimiento."
+        recommendation_initial: "Definir alcance, entregables, criterios de aceptacion."
+  term:
+    base_likelihood: 2
+    base_impact: 3
+    triggers:
+      - id: T01
+        when: "No hay fecha de inicio/termino ni mecanismo de renovacion"
+        likelihood: 3
+        impact: 3
+        probable_impact: "Vigencia incierta y riesgo de extension no deseada."
+        recommendation_initial: "Incluir vigencia determinada y reglas de renovacion."
+  payments:
+    base_likelihood: 3
+    base_impact: 4
+    triggers:
+      - id: PY01
+        when: "Penalizaciones por mora desproporcionadas o sin tope"
+        likelihood: 3
+        impact: 4
+        probable_impact: "Contingencia financiera no prevista."
+        recommendation_initial: "Limitar recargos y definir periodo de gracia."
+      - id: PY02
+        when: "No hay condicion clara de facturacion o aceptacion"
+        likelihood: 4
+        impact: 4
+        probable_impact: "Disputas de pago y tension operativa."
+        recommendation_initial: "Definir hitos de cobro y evidencia de cumplimiento."
+  termination:
+    base_likelihood: 3
+    base_impact: 4
+    triggers:
+      - id: TR01
+        when: "Terminacion solo a favor de una parte sin causa"
+        likelihood: 4
+        impact: 4
+        probable_impact: "Asimetria contractual y perdida de continuidad."
+        recommendation_initial: "Alinear causales y preavisos para ambas partes."
+  liability:
+    base_likelihood: 3
+    base_impact: 5
+    triggers:
+      - id: LB01
+        when: "Tope de responsabilidad inexistente o excesivo"
+        likelihood: 4
+        impact: 5
+        probable_impact: "Exposicion economica alta."
+        recommendation_initial: "Definir limite razonable ligado a valor del contrato."
+  indemnification:
+    base_likelihood: 3
+    base_impact: 5
+    triggers:
+      - id: IN01
+        when: "Indemnizacion unilateral sin derecho de defensa"
+        likelihood: 4
+        impact: 5
+        probable_impact: "Asuncion de contingencias de tercero sin control."
+        recommendation_initial: "Incluir reciprocidad y proceso de defensa."
+  confidentiality:
+    base_likelihood: 3
+    base_impact: 5
+    triggers:
+      - id: CF01
+        when: "No define informacion confidencial ni excepciones"
+        likelihood: 4
+        impact: 4
+        probable_impact: "Dificultad para exigir cumplimiento."
+        recommendation_initial: "Definir alcance, excepciones y vigencia post-terminacion."
+  intellectual_property:
+    base_likelihood: 3
+    base_impact: 5
+    triggers:
+      - id: IP01
+        when: "No se define titularidad de desarrollos/entregables"
+        likelihood: 4
+        impact: 5
+        probable_impact: "Conflicto por explotacion y uso de activos."
+        recommendation_initial: "Definir cesion/licencia, alcance territorial y temporal."
+  jurisdiction:
+    base_likelihood: 2
+    base_impact: 4
+    triggers:
+      - id: J01
+        when: "No hay ley aplicable o foro competente"
+        likelihood: 3
+        impact: 4
+        probable_impact: "Aumento de incertidumbre y costo litigioso."
+        recommendation_initial: "Establecer ley aplicable y jurisdiccion competente."
+  compliance:
+    base_likelihood: 3
+    base_impact: 5
+    triggers:
+      - id: C01
+        when: "Obligaciones regulatorias criticas no cubiertas"
+        likelihood: 4
+        impact: 5
+        probable_impact: "Sanciones regulatorias y dano reputacional."
+        recommendation_initial: "Agregar clausulas de cumplimiento y auditoria."
+
+operating_policies:
+  evidence_required_per_finding: 1
+  if_no_evidence:
+    level: "medium"
+    rationale: "Riesgo por informacion insuficiente"
+    recommendation_initial: "Solicitar version integra o anexos faltantes para validacion."
+  mandatory_human_review_levels:
+    - high
+    - critical

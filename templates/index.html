@@ -1,0 +1,378 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contract Analyst Agent</title>
+    <link rel="icon" type="image/x-icon" href="/static/Isotipo_Ternaria.ico" />
+    <link rel="stylesheet" href="/static/styles.css" />
+  </head>
+  <body>
+    <header class="app-header">
+      <div class="brand-wrap">
+        <img class="brand-logo" src="/static/logoTernariaLegal.png" alt="Ternaria Legal" />
+        <div>
+          <p class="app-kicker">LegalOps Desk</p>
+          <h1>Contract Analyst Agent</h1>
+        </div>
+      </div>
+      <div class="header-actions">
+        <span id="health-pill" class="health-pill">Verificando backend...</span>
+        <button id="btn-download-matrix" class="btn btn-light" type="button">Descargar Matriz PDF</button>
+      </div>
+    </header>
+
+    <div class="app-shell">
+      <aside class="sidebar">
+        <div class="sidebar-toggle-wrap">
+          <button id="toggle-sidebar" class="btn btn-light sidebar-toggle" type="button">Ocultar menú</button>
+        </div>
+        <nav class="menu">
+          <button class="menu-item is-active" data-tab="dashboard" type="button" title="Resumen Análisis">
+            <span class="menu-icon" aria-hidden="true">▦</span>
+            <span class="menu-label">Resumen Análisis</span>
+          </button>
+          <button class="menu-item" data-tab="new-analysis" type="button" title="Nuevo Análisis">
+            <span class="menu-icon" aria-hidden="true">＋</span>
+            <span class="menu-label">Nuevo Análisis</span>
+          </button>
+          <button class="menu-item" data-tab="analysis" type="button" title="Análisis IA">
+            <span class="menu-icon" aria-hidden="true">◉</span>
+            <span class="menu-label">Análisis IA</span>
+          </button>
+          <button class="menu-item" data-tab="review-queue" type="button" title="Dudas / Revisión">
+            <span class="menu-icon" aria-hidden="true">⌕</span>
+            <span class="menu-label">Dudas / Revisión</span>
+          </button>
+        </nav>
+
+        <section class="sidebar-card">
+          <h3>Base normativa (RAG)</h3>
+          <div class="rag-actions">
+            <button id="rag-build-sample" class="btn btn-secondary" type="button">Federal muestra</button>
+            <button id="rag-build-full" class="btn btn-secondary" type="button">Federal completo</button>
+            <button id="rag-build-state-sample" class="btn btn-secondary" type="button">Estados/CDMX muestra</button>
+            <button id="rag-build-state-full" class="btn btn-secondary" type="button">Estados/CDMX completo</button>
+            <button id="rag-check-updates" class="btn btn-secondary" type="button">Verificar actualizaciones</button>
+            <button id="rag-refresh-status" class="btn btn-light" type="button">Actualizar estado</button>
+          </div>
+          <div id="rag-status" class="rag-status">Sin datos de indexacion en esta sesion.</div>
+        </section>
+      </aside>
+
+      <main class="content">
+        <div id="global-message" class="global-message hidden"></div>
+
+        <section id="tab-dashboard" class="tab-panel is-active">
+          <header class="panel-header">
+            <h2>Dashboard de Contratos (Energia)</h2>
+            <div class="inline-actions">
+              <button id="reanalyze-all" class="btn btn-light" type="button">Reanalizar todo</button>
+              <button id="refresh-dashboard" class="btn btn-light" type="button">Actualizar</button>
+            </div>
+          </header>
+
+          <div class="dashboard-controls">
+            <label>
+              Cliente
+              <select id="dashboard-client-filter">
+                <option value="">Todos</option>
+              </select>
+            </label>
+            <label>
+              Registros
+              <select id="dashboard-page-size">
+                <option value="10">10</option>
+                <option value="50">50</option>
+                <option value="100">100</option>
+              </select>
+            </label>
+            <div id="dashboard-page-info" class="hint-text">Pagina 1</div>
+            <div class="inline-actions">
+              <button id="dashboard-prev-page" class="btn btn-light" type="button" aria-label="Página anterior">&lt;</button>
+              <button id="dashboard-next-page" class="btn btn-light" type="button" aria-label="Página siguiente">&gt;</button>
+            </div>
+          </div>
+
+          <div class="kpi-grid">
+            <article class="kpi-card">
+              <p class="kpi-label">Contratos Totales</p>
+              <p id="metric-total" class="kpi-value">0</p>
+            </article>
+            <article class="kpi-card">
+              <p class="kpi-label">Alto Riesgo</p>
+              <p id="metric-high-risk" class="kpi-value kpi-high">0</p>
+            </article>
+            <article class="kpi-card">
+              <p class="kpi-label">Pendiente Vo.Bo.</p>
+              <p id="metric-pending" class="kpi-value">0</p>
+            </article>
+            <article class="kpi-card">
+              <p class="kpi-label">Contratos con Analisis</p>
+              <p id="metric-analyzed" class="kpi-value">0</p>
+            </article>
+          </div>
+
+          <div class="table-wrap">
+            <table>
+              <thead>
+                <tr>
+                  <th>Nombre del Contrato</th>
+                  <th>Cliente</th>
+                  <th>Tipo</th>
+                  <th>Contraparte</th>
+                  <th>Firma Prevista</th>
+                  <th>Ult. Actualizacion</th>
+                  <th>Riesgo</th>
+                  <th>Estado</th>
+                  <th>Acciones</th>
+                </tr>
+              </thead>
+              <tbody id="contracts-table-body"></tbody>
+            </table>
+          </div>
+        </section>
+
+        <section id="tab-new-analysis" class="tab-panel">
+          <header class="panel-header">
+            <h2>Nuevo Análisis (Contrato Energía)</h2>
+          </header>
+
+          <form id="new-analysis-form" class="form-grid">
+            <label>
+              Nombre de Proyecto
+              <input id="project-name" name="project_name" type="text" required />
+            </label>
+            <label>
+              Cliente del despacho
+              <input id="client-name" name="client_name" type="text" required />
+            </label>
+            <label>
+              Tipo de Contrato
+              <select id="contract-type" name="contract_type" required>
+                <option value="">Selecciona...</option>
+                <option value="Suministro">Suministro</option>
+                <option value="Operacion">Operacion</option>
+                <option value="Mantenimiento">Mantenimiento</option>
+                <option value="Servicios">Servicios</option>
+                <option value="Compraventa">Compraventa</option>
+              </select>
+            </label>
+            <label>
+              Contraparte / Operador
+              <input id="counterparty" name="counterparty" type="text" required />
+            </label>
+            <label>
+              Fecha de Firma Prevista
+              <input id="expected-sign-date" name="expected_sign_date" type="date" />
+            </label>
+            <label class="full">
+              Objetivo
+              <textarea id="objective" name="objective" rows="3" placeholder="Describe alcance, monto o finalidad contractual"></textarea>
+            </label>
+            <label class="full">
+              Contrato (PDF, DOCX, TXT)
+              <input id="file-input" name="file" type="file" accept=".pdf,.docx,.txt" required />
+            </label>
+            <label class="checkbox full">
+              <input id="include-historical" name="include_historical" type="checkbox" />
+              Vincular al expediente historico
+            </label>
+            <div class="full form-actions">
+              <button class="btn btn-primary" type="submit">Cargar y Analizar</button>
+            </div>
+          </form>
+
+          <div class="progress-block">
+            <div class="progress-head">
+              <span>Proceso</span>
+              <span id="intake-progress-label">0%</span>
+            </div>
+            <div class="progress-track">
+              <div id="intake-progress" class="progress-fill"></div>
+            </div>
+            <p id="intake-message" class="hint-text">Completa el formulario para iniciar.</p>
+          </div>
+        </section>
+
+        <section id="tab-analysis" class="tab-panel">
+          <header class="panel-header">
+            <h2>Análisis y Dictamen</h2>
+            <div class="inline-actions">
+              <button id="btn-analyze-selected" class="btn btn-light" type="button">Analizar seleccionado</button>
+              <button id="btn-generate-dictamen" class="btn btn-light" type="button">Generar dictamen</button>
+              <button id="btn-download-dictamen" class="btn btn-light" type="button">Descargar dictamen PDF</button>
+            </div>
+          </header>
+
+          <div id="analysis-empty" class="empty-state">
+            Selecciona un contrato desde el dashboard para abrir su analisis.
+          </div>
+
+          <div id="analysis-content" class="analysis-layout hidden">
+            <section class="analysis-main">
+              <article class="contract-header">
+                <h3 id="selected-contract-name">Contrato no seleccionado</h3>
+                <p id="selected-contract-meta" class="hint-text"></p>
+              </article>
+
+              <div class="risk-summary-grid">
+                <article id="risk-card-general" class="risk-summary-card tone-medium">
+                  <div>
+                    <p class="risk-card-label">Riesgo General</p>
+                    <p id="analysis-overall-risk" class="risk-card-value">-</p>
+                    <p id="analysis-overall-score" class="risk-card-foot">Puntuacion: -/100</p>
+                  </div>
+                  <span id="analysis-risk-icon" class="risk-card-icon">!</span>
+                </article>
+                <article id="risk-card-critical" class="risk-summary-card tone-critical">
+                  <div>
+                    <p class="risk-card-label">Riesgos Criticos</p>
+                    <p id="analysis-critical-count" class="risk-card-value">0</p>
+                    <p id="analysis-critical-message" class="risk-card-foot">Sin hallazgos críticos</p>
+                  </div>
+                  <span class="risk-card-icon">!</span>
+                </article>
+                <article id="risk-card-compliance" class="risk-summary-card tone-low">
+                  <div>
+                    <p class="risk-card-label">Cumplimiento</p>
+                    <p id="analysis-compliance" class="risk-card-value">0%</p>
+                    <p id="analysis-updates-foot" class="risk-card-foot">Sin verificacion normativa</p>
+                  </div>
+                  <span class="risk-card-icon">✓</span>
+                </article>
+              </div>
+
+              <section class="analysis-section">
+                <h4>Resumen Ejecutivo</h4>
+                <div id="analysis-executive-summary" class="executive-summary-box">Sin resumen ejecutivo.</div>
+              </section>
+
+              <section class="analysis-section">
+                <h4>Base Legal Aplicable</h4>
+                <div class="legal-meta-grid">
+                  <div class="legal-meta-item">
+                    <p class="kpi-label">Jurisdiccion</p>
+                    <p id="analysis-jurisdiction" class="kpi-value small">-</p>
+                  </div>
+                  <div class="legal-meta-item">
+                    <p class="kpi-label">Leyes aplicables</p>
+                    <ul id="analysis-governing-laws" class="law-list">
+                      <li>No identificado</li>
+                    </ul>
+                  </div>
+                </div>
+              </section>
+
+              <section class="analysis-section">
+                <h4>Análisis Detallado</h4>
+                <div id="analysis-findings-list" class="findings-list"></div>
+              </section>
+
+              <article id="dictamen-preview" class="dictamen-preview hidden"></article>
+            </section>
+
+            <aside class="analysis-side">
+              <section class="chat-card">
+                <h3>Contract Analyst Agent (dialogo natural)</h3>
+                <div id="chat-thread" class="chat-thread"></div>
+                <form id="chat-form" class="chat-form">
+                  <textarea id="chat-input" rows="3" placeholder="Preguntame sobre riesgos, clausulas, ley aplicable o dictamen"></textarea>
+                  <button class="btn btn-primary" type="submit">Enviar</button>
+                </form>
+              </section>
+            </aside>
+          </div>
+        </section>
+
+        <section id="tab-review-queue" class="tab-panel">
+          <header class="panel-header">
+            <h2>Bandeja de Dudas y Revisión</h2>
+            <div class="inline-actions">
+              <select id="review-status-filter">
+                <option value="">Todos los estados</option>
+                <option value="Requiere revision">Requiere revision</option>
+                <option value="Duda">Duda</option>
+                <option value="Vo.Bo.">Vo.Bo.</option>
+              </select>
+              <select id="review-page-size">
+                <option value="10">10</option>
+                <option value="50">50</option>
+                <option value="100">100</option>
+              </select>
+              <button id="review-refresh" class="btn btn-light" type="button">Actualizar</button>
+            </div>
+          </header>
+          <div class="table-wrap">
+            <table>
+              <thead>
+                <tr>
+                  <th>Contrato</th>
+                  <th>Cliente</th>
+                  <th>Clausula</th>
+                  <th>Estado</th>
+                  <th>Riesgo</th>
+                  <th>Feedback</th>
+                  <th>Accion</th>
+                </tr>
+              </thead>
+              <tbody id="review-table-body"></tbody>
+            </table>
+          </div>
+          <div class="dashboard-controls">
+            <div id="review-page-info" class="hint-text">Pagina 1</div>
+            <div class="inline-actions">
+              <button id="review-prev-page" class="btn btn-light" type="button" aria-label="Página anterior">&lt;</button>
+              <button id="review-next-page" class="btn btn-light" type="button" aria-label="Página siguiente">&gt;</button>
+            </div>
+          </div>
+        </section>
+      </main>
+    </div>
+
+    <button id="feedback-fab" class="feedback-fab hidden" type="button" aria-expanded="false">
+      Lawyer-in-the-loop
+    </button>
+    <section id="feedback-drawer" class="feedback-drawer hidden" aria-hidden="true">
+      <header class="feedback-drawer-head">
+        <h3>Lawyer-in-the-loop</h3>
+        <button id="feedback-close" class="btn btn-light" type="button">Cerrar</button>
+      </header>
+      <form id="feedback-form" class="feedback-form">
+        <label>
+          Clausula
+          <select id="feedback-clause" name="clause_type">
+            <option value="">General</option>
+          </select>
+        </label>
+        <label>
+          Senal
+          <select id="feedback-signal" name="signal" required>
+            <option value="duda">Duda</option>
+            <option value="incumplimiento">Incumplimiento</option>
+            <option value="vo_bo">Vo.Bo.</option>
+          </select>
+        </label>
+        <label>
+          Riesgo corregido (opcional)
+          <select id="feedback-risk" name="corrected_risk">
+            <option value="">Sin ajuste</option>
+            <option value="low">Low</option>
+            <option value="medium">Medium</option>
+            <option value="high">High</option>
+            <option value="critical">Critical</option>
+          </select>
+        </label>
+        <label>
+          Nota del abogado
+          <textarea id="feedback-note" name="note" rows="3"></textarea>
+        </label>
+        <button class="btn btn-primary" type="submit">Guardar feedback</button>
+      </form>
+      <p id="feedback-summary" class="hint-text">Sin feedback registrado.</p>
+      <ul id="feedback-list" class="feedback-list"></ul>
+    </section>
+
+    <script src="/static/app.js"></script>
+  </body>
+</html>

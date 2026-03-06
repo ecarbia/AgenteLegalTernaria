@@ -1,0 +1,157 @@
+{
+  "last_rebuild": {
+    "started_at": "2026-03-04T19:39:08.451195+00:00",
+    "discovered": 317,
+    "indexed": 314,
+    "skipped": 0,
+    "errors": [
+      {
+        "law_key": "lagra",
+        "error": "HTTP Error 500: Internal Server Error"
+      },
+      {
+        "law_key": "lapp",
+        "error": "HTTP Error 500: Internal Server Error"
+      },
+      {
+        "law_key": "lftse",
+        "error": "HTTP Error 500: Internal Server Error"
+      }
+    ],
+    "finished_at": "2026-03-04T19:43:57.646882+00:00",
+    "ok": false
+  },
+  "index_url": "https://www.diputados.gob.mx/LeyesBiblio/index.htm",
+  "last_progress": 300,
+  "discovered": 317,
+  "federal_updates_checked_at": "2026-03-05T20:45:28.950970+00:00",
+  "federal_updates_hash": "3e45f575126f2f21c8f6df04a78ba47c9b65ad20a9154c2c25037f9c4440cc17",
+  "federal_updates_keys": [
+    "cnpcf",
+    "cpeum",
+    "cpeum_art",
+    "cpeum_crono",
+    "cpeum_per",
+    "lcm",
+    "lfda",
+    "lfppi",
+    "lft",
+    "lftse",
+    "lgamvlv",
+    "lgcdc",
+    "lgdnna",
+    "lgds",
+    "lge",
+    "lgec",
+    "lgeepa",
+    "lgimh",
+    "lgpgir",
+    "lgs",
+    "linm",
+    "lissfam",
+    "lissste",
+    "lmeum",
+    "lmigra",
+    "lplan",
+    "lss",
+    "lviv"
+  ],
+  "federal_updates_last_result": {
+    "checked_at": "2026-03-05T20:45:28.950970+00:00",
+    "updates_page": "https://www.diputados.gob.mx/LeyesBiblio/actual/ultima.htm",
+    "hash_changed": false,
+    "updated_law_keys": [
+      "cnpcf",
+      "cpeum",
+      "cpeum_art",
+      "cpeum_crono",
+      "cpeum_per",
+      "lcm",
+      "lfda",
+      "lfppi",
+      "lft",
+      "lftse",
+      "lgamvlv",
+      "lgcdc",
+      "lgdnna",
+      "lgds",
+      "lge",
+      "lgec",
+      "lgeepa",
+      "lgimh",
+      "lgpgir",
+      "lgs",
+      "linm",
+      "lissfam",
+      "lissste",
+      "lmeum",
+      "lmigra",
+      "lplan",
+      "lss",
+      "lviv"
+    ],
+    "updated_law_count": 28,
+    "sync_result": null
+  },
+  "last_rebuild_state": {
+    "scope": "state",
+    "started_at": "2026-03-04T20:41:06.450461+00:00",
+    "entrypoints": 33,
+    "processed": 33,
+    "indexed_sources": 36,
+    "indexed_chunks": 659,
+    "errors": [
+      {
+        "url": "https://data.consejeria.cdmx.gob.mx/index.php/leyes/constitucion",
+        "error": "<urlopen error timed out>"
+      },
+      {
+        "url": "http://www.congreso-hidalgo.gob.mx/biblioteca_legislativa/LEYES_VIGENTES/leyes_vigentes-lxiv.html",
+        "error": "<urlopen error timed out>"
+      },
+      {
+        "url": "https://legislativoedomex.gob.mx/revista",
+        "error": "<urlopen error timed out>"
+      },
+      {
+        "url": "https://congresosanluis.gob.mx/legislacion/leyes",
+        "error": "HTTP Error 307: Temporary Redirect"
+      },
+      {
+        "url": "http://www.congresoson.gob.mx/Transparencia/Leyes",
+        "error": "HTTP Error 404: Not Found"
+      },
+      {
+        "url": "https://www.legisver.gob.mx/Inicio.php?p=le",
+        "error": "<urlopen error timed out>"
+      }
+    ],
+    "finished_at": "2026-03-04T20:43:39.981304+00:00",
+    "ok": false
+  },
+  "gobiernos_url": "https://www.diputados.gob.mx/LeyesBiblio/gobiernos.htm",
+  "last_progress_state": 30,
+  "discovered_state": 33,
+  "last_progress_federal": 25,
+  "discovered_federal": 30,
+  "last_rebuild_federal": {
+    "scope": "federal",
+    "started_at": "2026-03-04T21:17:41.430960+00:00",
+    "discovered": 30,
+    "indexed": 30,
+    "skipped": 0,
+    "errors": [],
+    "finished_at": "2026-03-04T21:17:50.545404+00:00",
+    "ok": true
+  },
+  "last_rebuild_federal_subset": {
+    "scope": "federal_subset",
+    "started_at": "2026-03-04T23:52:25.658119+00:00",
+    "requested": 28,
+    "discovered": 23,
+    "indexed": 23,
+    "errors": [],
+    "finished_at": "2026-03-04T23:52:34.056900+00:00",
+    "ok": true
+  }
+}

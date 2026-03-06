@@ -1,0 +1,843 @@
+{
+  "analysis_id": "analysis_doc_8342d48b57d2",
+  "document": {
+    "document_id": "doc_8342d48b57d2",
+    "document_name": "contrato_demo.txt",
+    "source_type": "txt",
+    "repository_path": "/Users/eduardocarbia/Desktop/Scripts/agente-legal/data/uploads/doc_8342d48b57d2.txt",
+    "ingestion_timestamp": "2026-03-04T21:38:36.357469+00:00"
+  },
+  "summary": {
+    "parties": [
+      "La titularidad del codigo fuente y entregables sera del Cliente. El Proveedor conserva metodologias preexistentes y concede licencia no exclusiva para su uso interno."
+    ],
+    "object": "El Proveedor prestara servicios de desarrollo e implementacion de una plataforma interna de analitica para el Cliente, incluyendo configuracion, soporte inicial y transferencia de conocimiento.",
+    "term": {
+      "status": "partial",
+      "duration_text": "La vigencia del contrato iniciara el 01/04/2026 y concluira el 31/03/2027. Podra renovarse por acuerdo escrito de ambas partes."
+    },
+    "governing_law": "No identificado",
+    "jurisdiction": "Para la interpretacion y cumplimiento, las partes se someten a las leyes federales de Mexico y a los tribunales competentes de la Ciudad de Mexico, renunciando a cualquier otro fue"
+  },
+  "clauses": [
+    {
+      "clause_type": "parties",
+      "clause_label": "Partes",
+      "status": "found",
+      "extracted_text": "El Cliente pagara al Proveedor la cantidad de MXN 950,000 mas IVA en tres exhibiciones contra entrega de hitos definidos en el Anexo A. En caso de mora aplicara un interes mensual del 2%. La titularidad del codigo fuente y entregables sera del Cliente. El Proveedor conserva metodologias preexistentes y concede licencia no exclusiva para su uso interno.",
+      "normalized_data": {},
+      "evidence": [
+        {
+          "document_id": "doc_8342d48b57d2",
+          "document_name": "contrato_demo.txt",
+          "section": "PAGOS",
+          "snippet": "El Cliente pagara al Proveedor la cantidad de MXN 950,000 mas IVA en tres exhibiciones contra entrega de hitos definidos en el Anexo A. En caso de mora aplicara un interes mensual del 2%."
+        },
+        {
+          "document_id": "doc_8342d48b57d2",
+          "document_name": "contrato_demo.txt",
+          "section": "PROPIEDAD INTELECTUAL",
+          "snippet": "La titularidad del codigo fuente y entregables sera del Cliente. El Proveedor conserva metodologias preexistentes y concede licencia no exclusiva para su uso interno."
+        },
+        {
+          "document_id": "doc_8342d48b57d2",
+          "document_name": "contrato_demo.txt",
+          "section": "PARTES",
+          "snippet": "Que celebran por una parte Comercializadora Atlas, S.A. de C.V. (\"Cliente\") y por otra parte Soluciones Delta, S.A. de C.V. (\"Proveedor\")."
+        }
+      ],
+      "risk": {
+        "level": "low",
+        "score": 18,
+        "rationale": "Clausula localizada sin senales fuertes de riesgo inmediato.",
+        "probable_impact": "Riesgo acotado sujeto a revision juridica final.",
+        "recommendation_initial": "Confirmar nombres legales completos, representante y facultades.",
+        "confidence": 0.74
+      },
+      "feedback_signals": {}
+    },
+    {
+      "clause_type": "object",
+      "clause_label": "Objeto",
+      "status": "found",
+      "extracted_text": "El Proveedor prestara servicios de desarrollo e implementacion de una plataforma interna de analitica para el Cliente, incluyendo configuracion, soporte inicial y transferencia de conocimiento. La titularidad del codigo fuente y entregables sera del Cliente. El Proveedor conserva metodologias preexistentes y concede licencia no exclusiva para su uso interno.",
+      "normalized_data": {},
+      "evidence": [
+        {
+          "document_id": "doc_8342d48b57d2",
+          "document_name": "contrato_demo.txt",
+          "section": "OBJETO",
+          "snippet": "El Proveedor prestara servicios de desarrollo e implementacion de una plataforma interna de analitica para el Cliente, incluyendo configuracion, soporte inicial y transferencia de conocimiento."
+        },
+        {
+          "document_id": "doc_8342d48b57d2",
+          "document_name": "contrato_demo.txt",
+          "section": "PROPIEDAD INTELECTUAL",
+          "snippet": "La titularidad del codigo fuente y entregables sera del Cliente. El Proveedor conserva metodologias preexistentes y concede licencia no exclusiva para su uso interno."
+        }
+      ],
+      "risk": {
+        "level": "low",
+        "score": 18,
+        "rationale": "Clausula localizada sin senales fuertes de riesgo inmediato.",
+        "probable_impact": "Riesgo acotado sujeto a revision juridica final.",
+        "recommendation_initial": "Delimitar alcance, entregables y criterios de aceptacion.",
+        "confidence": 0.74
+      },
+      "feedback_signals": {}
+    },
+    {
+      "clause_type": "term",
+      "clause_label": "Vigencia",
+      "status": "partial",
+      "extracted_text": "La vigencia del contrato iniciara el 01/04/2026 y concluira el 31/03/2027. Podra renovarse por acuerdo escrito de ambas partes.",
+      "normalized_data": {},
+      "evidence": [
+        {
+          "document_id": "doc_8342d48b57d2",
+          "document_name": "contrato_demo.txt",
+          "section": "VIGENCIA",
+          "snippet": "La vigencia del contrato iniciara el 01/04/2026 y concluira el 31/03/2027. Podra renovarse por acuerdo escrito de ambas partes."
+        }
+      ],
+      "risk": {
+        "level": "medium",
+        "score": 46,
+        "rationale": "Se identificaron senales moderadas que requieren revision legal.",
+        "probable_impact": "Riesgo medio por ambiguedad o condiciones no del todo equilibradas.",
+        "recommendation_initial": "Definir fecha de inicio/termino y reglas de renovacion.",
+        "confidence": 0.72
+      },
+      "feedback_signals": {}
+    },
+    {
+      "clause_type": "payments",
+      "clause_label": "Pagos",
+      "status": "partial",
+      "extracted_text": "El Cliente pagara al Proveedor la cantidad de MXN 950,000 mas IVA en tres exhibiciones contra entrega de hitos definidos en el Anexo A. En caso de mora aplicara un interes mensual del 2%.",
+      "normalized_data": {},
+      "evidence": [
+        {
+          "document_id": "doc_8342d48b57d2",
+          "document_name": "contrato_demo.txt",
+          "section": "PAGOS",
+          "snippet": "El Cliente pagara al Proveedor la cantidad de MXN 950,000 mas IVA en tres exhibiciones contra entrega de hitos definidos en el Anexo A. En caso de mora aplicara un interes mensual del 2%."
+        }
+      ],
+      "risk": {
+        "level": "medium",
+        "score": 46,
+        "rationale": "Se identificaron senales moderadas que requieren revision legal.",
+        "probable_impact": "Riesgo medio por ambiguedad o condiciones no del todo equilibradas.",
+        "recommendation_initial": "Aclarar montos, hitos de pago, mora y condiciones de facturacion.",
+        "confidence": 0.72
+      },
+      "feedback_signals": {}
+    },
+    {
+      "clause_type": "termination",
+      "clause_label": "Terminacion",
+      "status": "found",
+      "extracted_text": "Cualquiera de las partes podra terminar el contrato por incumplimiento esencial, otorgando un preaviso de 15 dias naturales para subsanar. Las partes se obligan a guardar confidencialidad respecto de informacion tecnica, comercial y financiera por un plazo de 5 anos posteriores a la terminacion.",
+      "normalized_data": {},
+      "evidence": [
+        {
+          "document_id": "doc_8342d48b57d2",
+          "document_name": "contrato_demo.txt",
+          "section": "TERMINACION",
+          "snippet": "Cualquiera de las partes podra terminar el contrato por incumplimiento esencial, otorgando un preaviso de 15 dias naturales para subsanar."
+        },
+        {
+          "document_id": "doc_8342d48b57d2",
+          "document_name": "contrato_demo.txt",
+          "section": "CONFIDENCIALIDAD",
+          "snippet": "Las partes se obligan a guardar confidencialidad respecto de informacion tecnica, comercial y financiera por un plazo de 5 anos posteriores a la terminacion."
+        }
+      ],
+      "risk": {
+        "level": "high",
+        "score": 66,
+        "rationale": "Se detectaron terminos con potencial de desequilibrio contractual.",
+        "probable_impact": "Posibles controversias y contingencias economicas.",
+        "recommendation_initial": "Equilibrar causales y periodos de preaviso para ambas partes.",
+        "confidence": 0.79
+      },
+      "feedback_signals": {}
+    },
+    {
+      "clause_type": "liability",
+      "clause_label": "Responsabilidad",
+      "status": "found",
+      "extracted_text": "El Proveedor no sera responsable por danos indirectos. La responsabilidad total del Proveedor no excedera el monto total efectivamente pagado en los ultimos seis meses. El Cliente indemnizara al Proveedor por cualquier reclamacion de terceros relacionada con el uso de la plataforma, sin limite de responsabilidad y sin derecho de defensa del Cliente.",
+      "normalized_data": {},
+      "evidence": [
+        {
+          "document_id": "doc_8342d48b57d2",
+          "document_name": "contrato_demo.txt",
+          "section": "RESPONSABILIDAD",
+          "snippet": "El Proveedor no sera responsable por danos indirectos. La responsabilidad total del Proveedor no excedera el monto total efectivamente pagado en los ultimos seis meses."
+        },
+        {
+          "document_id": "doc_8342d48b57d2",
+          "document_name": "contrato_demo.txt",
+          "section": "INDEMNIZACION",
+          "snippet": "El Cliente indemnizara al Proveedor por cualquier reclamacion de terceros relacionada con el uso de la plataforma, sin limite de responsabilidad y sin derecho de defensa del Cliente."
+        }
+      ],
+      "risk": {
+        "level": "critical",
+        "score": 85,
+        "rationale": "La redaccion contiene terminos de alto impacto contractual.",
+        "probable_impact": "Exposicion severa por obligaciones desbalanceadas o ilimitadas.",
+        "recommendation_initial": "Definir limite de responsabilidad y exclusiones razonables.",
+        "confidence": 0.86
+      },
+      "feedback_signals": {}
+    },
+    {
+      "clause_type": "indemnification",
+      "clause_label": "Indemnizacion",
+      "status": "partial",
+      "extracted_text": "El Cliente indemnizara al Proveedor por cualquier reclamacion de terceros relacionada con el uso de la plataforma, sin limite de responsabilidad y sin derecho de defensa del Cliente.",
+      "normalized_data": {},
+      "evidence": [
+        {
+          "document_id": "doc_8342d48b57d2",
+          "document_name": "contrato_demo.txt",
+          "section": "INDEMNIZACION",
+          "snippet": "El Cliente indemnizara al Proveedor por cualquier reclamacion de terceros relacionada con el uso de la plataforma, sin limite de responsabilidad y sin derecho de defensa del Cliente."
+        }
+      ],
+      "risk": {
+        "level": "critical",
+        "score": 85,
+        "rationale": "La redaccion contiene terminos de alto impacto contractual.",
+        "probable_impact": "Exposicion severa por obligaciones desbalanceadas o ilimitadas.",
+        "recommendation_initial": "Establecer reciprocidad y mecanismo de defensa ante reclamos.",
+        "confidence": 0.86
+      },
+      "feedback_signals": {}
+    },
+    {
+      "clause_type": "confidentiality",
+      "clause_label": "Confidencialidad",
+      "status": "partial",
+      "extracted_text": "Las partes se obligan a guardar confidencialidad respecto de informacion tecnica, comercial y financiera por un plazo de 5 anos posteriores a la terminacion.",
+      "normalized_data": {},
+      "evidence": [
+        {
+          "document_id": "doc_8342d48b57d2",
+          "document_name": "contrato_demo.txt",
+          "section": "CONFIDENCIALIDAD",
+          "snippet": "Las partes se obligan a guardar confidencialidad respecto de informacion tecnica, comercial y financiera por un plazo de 5 anos posteriores a la terminacion."
+        }
+      ],
+      "risk": {
+        "level": "low",
+        "score": 20,
+        "rationale": "Se identificaron senales moderadas que requieren revision legal. Atenuado por Vo.Bo. del abogado.",
+        "probable_impact": "Riesgo medio por ambiguedad o condiciones no del todo equilibradas.",
+        "recommendation_initial": "Incluir alcance, excepciones y vigencia post-terminacion.",
+        "confidence": 0.72
+      },
+      "feedback_signals": {
+        "vo_bo": 1
+      }
+    },
+    {
+      "clause_type": "intellectual_property",
+      "clause_label": "Propiedad intelectual",
+      "status": "partial",
+      "extracted_text": "La titularidad del codigo fuente y entregables sera del Cliente. El Proveedor conserva metodologias preexistentes y concede licencia no exclusiva para su uso interno.",
+      "normalized_data": {},
+      "evidence": [
+        {
+          "document_id": "doc_8342d48b57d2",
+          "document_name": "contrato_demo.txt",
+          "section": "PROPIEDAD INTELECTUAL",
+          "snippet": "La titularidad del codigo fuente y entregables sera del Cliente. El Proveedor conserva metodologias preexistentes y concede licencia no exclusiva para su uso interno."
+        }
+      ],
+      "risk": {
+        "level": "medium",
+        "score": 46,
+        "rationale": "Se identificaron senales moderadas que requieren revision legal.",
+        "probable_impact": "Riesgo medio por ambiguedad o condiciones no del todo equilibradas.",
+        "recommendation_initial": "Definir titularidad y alcance de licencia/cesion.",
+        "confidence": 0.72
+      },
+      "feedback_signals": {}
+    },
+    {
+      "clause_type": "jurisdiction",
+      "clause_label": "Jurisdiccion",
+      "status": "partial",
+      "extracted_text": "Para la interpretacion y cumplimiento, las partes se someten a las leyes federales de Mexico y a los tribunales competentes de la Ciudad de Mexico, renunciando a cualquier otro fuero.",
+      "normalized_data": {},
+      "evidence": [
+        {
+          "document_id": "doc_8342d48b57d2",
+          "document_name": "contrato_demo.txt",
+          "section": "JURISDICCION Y LEY APLICABLE",
+          "snippet": "Para la interpretacion y cumplimiento, las partes se someten a las leyes federales de Mexico y a los tribunales competentes de la Ciudad de Mexico, renunciando a cualquier otro fuero."
+        }
+      ],
+      "risk": {
+        "level": "medium",
+        "score": 46,
+        "rationale": "Se identificaron senales moderadas que requieren revision legal.",
+        "probable_impact": "Riesgo medio por ambiguedad o condiciones no del todo equilibradas.",
+        "recommendation_initial": "Definir foro competente y ley aplicable.",
+        "confidence": 0.72
+      },
+      "feedback_signals": {}
+    },
+    {
+      "clause_type": "compliance",
+      "clause_label": "Cumplimiento",
+      "status": "found",
+      "extracted_text": "Las partes manifiestan cumplir con normativa de proteccion de datos personales y anticorrupcion aplicable. Cualquiera de las partes podra terminar el contrato por incumplimiento esencial, otorgando un preaviso de 15 dias naturales para subsanar.",
+      "normalized_data": {},
+      "evidence": [
+        {
+          "document_id": "doc_8342d48b57d2",
+          "document_name": "contrato_demo.txt",
+          "section": "CUMPLIMIENTO",
+          "snippet": "Las partes manifiestan cumplir con normativa de proteccion de datos personales y anticorrupcion aplicable."
+        },
+        {
+          "document_id": "doc_8342d48b57d2",
+          "document_name": "contrato_demo.txt",
+          "section": "TERMINACION",
+          "snippet": "Cualquiera de las partes podra terminar el contrato por incumplimiento esencial, otorgando un preaviso de 15 dias naturales para subsanar."
+        },
+        {
+          "document_id": "doc_8342d48b57d2",
+          "document_name": "contrato_demo.txt",
+          "section": "JURISDICCION Y LEY APLICABLE",
+          "snippet": "Para la interpretacion y cumplimiento, las partes se someten a las leyes federales de Mexico y a los tribunales competentes de la Ciudad de Mexico, renunciando a cualquier otro fuero."
+        }
+      ],
+      "risk": {
+        "level": "high",
+        "score": 66,
+        "rationale": "Se detectaron terminos con potencial de desequilibrio contractual.",
+        "probable_impact": "Posibles controversias y contingencias economicas.",
+        "recommendation_initial": "Alinear obligaciones regulatorias y derecho de auditoria.",
+        "confidence": 0.79
+      },
+      "feedback_signals": {}
+    }
+  ],
+  "overall_risk": {
+    "level": "critical",
+    "score": 85.0,
+    "critical_flags": [
+      "Terminacion: Se detectaron terminos con potencial de desequilibrio contractual.",
+      "Responsabilidad: La redaccion contiene terminos de alto impacto contractual.",
+      "Indemnizacion: La redaccion contiene terminos de alto impacto contractual.",
+      "Cumplimiento: Se detectaron terminos con potencial de desequilibrio contractual."
+    ]
+  },
+  "compliance_checks": [
+    {
+      "check_id": "CHK_CONF",
+      "status": "warn",
+      "message": "Confidencialidad presente: Requiere validacion manual.",
+      "evidence": [
+        {
+          "document_id": "doc_8342d48b57d2",
+          "document_name": "contrato_demo.txt",
+          "section": "CONFIDENCIALIDAD",
+          "snippet": "Las partes se obligan a guardar confidencialidad respecto de informacion tecnica, comercial y financiera por un plazo de 5 anos posteriores a la terminacion."
+        }
+      ]
+    },
+    {
+      "check_id": "CHK_JUR",
+      "status": "warn",
+      "message": "Jurisdiccion y ley aplicable: Requiere validacion manual.",
+      "evidence": [
+        {
+          "document_id": "doc_8342d48b57d2",
+          "document_name": "contrato_demo.txt",
+          "section": "JURISDICCION Y LEY APLICABLE",
+          "snippet": "Para la interpretacion y cumplimiento, las partes se someten a las leyes federales de Mexico y a los tribunales competentes de la Ciudad de Mexico, renunciando a cualquier otro fuero."
+        }
+      ]
+    },
+    {
+      "check_id": "CHK_COMP",
+      "status": "pass",
+      "message": "Clausula de cumplimiento: Evidencia localizada.",
+      "evidence": [
+        {
+          "document_id": "doc_8342d48b57d2",
+          "document_name": "contrato_demo.txt",
+          "section": "CUMPLIMIENTO",
+          "snippet": "Las partes manifiestan cumplir con normativa de proteccion de datos personales y anticorrupcion aplicable."
+        }
+      ]
+    }
+  ],
+  "human_review": {
+    "required": true,
+    "reason": "Existe riesgo high/critical.",
+    "review_status": "pending"
+  },
+  "generated_at": "2026-03-04T21:38:36.357469+00:00",
+  "disclaimer": "Analisis tecnico automatizado. No constituye asesoria legal definitiva; requiere validacion de abogado responsable.",
+  "contract_context": {
+    "project_name": "QA flujo final",
+    "contract_type": "Servicios",
+    "counterparty": "Operador QA",
+    "expected_sign_date": "2026-03-12",
+    "objective": "Prueba integral UI/API",
+    "include_historical": true
+  },
+  "legal_grounding": [
+    {
+      "clause_type": "parties",
+      "references": [
+        {
+          "law_key": "state::ciudad de mexico::3056fc68b2e81929b23c",
+          "law_name": "Marco Legal de la CDMX",
+          "article_label": "Fragmento 8",
+          "snippet": "USTENTABLE DE LA CIUDAD DE MÉXICO - Última reforma publicada en la GOCDMX el 15 de junio de 2023 Fecha de publicación: 30-06-2023 | Tamaño: 585 kb. LEY DEL SISTEMA DE SEGURIDAD CIUDADANA DE LA CIUDAD DE MÉXICO - Última reforma publicada en la GOCDMX el 15 de junio de 2023 Fecha de publicación: 30-06-2023 | Tamaño: 791 kb. LEY DE LOS DERECHOS DE LAS PERSONAS JÓVENES DE LA CIUDAD DE MÉXICO - Última reforma publicada e…",
+          "ref_url": "https://www.congresocdmx.gob.mx/marco-legal-cdmx-107-2.html",
+          "doc_url": "https://www.congresocdmx.gob.mx/marco-legal-cdmx-107-2.html",
+          "last_reform": null,
+          "scope": "state",
+          "jurisdiction": "ciudad de mexico",
+          "source_kind": "cdmx_congreso_leyes",
+          "rank_score": -0.2097399124738855,
+          "hybrid_score": 2.0097
+        },
+        {
+          "law_key": "ccf",
+          "law_name": "CÓDIGO CIVIL FEDERAL",
+          "article_label": "Artículo 1795",
+          "snippet": "Artículo 1795.- El contrato puede ser invalidado: I. Por incapacidad legal de las partes o de una de ellas; II. Por vicios del consentimiento; III. Porque su objeto, o su motivo o fin sea ilícito; IV. Porque el consentimiento no se haya manifestado en la forma que la ley establece.",
+          "ref_url": "https://www.diputados.gob.mx/LeyesBiblio/ref/ccf.htm",
+          "doc_url": "https://www.diputados.gob.mx/LeyesBiblio/doc/CCF.doc",
+          "last_reform": "14-11-2025",
+          "scope": "federal",
+          "jurisdiction": "mexico_federal",
+          "source_kind": "federal_law_doc",
+          "rank_score": -18.50428249512084,
+          "hybrid_score": 23.7043
+        }
+      ]
+    },
+    {
+      "clause_type": "object",
+      "references": [
+        {
+          "law_key": "state::ciudad de mexico::3056fc68b2e81929b23c",
+          "law_name": "Marco Legal de la CDMX",
+          "article_label": "Fragmento 26",
+          "snippet": "VICIO PÚBLICO \"SERVICIO DE TRANSPORTES ELÉCTRICOS DEL DISTRITO FEDERAL\" - Publicada en el DOF el 04 de enero de 1956 Fecha de publicación: 07-06-2022 | Tamaño: 643 kb. Marco Legal de la CDMX CONOCE Diputadas y Diputados OBLIGACIONES Visita Transparencia LISTADO Comisiones y Comités Diputadas y Diputados Comisiones y Comités Transmisión en Vivo Leyes de la CDMX Gaceta Parlamentaria Síntesis Informativa Comunicados de…",
+          "ref_url": "https://www.congresocdmx.gob.mx/marco-legal-cdmx-107-2.html",
+          "doc_url": "https://www.congresocdmx.gob.mx/marco-legal-cdmx-107-2.html",
+          "last_reform": null,
+          "scope": "state",
+          "jurisdiction": "ciudad de mexico",
+          "source_kind": "cdmx_congreso_leyes",
+          "rank_score": -4.932040595524662,
+          "hybrid_score": 6.732
+        },
+        {
+          "law_key": "ccom",
+          "law_name": "CÓDIGO DE COMERCIO",
+          "article_label": "Artículo 338",
+          "snippet": "Artículo 338.- Siempre que con asentimiento del depositante dispusiese el depositario de las cosas que fuesen objeto del depósito, ya para sí o sus negocios, ya para operaciones que aquel le encomendare, cesarán los derechos y obligaciones propias del depositante y depositario, surgiendo los del contrato que se celebrare.",
+          "ref_url": "https://www.diputados.gob.mx/LeyesBiblio/ref/ccom.htm",
+          "doc_url": "https://www.diputados.gob.mx/LeyesBiblio/doc/CCom.doc",
+          "last_reform": "14-11-2025",
+          "scope": "federal",
+          "jurisdiction": "mexico_federal",
+          "source_kind": "federal_law_doc",
+          "rank_score": -14.48040570700374,
+          "hybrid_score": 18.8804
+        }
+      ]
+    },
+    {
+      "clause_type": "term",
+      "references": [
+        {
+          "law_key": "lfppi",
+          "law_name": "LEY FEDERAL DE PROTECCIÓN A LA PROPIEDAD INDUSTRIAL",
+          "article_label": "Artículo 301",
+          "snippet": "Artículo 301.- Los efectos de la autorización para usar una denominación de origen o indicación geográfica durarán diez años, contados a partir de la fecha de presentación de la solicitud en el Instituto y podrán renovarse por períodos de la misma duración. La renovación deberá solicitarse por el titular dentro de los seis meses anteriores al vencimiento de su vigencia. Sin embargo, el Instituto dará trámite a aquel…",
+          "ref_url": "https://www.diputados.gob.mx/LeyesBiblio/ref/lfppi.htm",
+          "doc_url": "https://www.diputados.gob.mx/LeyesBiblio/doc/LFPPI.doc",
+          "last_reform": "15-01-2026",
+          "scope": "federal",
+          "jurisdiction": "mexico_federal",
+          "source_kind": "federal_law_doc",
+          "rank_score": -20.979074999370113,
+          "hybrid_score": 23.3791
+        },
+        {
+          "law_key": "lfppi",
+          "law_name": "LEY FEDERAL DE PROTECCIÓN A LA PROPIEDAD INDUSTRIAL",
+          "article_label": "Artículo 237",
+          "snippet": "Artículo 237.- La renovación del registro de una marca deberá solicitarse por el titular, dentro de los seis meses anteriores al vencimiento de su vigencia. Sin embargo, el Instituto dará trámite a aquellas solicitudes que se presenten dentro de un plazo de seis meses posteriores a la terminación de la vigencia del registro. Al presentar la solicitud de renovación, el titular deberá declarar el uso real y efectivo d…",
+          "ref_url": "https://www.diputados.gob.mx/LeyesBiblio/ref/lfppi.htm",
+          "doc_url": "https://www.diputados.gob.mx/LeyesBiblio/doc/LFPPI.doc",
+          "last_reform": "15-01-2026",
+          "scope": "federal",
+          "jurisdiction": "mexico_federal",
+          "source_kind": "federal_law_doc",
+          "rank_score": -20.13010568031563,
+          "hybrid_score": 22.5301
+        }
+      ]
+    },
+    {
+      "clause_type": "payments",
+      "references": [
+        {
+          "law_key": "lih",
+          "law_name": "LEY DE INGRESOS SOBRE HIDROCARBUROS",
+          "article_label": "Artículo 11",
+          "snippet": "Artículo 11.- Los Contratos de utilidad compartida establecerán las siguientes Contraprestaciones: I. A favor del Estado Mexicano: a) La Cuota Contractual para la Fase Exploratoria; b) Las Regalías determinadas conforme el artículo 24 de esta Ley, y c) Una Contraprestación que se determinará por la aplicación de un porcentaje a la Utilidad Operativa, y II. A favor del Contratista: a) La recuperación de los costos, s…",
+          "ref_url": "https://www.diputados.gob.mx/LeyesBiblio/ref/lih.htm",
+          "doc_url": "https://www.diputados.gob.mx/LeyesBiblio/doc/LIH.doc",
+          "last_reform": "18-03-2025",
+          "scope": "federal",
+          "jurisdiction": "mexico_federal",
+          "source_kind": "federal_law_doc",
+          "rank_score": -19.085106957077457,
+          "hybrid_score": 20.6851
+        },
+        {
+          "law_key": "lih",
+          "law_name": "LEY DE INGRESOS SOBRE HIDROCARBUROS",
+          "article_label": "Artículo 12",
+          "snippet": "Artículo 12.- Los Contratos de producción compartida establecerán las siguientes Contraprestaciones: I. A favor del Estado Mexicano: a) La Cuota Contractual para la Fase Exploratoria; b) Las Regalías determinadas conforme el artículo 24 de esta Ley, y c) Una Contraprestación que se determinará por la aplicación de un porcentaje a la Utilidad Operativa, y II. A favor del Contratista: a) La recuperación de los costos,…",
+          "ref_url": "https://www.diputados.gob.mx/LeyesBiblio/ref/lih.htm",
+          "doc_url": "https://www.diputados.gob.mx/LeyesBiblio/doc/LIH.doc",
+          "last_reform": "18-03-2025",
+          "scope": "federal",
+          "jurisdiction": "mexico_federal",
+          "source_kind": "federal_law_doc",
+          "rank_score": -18.062436284760466,
+          "hybrid_score": 19.6624
+        }
+      ]
+    },
+    {
+      "clause_type": "termination",
+      "references": [
+        {
+          "law_key": "laassp",
+          "law_name": "LEY DE ADQUISICIONES, ARRENDAMIENTOS Y SERVICIOS DEL SECTOR PÚBLICO",
+          "article_label": "Artículo 77",
+          "snippet": "Artículo 77. Las dependencias y entidades podrán en cualquier momento rescindir administrativamente los contratos cuando el proveedor incurra en incumplimiento de sus obligaciones, conforme al procedimiento siguiente: I. Se iniciará a partir de que al proveedor le sea comunicado a través de la Plataforma el incumplimiento en que haya incurrido, para que en un término de cinco días hábiles exponga lo que a su derecho…",
+          "ref_url": "https://www.diputados.gob.mx/LeyesBiblio/ref/laassp.htm",
+          "doc_url": "https://www.diputados.gob.mx/LeyesBiblio/doc/LAASSP.doc",
+          "last_reform": "16-04-2025",
+          "scope": "federal",
+          "jurisdiction": "mexico_federal",
+          "source_kind": "federal_law_doc",
+          "rank_score": -21.91534834601064,
+          "hybrid_score": 27.1153
+        },
+        {
+          "law_key": "lopsrm",
+          "law_name": "LEY DE OBRAS PÚBLICAS Y SERVICIOS RELACIONADOS CON LAS MISMAS",
+          "article_label": "Artículo 61",
+          "snippet": "Artículo 61.- Las dependencias y entidades podrán rescindir administrativamente los contratos en caso de incumplimiento de las obligaciones a cargo del contratista. El procedimiento de rescisión se llevará a cabo conforme a lo siguiente: I. Se iniciará a partir de que al contratista le sea comunicado el incumplimiento en que haya incurrido, para que en un término de quince días hábiles exponga lo que a su derecho co…",
+          "ref_url": "https://www.diputados.gob.mx/LeyesBiblio/ref/lopsrm.htm",
+          "doc_url": "https://www.diputados.gob.mx/LeyesBiblio/doc/LOPSRM.doc",
+          "last_reform": "14-11-2025",
+          "scope": "federal",
+          "jurisdiction": "mexico_federal",
+          "source_kind": "federal_law_doc",
+          "rank_score": -21.44605018684817,
+          "hybrid_score": 24.6461
+        }
+      ]
+    },
+    {
+      "clause_type": "liability",
+      "references": [
+        {
+          "law_key": "state::ciudad de mexico::3056fc68b2e81929b23c",
+          "law_name": "Marco Legal de la CDMX",
+          "article_label": "Fragmento 23",
+          "snippet": "amaño: 2,283 kb. LEY QUE ESTABLECE EL PROCEDIMIENTO DE REMOCIÓN DE LOS SERVIDORES PÚBLICOS QUE DESIGNA LA ASAMBLEA LEGISLATIVA DEL DISTRITO FEDERAL Y DE LOS TITULARES DE LOS ÓRGANOS PÓLÍTICO-ADMINISTRATIVOS DEL DISTRITO FEDERAL - Última reforma publicada en la GODF el 18 de diciembre de 2014 Fecha de publicación: 08-06-2022 | Tamaño: 1,103 kb. LEY DEL HEROICO CUERPO DE BOMBEROS DEL DISTRITO FEDERAL - Última reforma…",
+          "ref_url": "https://www.congresocdmx.gob.mx/marco-legal-cdmx-107-2.html",
+          "doc_url": "https://www.congresocdmx.gob.mx/marco-legal-cdmx-107-2.html",
+          "last_reform": null,
+          "scope": "state",
+          "jurisdiction": "ciudad de mexico",
+          "source_kind": "cdmx_congreso_leyes",
+          "rank_score": -6.0251447339532245,
+          "hybrid_score": 7.6251
+        },
+        {
+          "law_key": "lncm",
+          "law_name": "LEY DE NAVEGACIÓN Y COMERCIO MARÍTIMOS",
+          "article_label": "Artículo 305",
+          "snippet": "Artículo 305.- Cualquier acción para intentar la limitación de responsabilidad quedará sujeta al Convenio sobre Limitación de la Responsabilidad Civil nacida de Reclamaciones en Derecho Marítimo y en su caso, por el Convenio Internacional sobre Responsabilidad por Daños causados por la Contaminación de las Aguas del Mar por Hidrocarburos o en los tratados internacionales de la materia.",
+          "ref_url": "https://www.diputados.gob.mx/LeyesBiblio/ref/lncm.htm",
+          "doc_url": "https://www.diputados.gob.mx/LeyesBiblio/doc/LNCM.doc",
+          "last_reform": "14-11-2025",
+          "scope": "federal",
+          "jurisdiction": "mexico_federal",
+          "source_kind": "federal_law_doc",
+          "rank_score": -25.770456307338208,
+          "hybrid_score": 28.9705
+        }
+      ]
+    },
+    {
+      "clause_type": "indemnification",
+      "references": [
+        {
+          "law_key": "lvgc",
+          "law_name": "LEY DE VÍAS GENERALES DE COMUNICACIÓN",
+          "article_label": "Artículo 112",
+          "snippet": "Artículo 112.- En caso de guerra internacional, de grave alteración del orden público o cuando se tema algún peligro inminente para la paz interior del país o para la economía nacional, el Gobierno tendrá derecho de hacer la requisición, en caso de que a su juicio lo exija la seguridad, defensa, economía o tranquilidad del país, de las vías generales de comunicación, de los medios de transporte, de sus servicios aux…",
+          "ref_url": "https://www.diputados.gob.mx/LeyesBiblio/ref/lvgc.htm",
+          "doc_url": "https://www.diputados.gob.mx/LeyesBiblio/doc/LVGC.doc",
+          "last_reform": "14-11-2025",
+          "scope": "federal",
+          "jurisdiction": "mexico_federal",
+          "source_kind": "federal_law_doc",
+          "rank_score": -22.54912482145463,
+          "hybrid_score": 25.7491
+        },
+        {
+          "law_key": "lraf",
+          "law_name": "LEY PARA REGULAR LAS AGRUPACIONES FINANCIERAS",
+          "article_label": "Artículo 53",
+          "snippet": "Artículo 53.- La responsabilidad consistente en indemnizar los daños y perjuicios ocasionados con motivo de los actos, hechos u omisiones a que hace referencia esta Sección, será solidaria entre las personas que hayan ejecutado el acto, adoptado la decisión y será exigible como consecuencia de los daños o perjuicios ocasionados. La indemnización que corresponda deberá cubrir los daños y perjuicios causados a la Soci…",
+          "ref_url": "https://www.diputados.gob.mx/LeyesBiblio/ref/lraf.htm",
+          "doc_url": "https://www.diputados.gob.mx/LeyesBiblio/doc/LRAF.doc",
+          "last_reform": "14-11-2025",
+          "scope": "federal",
+          "jurisdiction": "mexico_federal",
+          "source_kind": "federal_law_doc",
+          "rank_score": -22.873741428885538,
+          "hybrid_score": 25.2737
+        }
+      ]
+    },
+    {
+      "clause_type": "confidentiality",
+      "references": [
+        {
+          "law_key": "state::ciudad de mexico::3056fc68b2e81929b23c",
+          "law_name": "Marco Legal de la CDMX",
+          "article_label": "Fragmento 14",
+          "snippet": "MEDIANA EMPRESA DEL DISTRITO FEDERAL - Última reforma publicada en la GOCDMX el 027 de marzo de 2021 Fecha de publicación: 22-06-2022 | Tamaño: 1,536 kb. LEY PARA LA CELEBRACIÓN DE ESPECTÁCULOS PÚBLICOS EN LA CIUDAD DE MÉXICO - Última reforma publicada en la GOCDMX el 02 de marzo de 2021 Fecha de publicación: 22-06-2022 | Tamaño: 3,835 kb. LEY DE TRANSPARENCIA, ACCESO A LA INFORMACIÓN PÚBLICA Y RENDICIÓN DE CUENTAS…",
+          "ref_url": "https://www.congresocdmx.gob.mx/marco-legal-cdmx-107-2.html",
+          "doc_url": "https://www.congresocdmx.gob.mx/marco-legal-cdmx-107-2.html",
+          "last_reform": null,
+          "scope": "state",
+          "jurisdiction": "ciudad de mexico",
+          "source_kind": "cdmx_congreso_leyes",
+          "rank_score": -5.949123276331621,
+          "hybrid_score": 8.5491
+        },
+        {
+          "law_key": "lfppi",
+          "law_name": "LEY FEDERAL DE PROTECCIÓN A LA PROPIEDAD INDUSTRIAL",
+          "article_label": "Artículo 164",
+          "snippet": "Artículo 164.- No se considerará apropiación indebida: I.- El descubrimiento o la creación independientes de la información que se reclame como un secreto industrial; II.- La observación, el estudio, el desmontaje o el ensayo de un producto u objeto que se haya puesto a disposición del público o que esté lícitamente en posesión de quien obtiene la información, siempre y cuando no esté sujeto a ninguna obligación de…",
+          "ref_url": "https://www.diputados.gob.mx/LeyesBiblio/ref/lfppi.htm",
+          "doc_url": "https://www.diputados.gob.mx/LeyesBiblio/doc/LFPPI.doc",
+          "last_reform": "15-01-2026",
+          "scope": "federal",
+          "jurisdiction": "mexico_federal",
+          "source_kind": "federal_law_doc",
+          "rank_score": -22.617513171257233,
+          "hybrid_score": 24.2175
+        }
+      ]
+    },
+    {
+      "clause_type": "intellectual_property",
+      "references": [
+        {
+          "law_key": "state::ciudad de mexico::26e0af7ea3a72267d67e",
+          "law_name": "Marco Jurídico",
+          "article_label": "Fragmento 2",
+          "snippet": "nta Pública 2023 Cuenta Pública 2024 --> Comunicación Social Organigrama Misión --> Síntesis informativa --> Comunicados de Prensa Agenda Legislativa Trabajo Legislativo --> Fotos --> Videos --> Noticias Agenda y Trasmisiones en Vivo Sintesis Informativa Multimedia Revista --> Podcast Contraloría Interna Declaracion 3 de 3 Control Interno Informes Etica y Conducta Institucional Capacitacion y Cultura Organizacional…",
+          "ref_url": "https://www.congresocdmx.gob.mx/marco-legal-cdmx-107-2.html",
+          "doc_url": "https://www.congresocdmx.gob.mx/marco-juridico-102-1.html",
+          "last_reform": null,
+          "scope": "state",
+          "jurisdiction": "ciudad de mexico",
+          "source_kind": "cdmx_congreso_leyes",
+          "rank_score": -3.294400328227486,
+          "hybrid_score": 5.0944
+        },
+        {
+          "law_key": "cmpp",
+          "law_name": "CÓDIGO MILITAR DE PROCEDIMIENTOS PENALES",
+          "article_label": "Artículo 231",
+          "snippet": "Artículo 231. Aseguramiento de narcóticos y productos relacionados con delitos de propiedad intelectual y derechos de autor Cuando se aseguren narcóticos previstos en cualquier disposición, productos relacionados con delitos de propiedad intelectual y derechos de autor o bienes que impliquen un alto costo o peligrosidad por su conservación, si esta medida es procedente, el Ministerio Público ordenará su destrucción,…",
+          "ref_url": "https://www.diputados.gob.mx/LeyesBiblio/ref/cmpp.htm",
+          "doc_url": "https://www.diputados.gob.mx/LeyesBiblio/doc/CMPP.doc",
+          "last_reform": "14-11-2025",
+          "scope": "federal",
+          "jurisdiction": "mexico_federal",
+          "source_kind": "federal_law_doc",
+          "rank_score": -28.223333731404303,
+          "hybrid_score": 31.4233
+        }
+      ]
+    },
+    {
+      "clause_type": "jurisdiction",
+      "references": [
+        {
+          "law_key": "state::ciudad de mexico::3056fc68b2e81929b23c",
+          "law_name": "Marco Legal de la CDMX",
+          "article_label": "Fragmento 9",
+          "snippet": "O - Última reforma publicada en la GOCDMX el 28 de abril de 2023 Fecha de publicación: 05-05-2023 | Tamaño: 787 kb. LEY DE BEBÉ SEGURO DE LA CIUDAD DE MÉXICO - Última reforma publicada en la GOCDMX el 27 de abril de 2023 Fecha de publicación: 05-05-2023 | Tamaño: 457 kb. LEY DE FOMENTO COOPERATIVO PARA EL DISTRITO FEDERAL - Última reforma publicada en la GOCDMX el 27 de abril de 2023 Fecha de publicación: 05-05-2023…",
+          "ref_url": "https://www.congresocdmx.gob.mx/marco-legal-cdmx-107-2.html",
+          "doc_url": "https://www.congresocdmx.gob.mx/marco-legal-cdmx-107-2.html",
+          "last_reform": null,
+          "scope": "state",
+          "jurisdiction": "ciudad de mexico",
+          "source_kind": "cdmx_congreso_leyes",
+          "rank_score": -0.16310873643701598,
+          "hybrid_score": 0.1631
+        },
+        {
+          "law_key": "cnpcf",
+          "law_name": "CÓDIGO NACIONAL DE PROCEDIMIENTOS CIVILES Y FAMILIARES",
+          "article_label": "Artículo 78",
+          "snippet": "Artículo 78. Los Tribunales Colegiados de Circuito, Tribunales Colegiados de Apelación y Plenos Regionales, así como la Suprema Corte de Justicia de la Nación, conocerán en segunda instancia, de los procedimientos en que resulte aplicable este Código Nacional y que sea competencia de los Juzgados de Distrito, en términos de lo que disponga la Ley Orgánica del Poder Judicial de la Federación. Cuando, en el lugar que…",
+          "ref_url": "https://www.diputados.gob.mx/LeyesBiblio/ref/cnpcf.htm",
+          "doc_url": "https://www.diputados.gob.mx/LeyesBiblio/doc/CNPCF.doc",
+          "last_reform": "15-01-2026",
+          "scope": "federal",
+          "jurisdiction": "mexico_federal",
+          "source_kind": "federal_law_doc",
+          "rank_score": -14.527190977913031,
+          "hybrid_score": 18.9272
+        }
+      ]
+    },
+    {
+      "clause_type": "compliance",
+      "references": [
+        {
+          "law_key": "state::ciudad de mexico::3056fc68b2e81929b23c",
+          "law_name": "Marco Legal de la CDMX",
+          "article_label": "Fragmento 14",
+          "snippet": "MEDIANA EMPRESA DEL DISTRITO FEDERAL - Última reforma publicada en la GOCDMX el 027 de marzo de 2021 Fecha de publicación: 22-06-2022 | Tamaño: 1,536 kb. LEY PARA LA CELEBRACIÓN DE ESPECTÁCULOS PÚBLICOS EN LA CIUDAD DE MÉXICO - Última reforma publicada en la GOCDMX el 02 de marzo de 2021 Fecha de publicación: 22-06-2022 | Tamaño: 3,835 kb. LEY DE TRANSPARENCIA, ACCESO A LA INFORMACIÓN PÚBLICA Y RENDICIÓN DE CUENTAS…",
+          "ref_url": "https://www.congresocdmx.gob.mx/marco-legal-cdmx-107-2.html",
+          "doc_url": "https://www.congresocdmx.gob.mx/marco-legal-cdmx-107-2.html",
+          "last_reform": null,
+          "scope": "state",
+          "jurisdiction": "ciudad de mexico",
+          "source_kind": "cdmx_congreso_leyes",
+          "rank_score": -5.949123276331621,
+          "hybrid_score": 7.5491
+        },
+        {
+          "law_key": "lgpdppso",
+          "law_name": "LEY GENERAL DE PROTECCIÓN DE DATOS PERSONALES EN POSESIÓN DE SUJETOS OBLIGADOS",
+          "article_label": "Artículo 66",
+          "snippet": "Artículo 66. Para el cumplimiento de las obligaciones previstas en la presente Ley, el responsable podrá desarrollar o adoptar, en lo individual o en acuerdo con otros responsables, encargados u organizaciones, esquemas de mejores prácticas que tengan por objeto: I. Elevar el nivel de protección de los datos personales; II. Armonizar el tratamiento de datos personales en un sector específico; III. Facilitar el ejerc…",
+          "ref_url": "https://www.diputados.gob.mx/LeyesBiblio/ref/lgpdppso.htm",
+          "doc_url": "https://www.diputados.gob.mx/LeyesBiblio/doc/LGPDPPSO.doc",
+          "last_reform": "14-11-2025",
+          "scope": "federal",
+          "jurisdiction": "mexico_federal",
+          "source_kind": "federal_law_doc",
+          "rank_score": -15.935572236017997,
+          "hybrid_score": 20.3356
+        }
+      ]
+    }
+  ],
+  "federal_updates_check": {
+    "checked_at": "2026-03-04T21:38:36.355233+00:00",
+    "updates_page": "https://www.diputados.gob.mx/LeyesBiblio/actual/ultima.htm",
+    "hash_changed": false,
+    "updated_law_keys": [
+      "cnpcf",
+      "cpeum",
+      "cpeum_art",
+      "cpeum_crono",
+      "cpeum_per",
+      "lcm",
+      "lfda",
+      "lfppi",
+      "lft",
+      "lftse",
+      "lgamvlv",
+      "lgcdc",
+      "lgdnna",
+      "lgds",
+      "lge",
+      "lgec",
+      "lgeepa",
+      "lgimh",
+      "lgpgir",
+      "lgs",
+      "linm",
+      "lissfam",
+      "lissste",
+      "lmeum",
+      "lmigra",
+      "lplan",
+      "lss",
+      "lviv"
+    ],
+    "updated_law_count": 28,
+    "sync_result": null
+  },
+  "llm_review": {
+    "provider": "gemini",
+    "configured": true,
+    "model": "gemini-1.5-flash",
+    "used": false,
+    "error": "Gemini HTTP 400: {\n  \"error\": {\n    \"code\": 400,\n    \"message\": \"API key not valid. Please pass a valid API key.\",\n    \"status\": \"INVALID_ARGUMENT\",\n    \"details\": [\n      {\n        \"@type\": \"type.googleapis.com/google.rpc.ErrorInfo\",\n        \"reason\": \"API_KEY_INVAL",
+    "generated_at": "2026-03-04T21:38:36.812439+00:00"
+  },
+  "lawyer_feedback": {
+    "total": 1,
+    "signals": {
+      "incumplimiento": 0,
+      "duda": 0,
+      "vo_bo": 1
+    },
+    "latest": {
+      "feedback_id": "fb_167e7af554ae",
+      "document_id": "doc_8342d48b57d2",
+      "document_name": "contrato_demo.txt",
+      "clause_type": "confidentiality",
+      "signal": "vo_bo",
+      "corrected_risk": null,
+      "note": "Texto aceptable",
+      "reviewer": "abogado",
+      "created_at": "2026-03-04T21:10:13.736124+00:00"
+    },
+    "by_clause": {
+      "confidentiality": {
+        "vo_bo": 1
+      }
+    }
+  },
+  "learning_trace": {
+    "global_feedback_count": 2,
+    "document_feedback_count": 1,
+    "adjustments": [
+      {
+        "clause_type": "confidentiality",
+        "from_level": "medium",
+        "to_level": "low"
+      }
+    ]
+  }
+}

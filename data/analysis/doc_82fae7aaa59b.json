@@ -1,0 +1,898 @@
+{
+  "analysis_id": "analysis_doc_82fae7aaa59b",
+  "document": {
+    "document_id": "doc_82fae7aaa59b",
+    "document_name": "CONTRATO_DE_PRESTACION_DE_SERVICIOS_PROFESIONALES_EC.docx",
+    "source_type": "docx",
+    "repository_path": "/Users/eduardocarbia/Desktop/Scripts/agente-legal/data/uploads/doc_82fae7aaa59b.docx",
+    "ingestion_timestamp": "2026-03-04T23:34:54.473773+00:00"
+  },
+  "summary": {
+    "parties": [
+      "PRIMERA. OBJETO DEL CONTRATO. EL PROFESIONAL se obliga a prestar a EL CLIENTE los servicios profesionales de consultoría en marketing, ventas y producto, conforme a las especificac"
+    ],
+    "object": "En la Ciudad de México, a 8 de Septiembre de 2025, comparecen por una parte Hexagon Media S.A.P.I. de C.V. , con RFC HME1808154G8 , a quien en lo sucesivo se le denominará EL CLIENTE, y por la otra parte Sara Elvira Port",
+    "term": {
+      "status": "found",
+      "duration_text": "Las partes se obligan a mantener en estricta confidencialidad toda la información técnica, comercial o estratégica compartida durante la vigencia del contrato y por un periodo de ["
+    },
+    "governing_law": "Ley aplicable identificada en el documento (validar detalle).",
+    "jurisdiction": "Para cualquier controversia, las partes se someten expresamente a la jurisdicción de las Tribunales de la Ciudad de México, renunciando a cualquier otro fuero."
+  },
+  "clauses": [
+    {
+      "clause_type": "parties",
+      "clause_label": "Partes",
+      "status": "found",
+      "extracted_text": "En la Ciudad de México, a 8 de Septiembre de 2025, comparecen por una parte Hexagon Media S.A.P.I. de C.V. , con RFC HME1808154G8 , a quien en lo sucesivo se le denominará EL CLIENTE, y por la otra parte Sara Elvira Portillo Gómez, con RFC POGS8601244D4, a quien en lo sucesivo se le denominará EL PROFESIONAL, y manifiestan que celebran el presente contrato de prestación de servicios profesionales de conformidad con l PRIMERA. OBJETO DEL CONTRATO. EL PROFESIONAL se obliga a prestar a EL CLIENTE los servicios profesionales de consultoría en marketing, ventas y producto, conforme a las especificaciones, plazos y entregables detallados en el Anexo 1 (Alcance del Proyecto), el cual forma parte integrante de este contrato. SEGUNDA. Plazo. Este contrato tendrá una duración del 8 de septiembre de 2025 al 30 de enero de 2026. TERCERA.",
+      "normalized_data": {},
+      "evidence": [
+        {
+          "document_id": "doc_82fae7aaa59b",
+          "document_name": "CONTRATO_DE_PRESTACION_DE_SERVICIOS_PROFESIONALES_EC.docx",
+          "section": "CONTRATO DE PRESTACIÓN DE SERVICIOS PROFESIONALES",
+          "snippet": "En la Ciudad de México, a 8 de Septiembre de 2025, comparecen por una parte Hexagon Media S.A.P.I. de C.V. , con RFC HME1808154G8 , a quien en lo sucesivo se le denominará EL CLIENTE, y por la otra parte Sara Elvira Portillo Gómez, con RFC POGS8601244D4, a quien en lo sucesivo se le denominará EL PROFESIONAL, y manifiestan que celebran el presente contrato de prestación de servicios profesionales de conformidad con l"
+        },
+        {
+          "document_id": "doc_82fae7aaa59b",
+          "document_name": "CONTRATO_DE_PRESTACION_DE_SERVICIOS_PROFESIONALES_EC.docx",
+          "section": "CLÁUSULAS",
+          "snippet": "PRIMERA. OBJETO DEL CONTRATO. EL PROFESIONAL se obliga a prestar a EL CLIENTE los servicios profesionales de consultoría en marketing, ventas y producto, conforme a las especificaciones, plazos y entregables detallados en el Anexo 1 (Alcance del Proyecto), el cual forma parte integrante de este contrato. SEGUNDA. Plazo. Este contrato tendrá una duración del 8 de septiembre de 2025 al 30 de enero de 2026. TERCERA."
+        },
+        {
+          "document_id": "doc_82fae7aaa59b",
+          "document_name": "CONTRATO_DE_PRESTACION_DE_SERVICIOS_PROFESIONALES_EC.docx",
+          "section": "CLÁUSULAS",
+          "snippet": "HONORARIOS Y FORMA DE PAGO. Por los servicios prestados, EL CLIENTE pagará a EL PROFESIONAL la cantidad de $ 187,500 mil (Ciento ochenta y siete mil quinientos pesos 00/100 M.N. ) , más impuestos aplicables , conforme al siguiente calendario de pagos: 100% a la entrega final y aceptación del proyecto. Los pagos se efectuarán por transferencia bancaria a la cuenta en NuBank CLABE:"
+        }
+      ],
+      "risk": {
+        "level": "low",
+        "score": 18,
+        "rationale": "Clausula localizada sin senales fuertes de riesgo inmediato.",
+        "probable_impact": "Riesgo acotado sujeto a revision juridica final.",
+        "recommendation_initial": "Confirmar nombres legales completos, representante y facultades.",
+        "confidence": 0.74
+      },
+      "feedback_signals": {}
+    },
+    {
+      "clause_type": "object",
+      "clause_label": "Objeto",
+      "status": "found",
+      "extracted_text": "PRIMERA. OBJETO DEL CONTRATO. EL PROFESIONAL se obliga a prestar a EL CLIENTE los servicios profesionales de consultoría en marketing, ventas y producto, conforme a las especificaciones, plazos y entregables detallados en el Anexo 1 (Alcance del Proyecto), el cual forma parte integrante de este contrato. SEGUNDA. Plazo. Este contrato tendrá una duración del 8 de septiembre de 2025 al 30 de enero de 2026. TERCERA. PRIMERA. OBJETO DEL CONTRATO. EL PROFESIONAL se obliga a prestar a EL CLIENTE los servicios profesionales de consultoría en marketing, ventas y producto, conforme a las especificaciones, plazos y entregables detallados en el Anexo 1 (Alcance del Proyecto), el cual forma parte integrante de este contrato. SEGUNDA. Plazo. Este contrato tendrá una duración del 8 de septiembre de 2025 al 30 de enero de 2026. TERCERA. HON",
+      "normalized_data": {},
+      "evidence": [
+        {
+          "document_id": "doc_82fae7aaa59b",
+          "document_name": "CONTRATO_DE_PRESTACION_DE_SERVICIOS_PROFESIONALES_EC.docx",
+          "section": "CLÁUSULAS",
+          "snippet": "PRIMERA. OBJETO DEL CONTRATO. EL PROFESIONAL se obliga a prestar a EL CLIENTE los servicios profesionales de consultoría en marketing, ventas y producto, conforme a las especificaciones, plazos y entregables detallados en el Anexo 1 (Alcance del Proyecto), el cual forma parte integrante de este contrato. SEGUNDA. Plazo. Este contrato tendrá una duración del 8 de septiembre de 2025 al 30 de enero de 2026. TERCERA."
+        },
+        {
+          "document_id": "doc_82fae7aaa59b",
+          "document_name": "CONTRATO_DE_PRESTACION_DE_SERVICIOS_PROFESIONALES_EC.docx",
+          "section": "CLÁUSULAS",
+          "snippet": "PRIMERA. OBJETO DEL CONTRATO. EL PROFESIONAL se obliga a prestar a EL CLIENTE los servicios profesionales de consultoría en marketing, ventas y producto, conforme a las especificaciones, plazos y entregables detallados en el Anexo 1 (Alcance del Proyecto), el cual forma parte integrante de este contrato. SEGUNDA. Plazo. Este contrato tendrá una duración del 8 de septiembre de 2025 al 30 de enero de 2026. TERCERA. HON"
+        },
+        {
+          "document_id": "doc_82fae7aaa59b",
+          "document_name": "CONTRATO_DE_PRESTACION_DE_SERVICIOS_PROFESIONALES_EC.docx",
+          "section": "DECLARACIONES",
+          "snippet": "EL CLIENTE declara que cuenta con la capacidad legal para celebrar este contrato y que requiere los servicios profesionales descritos en la cláusula primera. EL PROFESIONAL declara que cuenta con la capacidad legal, experiencia y conocimientos técnicos para prestar los servicios objeto de este contrato de manera independiente y autónoma."
+        }
+      ],
+      "risk": {
+        "level": "low",
+        "score": 18,
+        "rationale": "Clausula localizada sin senales fuertes de riesgo inmediato.",
+        "probable_impact": "Riesgo acotado sujeto a revision juridica final.",
+        "recommendation_initial": "Delimitar alcance, entregables y criterios de aceptacion.",
+        "confidence": 0.74
+      },
+      "feedback_signals": {}
+    },
+    {
+      "clause_type": "term",
+      "clause_label": "Vigencia",
+      "status": "found",
+      "extracted_text": "Las partes se obligan a mantener en estricta confidencialidad toda la información técnica, comercial o estratégica compartida durante la vigencia del contrato y por un periodo de [2 años] posterior a su terminación, salvo autorización expresa de la otra parte. SÉPTIMA. AUSENCIA DE RELACIÓN LABORAL. Este contrato genera una relación estrictamente civil y profesional. PROFESIONAL tiene el permiso de hacer referencia a mi trabajo en TernariA (prototipo, estrategia y diseño) exclusivamente para fines de mi portafolio profesional y CV. SEXTA. CONFIDENCIALIDAD. Las partes se obligan a mantener en estricta confidencialidad toda la información técnica, comercial o estratégica compartida durante la vigencia del contrato y por un periodo de [2 años] posterior a su terminación, salvo autor",
+      "normalized_data": {},
+      "evidence": [
+        {
+          "document_id": "doc_82fae7aaa59b",
+          "document_name": "CONTRATO_DE_PRESTACION_DE_SERVICIOS_PROFESIONALES_EC.docx",
+          "section": "CLÁUSULAS",
+          "snippet": "Las partes se obligan a mantener en estricta confidencialidad toda la información técnica, comercial o estratégica compartida durante la vigencia del contrato y por un periodo de [2 años] posterior a su terminación, salvo autorización expresa de la otra parte. SÉPTIMA. AUSENCIA DE RELACIÓN LABORAL. Este contrato genera una relación estrictamente civil y profesional."
+        },
+        {
+          "document_id": "doc_82fae7aaa59b",
+          "document_name": "CONTRATO_DE_PRESTACION_DE_SERVICIOS_PROFESIONALES_EC.docx",
+          "section": "CLÁUSULAS",
+          "snippet": "PROFESIONAL tiene el permiso de hacer referencia a mi trabajo en TernariA (prototipo, estrategia y diseño) exclusivamente para fines de mi portafolio profesional y CV. SEXTA. CONFIDENCIALIDAD. Las partes se obligan a mantener en estricta confidencialidad toda la información técnica, comercial o estratégica compartida durante la vigencia del contrato y por un periodo de [2 años] posterior a su terminación, salvo autor"
+        },
+        {
+          "document_id": "doc_82fae7aaa59b",
+          "document_name": "CONTRATO_DE_PRESTACION_DE_SERVICIOS_PROFESIONALES_EC.docx",
+          "section": "CLÁUSULAS",
+          "snippet": "Las partes se obligan a mantener en estricta confidencialidad toda la información técnica, comercial o estratégica compartida durante la vigencia del contrato y por un periodo de [2 años] posterior a su terminación, salvo autorización expresa de la otra parte. SÉPTIMA. AUSENCIA DE RELACIÓN LABORAL. Este contrato genera una relación estrictamente civil y profesional. EL PROFESIONAL prestará sus servicios con autonomía"
+        }
+      ],
+      "risk": {
+        "level": "low",
+        "score": 18,
+        "rationale": "Clausula localizada sin senales fuertes de riesgo inmediato.",
+        "probable_impact": "Riesgo acotado sujeto a revision juridica final.",
+        "recommendation_initial": "Definir fecha de inicio/termino y reglas de renovacion.",
+        "confidence": 0.74
+      },
+      "feedback_signals": {}
+    },
+    {
+      "clause_type": "payments",
+      "clause_label": "Pagos",
+      "status": "found",
+      "extracted_text": "HONORARIOS Y FORMA DE PAGO. Por los servicios prestados, EL CLIENTE pagará a EL PROFESIONAL la cantidad de $ 187,500 mil (Ciento ochenta y siete mil quinientos pesos 00/100 M.N. ) , más impuestos aplicables , conforme al siguiente calendario de pagos: 100% a la entrega final y aceptación del proyecto. Los pagos se efectuarán por transferencia bancaria a la cuenta en NuBank CLABE: HONORARIOS Y FORMA DE PAGO. Por los servicios prestados, EL CLIENTE pagará a EL PROFESIONAL la cantidad de $ 187,500 mil (Ciento ochenta y siete mil quinientos pesos 00/100 M.N. ) , más impuestos aplicables , conforme al siguiente calendario de pagos: 100% a la entrega final y aceptación del proyecto. Los pagos se efectuarán por transferencia bancaria a la cuenta en NuBank CLABE: 638180010166038874 dentro de los [5] ",
+      "normalized_data": {},
+      "evidence": [
+        {
+          "document_id": "doc_82fae7aaa59b",
+          "document_name": "CONTRATO_DE_PRESTACION_DE_SERVICIOS_PROFESIONALES_EC.docx",
+          "section": "CLÁUSULAS",
+          "snippet": "HONORARIOS Y FORMA DE PAGO. Por los servicios prestados, EL CLIENTE pagará a EL PROFESIONAL la cantidad de $ 187,500 mil (Ciento ochenta y siete mil quinientos pesos 00/100 M.N. ) , más impuestos aplicables , conforme al siguiente calendario de pagos: 100% a la entrega final y aceptación del proyecto. Los pagos se efectuarán por transferencia bancaria a la cuenta en NuBank CLABE:"
+        },
+        {
+          "document_id": "doc_82fae7aaa59b",
+          "document_name": "CONTRATO_DE_PRESTACION_DE_SERVICIOS_PROFESIONALES_EC.docx",
+          "section": "CLÁUSULAS",
+          "snippet": "HONORARIOS Y FORMA DE PAGO. Por los servicios prestados, EL CLIENTE pagará a EL PROFESIONAL la cantidad de $ 187,500 mil (Ciento ochenta y siete mil quinientos pesos 00/100 M.N. ) , más impuestos aplicables , conforme al siguiente calendario de pagos: 100% a la entrega final y aceptación del proyecto. Los pagos se efectuarán por transferencia bancaria a la cuenta en NuBank CLABE: 638180010166038874 dentro de los [5] "
+        },
+        {
+          "document_id": "doc_82fae7aaa59b",
+          "document_name": "CONTRATO_DE_PRESTACION_DE_SERVICIOS_PROFESIONALES_EC.docx",
+          "section": "CLÁUSULAS",
+          "snippet": "La presente cesión surtirá efectos únicamente a partir del pago total de los honorarios pactados conforme a la Cláusula Tercera del presente contrato. La cesión se realiza para todo el mundo y por todo el plazo de protección legal que corresponda conforme a la legislación aplicable. EL PROFESIONAL conserva sus derechos morales conforme a la ley y autoriza expresamente a EL CLIENTE a utilizar, adaptar y explotar los e"
+        }
+      ],
+      "risk": {
+        "level": "low",
+        "score": 18,
+        "rationale": "Clausula localizada sin senales fuertes de riesgo inmediato.",
+        "probable_impact": "Riesgo acotado sujeto a revision juridica final.",
+        "recommendation_initial": "Aclarar montos, hitos de pago, mora y condiciones de facturacion.",
+        "confidence": 0.74
+      },
+      "feedback_signals": {}
+    },
+    {
+      "clause_type": "termination",
+      "clause_label": "Terminacion",
+      "status": "found",
+      "extracted_text": "EL PROFESIONAL prestará sus servicios con autonomía técnica y organizativa, sin subordinación jurídica respecto de EL CLIENTE. EL PROFESIONAL será responsable de sus propias obligaciones fiscales, de seguridad social y laborales. OCTAVA. TERMINACIÓN ANTICIPADA. Cualquiera de las partes podrá terminar este contrato por incumplimiento grave de la otra, notificándolo por escrito con [15 días] de anticipación. EL PROFESIONAL prestará sus servicios con autonomía técnica y organizativa, sin subordinación jurídica respecto de EL CLIENTE. EL PROFESIONAL será responsable de sus propias obligaciones fiscales, de seguridad social y laborales. OCTAVA. TERMINACIÓN ANTICIPADA. Cualquiera de las partes podrá terminar este contrato por incumplimiento grave de la otra, notificándolo por escrito con [15 días] de anticipación. EL CLIENTE",
+      "normalized_data": {},
+      "evidence": [
+        {
+          "document_id": "doc_82fae7aaa59b",
+          "document_name": "CONTRATO_DE_PRESTACION_DE_SERVICIOS_PROFESIONALES_EC.docx",
+          "section": "CLÁUSULAS",
+          "snippet": "EL PROFESIONAL prestará sus servicios con autonomía técnica y organizativa, sin subordinación jurídica respecto de EL CLIENTE. EL PROFESIONAL será responsable de sus propias obligaciones fiscales, de seguridad social y laborales. OCTAVA. TERMINACIÓN ANTICIPADA. Cualquiera de las partes podrá terminar este contrato por incumplimiento grave de la otra, notificándolo por escrito con [15 días] de anticipación."
+        },
+        {
+          "document_id": "doc_82fae7aaa59b",
+          "document_name": "CONTRATO_DE_PRESTACION_DE_SERVICIOS_PROFESIONALES_EC.docx",
+          "section": "CLÁUSULAS",
+          "snippet": "EL PROFESIONAL prestará sus servicios con autonomía técnica y organizativa, sin subordinación jurídica respecto de EL CLIENTE. EL PROFESIONAL será responsable de sus propias obligaciones fiscales, de seguridad social y laborales. OCTAVA. TERMINACIÓN ANTICIPADA. Cualquiera de las partes podrá terminar este contrato por incumplimiento grave de la otra, notificándolo por escrito con [15 días] de anticipación. EL CLIENTE"
+        }
+      ],
+      "risk": {
+        "level": "low",
+        "score": 18,
+        "rationale": "Clausula localizada sin senales fuertes de riesgo inmediato.",
+        "probable_impact": "Riesgo acotado sujeto a revision juridica final.",
+        "recommendation_initial": "Equilibrar causales y periodos de preaviso para ambas partes.",
+        "confidence": 0.74
+      },
+      "feedback_signals": {}
+    },
+    {
+      "clause_type": "liability",
+      "clause_label": "Responsabilidad",
+      "status": "found",
+      "extracted_text": "EL CLIENTE pagará los servicios prestados hasta la fecha de terminación. NOVENA. RESPONSABILIDAD. La responsabilidad del PROFESIONAL se limitará al monto total de los honorarios pactados. No habrá responsabilidad por daños indirectos o lucro cesante. DÉCIMA. LEY APLICABLE Y JURISDICCIÓN. Este contrato se regirá por las leyes de México. EL CLIENTE pagará los servicios prestados hasta la fecha de terminación. NOVENA. RESPONSABILIDAD. La responsabilidad del PROFESIONAL se limitará al monto total de los honorarios pactados. No habrá responsabilidad por daños indirectos o lucro cesante. DÉCIMA. LEY APLICABLE Y JURISDICCIÓN. Este contrato se regirá por las leyes de México. Para cualquier controversia, las partes se someten expresamente a la jurisdicción ",
+      "normalized_data": {},
+      "evidence": [
+        {
+          "document_id": "doc_82fae7aaa59b",
+          "document_name": "CONTRATO_DE_PRESTACION_DE_SERVICIOS_PROFESIONALES_EC.docx",
+          "section": "CLÁUSULAS",
+          "snippet": "EL CLIENTE pagará los servicios prestados hasta la fecha de terminación. NOVENA. RESPONSABILIDAD. La responsabilidad del PROFESIONAL se limitará al monto total de los honorarios pactados. No habrá responsabilidad por daños indirectos o lucro cesante. DÉCIMA. LEY APLICABLE Y JURISDICCIÓN. Este contrato se regirá por las leyes de México."
+        },
+        {
+          "document_id": "doc_82fae7aaa59b",
+          "document_name": "CONTRATO_DE_PRESTACION_DE_SERVICIOS_PROFESIONALES_EC.docx",
+          "section": "CLÁUSULAS",
+          "snippet": "EL CLIENTE pagará los servicios prestados hasta la fecha de terminación. NOVENA. RESPONSABILIDAD. La responsabilidad del PROFESIONAL se limitará al monto total de los honorarios pactados. No habrá responsabilidad por daños indirectos o lucro cesante. DÉCIMA. LEY APLICABLE Y JURISDICCIÓN. Este contrato se regirá por las leyes de México. Para cualquier controversia, las partes se someten expresamente a la jurisdicción "
+        }
+      ],
+      "risk": {
+        "level": "low",
+        "score": 18,
+        "rationale": "Clausula localizada sin senales fuertes de riesgo inmediato.",
+        "probable_impact": "Riesgo acotado sujeto a revision juridica final.",
+        "recommendation_initial": "Definir limite de responsabilidad y exclusiones razonables.",
+        "confidence": 0.74
+      },
+      "feedback_signals": {}
+    },
+    {
+      "clause_type": "indemnification",
+      "clause_label": "Indemnizacion",
+      "status": "not_found",
+      "extracted_text": "",
+      "normalized_data": {},
+      "evidence": [
+        {
+          "document_id": "doc_82fae7aaa59b",
+          "document_name": "CONTRATO_DE_PRESTACION_DE_SERVICIOS_PROFESIONALES_EC.docx",
+          "section": "CONTRATO DE PRESTACIÓN DE SERVICIOS PROFESIONALES",
+          "snippet": "En la Ciudad de México, a 8 de Septiembre de 2025, comparecen por una parte Hexagon Media S.A.P.I. de C.V. , con RFC HME1808154G8 , a quien en lo sucesivo se le denominará EL CLIENTE, y por la otra parte Sara Elvira Portillo Gómez, con RFC POGS8601244D4, a quien en lo sucesivo se le denominará EL PR"
+        }
+      ],
+      "risk": {
+        "level": "critical",
+        "score": 82,
+        "rationale": "No se encontro la clausula y es critica para control de contingencias.",
+        "probable_impact": "Alta exposicion legal/economica por vacio contractual.",
+        "recommendation_initial": "Establecer reciprocidad y mecanismo de defensa ante reclamos.",
+        "confidence": 0.88
+      },
+      "feedback_signals": {
+        "incumplimiento": 4,
+        "duda": 2,
+        "vo_bo": 1
+      }
+    },
+    {
+      "clause_type": "confidentiality",
+      "clause_label": "Confidencialidad",
+      "status": "found",
+      "extracted_text": "638180010166038874 dentro de los [5] días siguientes a la recepción de la factura correspondiente. CUARTA. OBLIGACIONES DEL PROFESIONAL. a) Ejecutar los servicios con profesionalismo, diligencia y en los plazos pactados. b) Proporcionar informes periódicos de avance según se acuerde. c) Mantener confidencialidad sobre la información del proyecto conforme a la Cláusula Sexta. QUINTA. PROFESIONAL tiene el permiso de hacer referencia a mi trabajo en TernariA (prototipo, estrategia y diseño) exclusivamente para fines de mi portafolio profesional y CV. SEXTA. CONFIDENCIALIDAD.",
+      "normalized_data": {},
+      "evidence": [
+        {
+          "document_id": "doc_82fae7aaa59b",
+          "document_name": "CONTRATO_DE_PRESTACION_DE_SERVICIOS_PROFESIONALES_EC.docx",
+          "section": "CLÁUSULAS",
+          "snippet": "638180010166038874 dentro de los [5] días siguientes a la recepción de la factura correspondiente. CUARTA. OBLIGACIONES DEL PROFESIONAL. a) Ejecutar los servicios con profesionalismo, diligencia y en los plazos pactados. b) Proporcionar informes periódicos de avance según se acuerde. c) Mantener confidencialidad sobre la información del proyecto conforme a la Cláusula Sexta. QUINTA."
+        },
+        {
+          "document_id": "doc_82fae7aaa59b",
+          "document_name": "CONTRATO_DE_PRESTACION_DE_SERVICIOS_PROFESIONALES_EC.docx",
+          "section": "CLÁUSULAS",
+          "snippet": "PROFESIONAL tiene el permiso de hacer referencia a mi trabajo en TernariA (prototipo, estrategia y diseño) exclusivamente para fines de mi portafolio profesional y CV. SEXTA. CONFIDENCIALIDAD."
+        },
+        {
+          "document_id": "doc_82fae7aaa59b",
+          "document_name": "CONTRATO_DE_PRESTACION_DE_SERVICIOS_PROFESIONALES_EC.docx",
+          "section": "CLÁUSULAS",
+          "snippet": "Las partes se obligan a mantener en estricta confidencialidad toda la información técnica, comercial o estratégica compartida durante la vigencia del contrato y por un periodo de [2 años] posterior a su terminación, salvo autorización expresa de la otra parte. SÉPTIMA. AUSENCIA DE RELACIÓN LABORAL. Este contrato genera una relación estrictamente civil y profesional."
+        }
+      ],
+      "risk": {
+        "level": "low",
+        "score": 18,
+        "rationale": "Clausula localizada sin senales fuertes de riesgo inmediato.",
+        "probable_impact": "Riesgo acotado sujeto a revision juridica final.",
+        "recommendation_initial": "Incluir alcance, excepciones y vigencia post-terminacion.",
+        "confidence": 0.74
+      },
+      "feedback_signals": {}
+    },
+    {
+      "clause_type": "intellectual_property",
+      "clause_label": "Propiedad intelectual",
+      "status": "found",
+      "extracted_text": "PROPIEDAD INTELECTUAL Y PORTAFOLIO. EL CLIENTE reconoce que los entregables desarrollados por EL PROFESIONAL en el marco del presente contrato han sido recibidos y aceptados a su entera satisfacción. 638180010166038874 dentro de los [5] días siguientes a la recepción de la factura correspondiente. CUARTA. OBLIGACIONES DEL PROFESIONAL. a) Ejecutar los servicios con profesionalismo, diligencia y en los plazos pactados. b) Proporcionar informes periódicos de avance según se acuerde. c) Mantener confidencialidad sobre la información del proyecto conforme a la Cláusula Sexta. QUINTA. PROPIEDAD INTELECTUAL Y PORTAFOLIO",
+      "normalized_data": {},
+      "evidence": [
+        {
+          "document_id": "doc_82fae7aaa59b",
+          "document_name": "CONTRATO_DE_PRESTACION_DE_SERVICIOS_PROFESIONALES_EC.docx",
+          "section": "CLÁUSULAS",
+          "snippet": "PROPIEDAD INTELECTUAL Y PORTAFOLIO. EL CLIENTE reconoce que los entregables desarrollados por EL PROFESIONAL en el marco del presente contrato han sido recibidos y aceptados a su entera satisfacción."
+        },
+        {
+          "document_id": "doc_82fae7aaa59b",
+          "document_name": "CONTRATO_DE_PRESTACION_DE_SERVICIOS_PROFESIONALES_EC.docx",
+          "section": "CLÁUSULAS",
+          "snippet": "638180010166038874 dentro de los [5] días siguientes a la recepción de la factura correspondiente. CUARTA. OBLIGACIONES DEL PROFESIONAL. a) Ejecutar los servicios con profesionalismo, diligencia y en los plazos pactados. b) Proporcionar informes periódicos de avance según se acuerde. c) Mantener confidencialidad sobre la información del proyecto conforme a la Cláusula Sexta. QUINTA. PROPIEDAD INTELECTUAL Y PORTAFOLIO"
+        },
+        {
+          "document_id": "doc_82fae7aaa59b",
+          "document_name": "CONTRATO_DE_PRESTACION_DE_SERVICIOS_PROFESIONALES_EC.docx",
+          "section": "CLÁUSULAS",
+          "snippet": "PROPIEDAD INTELECTUAL Y PORTAFOLIO. EL CLIENTE reconoce que los entregables desarrollados por EL PROFESIONAL en el marco del presente contrato han sido recibidos y aceptados a su entera satisfacción. EL PROFESIONAL cede en favor de EL CLIENTE, de manera total, exclusiva y definitiva, todos los derechos patrimoniales de autor sobre los resultados, prototipos, materiales y entregables generados en ejecución de este con"
+        }
+      ],
+      "risk": {
+        "level": "low",
+        "score": 18,
+        "rationale": "Clausula localizada sin senales fuertes de riesgo inmediato.",
+        "probable_impact": "Riesgo acotado sujeto a revision juridica final.",
+        "recommendation_initial": "Definir titularidad y alcance de licencia/cesion.",
+        "confidence": 0.74
+      },
+      "feedback_signals": {}
+    },
+    {
+      "clause_type": "jurisdiction",
+      "clause_label": "Jurisdiccion",
+      "status": "found",
+      "extracted_text": "Para cualquier controversia, las partes se someten expresamente a la jurisdicción de las Tribunales de la Ciudad de México, renunciando a cualquier otro fuero. Leído que fue el presente contrato y enteradas las partes de su contenido y alcances, lo firman por duplicado en la Ciudad de México, a los 30 días del mes de Enero de 2026. EL CLIENTE : Carlos Eduardo Carbia Enríquez RFC: CAEC800212CJ5 EL PROFESIONAL : Para cualquier controversia, las partes se someten expresamente a la jurisdicción de las Tribunales de la Ciudad de México, renunciando a cualquier otro fuero. Leído que fue el presente contrato y enteradas las partes de su contenido y alcances, lo firman por duplicado en la Ciudad de México, a los 30 días del mes de Enero de 2026. EL CLIENTE : Carlos Eduardo Carbia Enríquez RFC: CAEC800212CJ5 EL PROFESIONAL : Sara E",
+      "normalized_data": {},
+      "evidence": [
+        {
+          "document_id": "doc_82fae7aaa59b",
+          "document_name": "CONTRATO_DE_PRESTACION_DE_SERVICIOS_PROFESIONALES_EC.docx",
+          "section": "CLÁUSULAS",
+          "snippet": "Para cualquier controversia, las partes se someten expresamente a la jurisdicción de las Tribunales de la Ciudad de México, renunciando a cualquier otro fuero. Leído que fue el presente contrato y enteradas las partes de su contenido y alcances, lo firman por duplicado en la Ciudad de México, a los 30 días del mes de Enero de 2026. EL CLIENTE : Carlos Eduardo Carbia Enríquez RFC: CAEC800212CJ5 EL PROFESIONAL :"
+        },
+        {
+          "document_id": "doc_82fae7aaa59b",
+          "document_name": "CONTRATO_DE_PRESTACION_DE_SERVICIOS_PROFESIONALES_EC.docx",
+          "section": "CLÁUSULAS",
+          "snippet": "Para cualquier controversia, las partes se someten expresamente a la jurisdicción de las Tribunales de la Ciudad de México, renunciando a cualquier otro fuero. Leído que fue el presente contrato y enteradas las partes de su contenido y alcances, lo firman por duplicado en la Ciudad de México, a los 30 días del mes de Enero de 2026. EL CLIENTE : Carlos Eduardo Carbia Enríquez RFC: CAEC800212CJ5 EL PROFESIONAL : Sara E"
+        },
+        {
+          "document_id": "doc_82fae7aaa59b",
+          "document_name": "CONTRATO_DE_PRESTACION_DE_SERVICIOS_PROFESIONALES_EC.docx",
+          "section": "CLÁUSULAS",
+          "snippet": "EL CLIENTE pagará los servicios prestados hasta la fecha de terminación. NOVENA. RESPONSABILIDAD. La responsabilidad del PROFESIONAL se limitará al monto total de los honorarios pactados. No habrá responsabilidad por daños indirectos o lucro cesante. DÉCIMA. LEY APLICABLE Y JURISDICCIÓN. Este contrato se regirá por las leyes de México."
+        }
+      ],
+      "risk": {
+        "level": "low",
+        "score": 18,
+        "rationale": "Clausula localizada sin senales fuertes de riesgo inmediato.",
+        "probable_impact": "Riesgo acotado sujeto a revision juridica final.",
+        "recommendation_initial": "Definir foro competente y ley aplicable.",
+        "confidence": 0.74
+      },
+      "feedback_signals": {}
+    },
+    {
+      "clause_type": "compliance",
+      "clause_label": "Cumplimiento",
+      "status": "found",
+      "extracted_text": "EL PROFESIONAL prestará sus servicios con autonomía técnica y organizativa, sin subordinación jurídica respecto de EL CLIENTE. EL PROFESIONAL será responsable de sus propias obligaciones fiscales, de seguridad social y laborales. OCTAVA. TERMINACIÓN ANTICIPADA. Cualquiera de las partes podrá terminar este contrato por incumplimiento grave de la otra, notificándolo por escrito con [15 días] de anticipación. EL PROFESIONAL prestará sus servicios con autonomía técnica y organizativa, sin subordinación jurídica respecto de EL CLIENTE. EL PROFESIONAL será responsable de sus propias obligaciones fiscales, de seguridad social y laborales. OCTAVA. TERMINACIÓN ANTICIPADA. Cualquiera de las partes podrá terminar este contrato por incumplimiento grave de la otra, notificándolo por escrito con [15 días] de anticipación. EL CLIENTE",
+      "normalized_data": {},
+      "evidence": [
+        {
+          "document_id": "doc_82fae7aaa59b",
+          "document_name": "CONTRATO_DE_PRESTACION_DE_SERVICIOS_PROFESIONALES_EC.docx",
+          "section": "CLÁUSULAS",
+          "snippet": "EL PROFESIONAL prestará sus servicios con autonomía técnica y organizativa, sin subordinación jurídica respecto de EL CLIENTE. EL PROFESIONAL será responsable de sus propias obligaciones fiscales, de seguridad social y laborales. OCTAVA. TERMINACIÓN ANTICIPADA. Cualquiera de las partes podrá terminar este contrato por incumplimiento grave de la otra, notificándolo por escrito con [15 días] de anticipación."
+        },
+        {
+          "document_id": "doc_82fae7aaa59b",
+          "document_name": "CONTRATO_DE_PRESTACION_DE_SERVICIOS_PROFESIONALES_EC.docx",
+          "section": "CLÁUSULAS",
+          "snippet": "EL PROFESIONAL prestará sus servicios con autonomía técnica y organizativa, sin subordinación jurídica respecto de EL CLIENTE. EL PROFESIONAL será responsable de sus propias obligaciones fiscales, de seguridad social y laborales. OCTAVA. TERMINACIÓN ANTICIPADA. Cualquiera de las partes podrá terminar este contrato por incumplimiento grave de la otra, notificándolo por escrito con [15 días] de anticipación. EL CLIENTE"
+        }
+      ],
+      "risk": {
+        "level": "low",
+        "score": 18,
+        "rationale": "Clausula localizada sin senales fuertes de riesgo inmediato.",
+        "probable_impact": "Riesgo acotado sujeto a revision juridica final.",
+        "recommendation_initial": "Alinear obligaciones regulatorias y derecho de auditoria.",
+        "confidence": 0.74
+      },
+      "feedback_signals": {}
+    }
+  ],
+  "overall_risk": {
+    "level": "critical",
+    "score": 82.0,
+    "critical_flags": [
+      "Indemnizacion: No se encontro la clausula y es critica para control de contingencias."
+    ]
+  },
+  "compliance_checks": [
+    {
+      "check_id": "CHK_CONF",
+      "status": "pass",
+      "message": "Confidencialidad presente: Evidencia localizada.",
+      "evidence": [
+        {
+          "document_id": "doc_82fae7aaa59b",
+          "document_name": "CONTRATO_DE_PRESTACION_DE_SERVICIOS_PROFESIONALES_EC.docx",
+          "section": "CLÁUSULAS",
+          "snippet": "638180010166038874 dentro de los [5] días siguientes a la recepción de la factura correspondiente. CUARTA. OBLIGACIONES DEL PROFESIONAL. a) Ejecutar los servicios con profesionalismo, diligencia y en los plazos pactados. b) Proporcionar informes periódicos de avance según se acuerde. c) Mantener confidencialidad sobre la información del proyecto conforme a la Cláusula Sexta. QUINTA."
+        }
+      ]
+    },
+    {
+      "check_id": "CHK_JUR",
+      "status": "pass",
+      "message": "Jurisdiccion y ley aplicable: Evidencia localizada.",
+      "evidence": [
+        {
+          "document_id": "doc_82fae7aaa59b",
+          "document_name": "CONTRATO_DE_PRESTACION_DE_SERVICIOS_PROFESIONALES_EC.docx",
+          "section": "CLÁUSULAS",
+          "snippet": "Para cualquier controversia, las partes se someten expresamente a la jurisdicción de las Tribunales de la Ciudad de México, renunciando a cualquier otro fuero. Leído que fue el presente contrato y enteradas las partes de su contenido y alcances, lo firman por duplicado en la Ciudad de México, a los 30 días del mes de Enero de 2026. EL CLIENTE : Carlos Eduardo Carbia Enríquez RFC: CAEC800212CJ5 EL PROFESIONAL :"
+        }
+      ]
+    },
+    {
+      "check_id": "CHK_COMP",
+      "status": "pass",
+      "message": "Clausula de cumplimiento: Evidencia localizada.",
+      "evidence": [
+        {
+          "document_id": "doc_82fae7aaa59b",
+          "document_name": "CONTRATO_DE_PRESTACION_DE_SERVICIOS_PROFESIONALES_EC.docx",
+          "section": "CLÁUSULAS",
+          "snippet": "EL PROFESIONAL prestará sus servicios con autonomía técnica y organizativa, sin subordinación jurídica respecto de EL CLIENTE. EL PROFESIONAL será responsable de sus propias obligaciones fiscales, de seguridad social y laborales. OCTAVA. TERMINACIÓN ANTICIPADA. Cualquiera de las partes podrá terminar este contrato por incumplimiento grave de la otra, notificándolo por escrito con [15 días] de anticipación."
+        }
+      ]
+    }
+  ],
+  "human_review": {
+    "required": true,
+    "reason": "Existe riesgo high/critical.",
+    "review_status": "pending"
+  },
+  "generated_at": "2026-03-04T23:34:54.473773+00:00",
+  "disclaimer": "Analisis tecnico automatizado. No constituye asesoria legal definitiva; requiere validacion de abogado responsable.",
+  "contract_context": {
+    "project_name": "Test1",
+    "contract_type": "Servicios",
+    "counterparty": "Depacho de KIM",
+    "expected_sign_date": "2026-03-04",
+    "objective": "",
+    "include_historical": false
+  },
+  "legal_grounding": [
+    {
+      "clause_type": "parties",
+      "references": [
+        {
+          "law_key": "state::ciudad de mexico::3056fc68b2e81929b23c",
+          "law_name": "Marco Legal de la CDMX",
+          "article_label": "Fragmento 8",
+          "snippet": "USTENTABLE DE LA CIUDAD DE MÉXICO - Última reforma publicada en la GOCDMX el 15 de junio de 2023 Fecha de publicación: 30-06-2023 | Tamaño: 585 kb. LEY DEL SISTEMA DE SEGURIDAD CIUDADANA DE LA CIUDAD DE MÉXICO - Última r",
+          "ref_url": "https://www.congresocdmx.gob.mx/marco-legal-cdmx-107-2.html",
+          "doc_url": "https://www.congresocdmx.gob.mx/marco-legal-cdmx-107-2.html",
+          "last_reform": null,
+          "scope": "state",
+          "jurisdiction": "ciudad de mexico",
+          "source_kind": "cdmx_congreso_leyes",
+          "rank_score": -0.2097399124738855,
+          "hybrid_score": 2.0097
+        },
+        {
+          "law_key": "ccf",
+          "law_name": "CÓDIGO CIVIL FEDERAL",
+          "article_label": "Artículo 1795",
+          "snippet": "Artículo 1795.- El contrato puede ser invalidado: I. Por incapacidad legal de las partes o de una de ellas; II. Por vicios del consentimiento; III. Porque su objeto, o su motivo o fin sea ilícito; IV. Porque el consentim",
+          "ref_url": "https://www.diputados.gob.mx/LeyesBiblio/ref/ccf.htm",
+          "doc_url": "https://www.diputados.gob.mx/LeyesBiblio/doc/CCF.doc",
+          "last_reform": "14-11-2025",
+          "scope": "federal",
+          "jurisdiction": "mexico federal",
+          "source_kind": "federal_law_doc",
+          "rank_score": -18.50428249512084,
+          "hybrid_score": 23.7043
+        }
+      ]
+    },
+    {
+      "clause_type": "object",
+      "references": [
+        {
+          "law_key": "state::ciudad de mexico::3056fc68b2e81929b23c",
+          "law_name": "Marco Legal de la CDMX",
+          "article_label": "Fragmento 26",
+          "snippet": "VICIO PÚBLICO \"SERVICIO DE TRANSPORTES ELÉCTRICOS DEL DISTRITO FEDERAL\" - Publicada en el DOF el 04 de enero de 1956 Fecha de publicación: 07-06-2022 | Tamaño: 643 kb. Marco Legal de la CDMX CONOCE Diputadas y Diputados",
+          "ref_url": "https://www.congresocdmx.gob.mx/marco-legal-cdmx-107-2.html",
+          "doc_url": "https://www.congresocdmx.gob.mx/marco-legal-cdmx-107-2.html",
+          "last_reform": null,
+          "scope": "state",
+          "jurisdiction": "ciudad de mexico",
+          "source_kind": "cdmx_congreso_leyes",
+          "rank_score": -4.932040595524662,
+          "hybrid_score": 6.732
+        },
+        {
+          "law_key": "ccom",
+          "law_name": "CÓDIGO DE COMERCIO",
+          "article_label": "Artículo 338",
+          "snippet": "Artículo 338.- Siempre que con asentimiento del depositante dispusiese el depositario de las cosas que fuesen objeto del depósito, ya para sí o sus negocios, ya para operaciones que aquel le encomendare, cesarán los dere",
+          "ref_url": "https://www.diputados.gob.mx/LeyesBiblio/ref/ccom.htm",
+          "doc_url": "https://www.diputados.gob.mx/LeyesBiblio/doc/CCom.doc",
+          "last_reform": "14-11-2025",
+          "scope": "federal",
+          "jurisdiction": "mexico federal",
+          "source_kind": "federal_law_doc",
+          "rank_score": -14.48040570700374,
+          "hybrid_score": 18.8804
+        }
+      ]
+    },
+    {
+      "clause_type": "term",
+      "references": [
+        {
+          "law_key": "lfppi",
+          "law_name": "LEY FEDERAL DE PROTECCIÓN A LA PROPIEDAD INDUSTRIAL",
+          "article_label": "Artículo 301",
+          "snippet": "Artículo 301.- Los efectos de la autorización para usar una denominación de origen o indicación geográfica durarán diez años, contados a partir de la fecha de presentación de la solicitud en el Instituto y podrán renovar",
+          "ref_url": "https://www.diputados.gob.mx/LeyesBiblio/ref/lfppi.htm",
+          "doc_url": "https://www.diputados.gob.mx/LeyesBiblio/doc/LFPPI.doc",
+          "last_reform": "15-01-2026",
+          "scope": "federal",
+          "jurisdiction": "mexico federal",
+          "source_kind": "federal_law_doc",
+          "rank_score": -20.979074999370113,
+          "hybrid_score": 23.3791
+        },
+        {
+          "law_key": "lfppi",
+          "law_name": "LEY FEDERAL DE PROTECCIÓN A LA PROPIEDAD INDUSTRIAL",
+          "article_label": "Artículo 237",
+          "snippet": "Artículo 237.- La renovación del registro de una marca deberá solicitarse por el titular, dentro de los seis meses anteriores al vencimiento de su vigencia. Sin embargo, el Instituto dará trámite a aquellas solicitudes q",
+          "ref_url": "https://www.diputados.gob.mx/LeyesBiblio/ref/lfppi.htm",
+          "doc_url": "https://www.diputados.gob.mx/LeyesBiblio/doc/LFPPI.doc",
+          "last_reform": "15-01-2026",
+          "scope": "federal",
+          "jurisdiction": "mexico federal",
+          "source_kind": "federal_law_doc",
+          "rank_score": -20.13010568031563,
+          "hybrid_score": 22.5301
+        }
+      ]
+    },
+    {
+      "clause_type": "payments",
+      "references": [
+        {
+          "law_key": "lih",
+          "law_name": "LEY DE INGRESOS SOBRE HIDROCARBUROS",
+          "article_label": "Artículo 11",
+          "snippet": "Artículo 11.- Los Contratos de utilidad compartida establecerán las siguientes Contraprestaciones: I. A favor del Estado Mexicano: a) La Cuota Contractual para la Fase Exploratoria; b) Las Regalías determinadas conforme",
+          "ref_url": "https://www.diputados.gob.mx/LeyesBiblio/ref/lih.htm",
+          "doc_url": "https://www.diputados.gob.mx/LeyesBiblio/doc/LIH.doc",
+          "last_reform": "18-03-2025",
+          "scope": "federal",
+          "jurisdiction": "mexico federal",
+          "source_kind": "federal_law_doc",
+          "rank_score": -19.085106957077457,
+          "hybrid_score": 20.6851
+        },
+        {
+          "law_key": "lih",
+          "law_name": "LEY DE INGRESOS SOBRE HIDROCARBUROS",
+          "article_label": "Artículo 12",
+          "snippet": "Artículo 12.- Los Contratos de producción compartida establecerán las siguientes Contraprestaciones: I. A favor del Estado Mexicano: a) La Cuota Contractual para la Fase Exploratoria; b) Las Regalías determinadas conform",
+          "ref_url": "https://www.diputados.gob.mx/LeyesBiblio/ref/lih.htm",
+          "doc_url": "https://www.diputados.gob.mx/LeyesBiblio/doc/LIH.doc",
+          "last_reform": "18-03-2025",
+          "scope": "federal",
+          "jurisdiction": "mexico federal",
+          "source_kind": "federal_law_doc",
+          "rank_score": -18.062436284760466,
+          "hybrid_score": 19.6624
+        }
+      ]
+    },
+    {
+      "clause_type": "termination",
+      "references": [
+        {
+          "law_key": "laassp",
+          "law_name": "LEY DE ADQUISICIONES, ARRENDAMIENTOS Y SERVICIOS DEL SECTOR PÚBLICO",
+          "article_label": "Artículo 77",
+          "snippet": "Artículo 77. Las dependencias y entidades podrán en cualquier momento rescindir administrativamente los contratos cuando el proveedor incurra en incumplimiento de sus obligaciones, conforme al procedimiento siguiente: I.",
+          "ref_url": "https://www.diputados.gob.mx/LeyesBiblio/ref/laassp.htm",
+          "doc_url": "https://www.diputados.gob.mx/LeyesBiblio/doc/LAASSP.doc",
+          "last_reform": "16-04-2025",
+          "scope": "federal",
+          "jurisdiction": "mexico federal",
+          "source_kind": "federal_law_doc",
+          "rank_score": -21.91534834601064,
+          "hybrid_score": 27.1153
+        },
+        {
+          "law_key": "lopsrm",
+          "law_name": "LEY DE OBRAS PÚBLICAS Y SERVICIOS RELACIONADOS CON LAS MISMAS",
+          "article_label": "Artículo 61",
+          "snippet": "Artículo 61.- Las dependencias y entidades podrán rescindir administrativamente los contratos en caso de incumplimiento de las obligaciones a cargo del contratista. El procedimiento de rescisión se llevará a cabo conform",
+          "ref_url": "https://www.diputados.gob.mx/LeyesBiblio/ref/lopsrm.htm",
+          "doc_url": "https://www.diputados.gob.mx/LeyesBiblio/doc/LOPSRM.doc",
+          "last_reform": "14-11-2025",
+          "scope": "federal",
+          "jurisdiction": "mexico federal",
+          "source_kind": "federal_law_doc",
+          "rank_score": -21.44605018684817,
+          "hybrid_score": 24.6461
+        }
+      ]
+    },
+    {
+      "clause_type": "liability",
+      "references": [
+        {
+          "law_key": "state::ciudad de mexico::3056fc68b2e81929b23c",
+          "law_name": "Marco Legal de la CDMX",
+          "article_label": "Fragmento 23",
+          "snippet": "amaño: 2,283 kb. LEY QUE ESTABLECE EL PROCEDIMIENTO DE REMOCIÓN DE LOS SERVIDORES PÚBLICOS QUE DESIGNA LA ASAMBLEA LEGISLATIVA DEL DISTRITO FEDERAL Y DE LOS TITULARES DE LOS ÓRGANOS PÓLÍTICO-ADMINISTRATIVOS DEL DISTRITO",
+          "ref_url": "https://www.congresocdmx.gob.mx/marco-legal-cdmx-107-2.html",
+          "doc_url": "https://www.congresocdmx.gob.mx/marco-legal-cdmx-107-2.html",
+          "last_reform": null,
+          "scope": "state",
+          "jurisdiction": "ciudad de mexico",
+          "source_kind": "cdmx_congreso_leyes",
+          "rank_score": -6.0251447339532245,
+          "hybrid_score": 7.6251
+        },
+        {
+          "law_key": "lncm",
+          "law_name": "LEY DE NAVEGACIÓN Y COMERCIO MARÍTIMOS",
+          "article_label": "Artículo 305",
+          "snippet": "Artículo 305.- Cualquier acción para intentar la limitación de responsabilidad quedará sujeta al Convenio sobre Limitación de la Responsabilidad Civil nacida de Reclamaciones en Derecho Marítimo y en su caso, por el Conv",
+          "ref_url": "https://www.diputados.gob.mx/LeyesBiblio/ref/lncm.htm",
+          "doc_url": "https://www.diputados.gob.mx/LeyesBiblio/doc/LNCM.doc",
+          "last_reform": "14-11-2025",
+          "scope": "federal",
+          "jurisdiction": "mexico federal",
+          "source_kind": "federal_law_doc",
+          "rank_score": -25.770456307338208,
+          "hybrid_score": 28.9705
+        }
+      ]
+    },
+    {
+      "clause_type": "indemnification",
+      "references": [
+        {
+          "law_key": "lvgc",
+          "law_name": "LEY DE VÍAS GENERALES DE COMUNICACIÓN",
+          "article_label": "Artículo 112",
+          "snippet": "Artículo 112.- En caso de guerra internacional, de grave alteración del orden público o cuando se tema algún peligro inminente para la paz interior del país o para la economía nacional, el Gobierno tendrá derecho de hace",
+          "ref_url": "https://www.diputados.gob.mx/LeyesBiblio/ref/lvgc.htm",
+          "doc_url": "https://www.diputados.gob.mx/LeyesBiblio/doc/LVGC.doc",
+          "last_reform": "14-11-2025",
+          "scope": "federal",
+          "jurisdiction": "mexico federal",
+          "source_kind": "federal_law_doc",
+          "rank_score": -22.54912482145463,
+          "hybrid_score": 25.7491
+        },
+        {
+          "law_key": "lraf",
+          "law_name": "LEY PARA REGULAR LAS AGRUPACIONES FINANCIERAS",
+          "article_label": "Artículo 53",
+          "snippet": "Artículo 53.- La responsabilidad consistente en indemnizar los daños y perjuicios ocasionados con motivo de los actos, hechos u omisiones a que hace referencia esta Sección, será solidaria entre las personas que hayan ej",
+          "ref_url": "https://www.diputados.gob.mx/LeyesBiblio/ref/lraf.htm",
+          "doc_url": "https://www.diputados.gob.mx/LeyesBiblio/doc/LRAF.doc",
+          "last_reform": "14-11-2025",
+          "scope": "federal",
+          "jurisdiction": "mexico federal",
+          "source_kind": "federal_law_doc",
+          "rank_score": -22.873741428885538,
+          "hybrid_score": 25.2737
+        }
+      ]
+    },
+    {
+      "clause_type": "confidentiality",
+      "references": [
+        {
+          "law_key": "state::ciudad de mexico::3056fc68b2e81929b23c",
+          "law_name": "Marco Legal de la CDMX",
+          "article_label": "Fragmento 14",
+          "snippet": "MEDIANA EMPRESA DEL DISTRITO FEDERAL - Última reforma publicada en la GOCDMX el 027 de marzo de 2021 Fecha de publicación: 22-06-2022 | Tamaño: 1,536 kb. LEY PARA LA CELEBRACIÓN DE ESPECTÁCULOS PÚBLICOS EN LA CIUDAD DE M",
+          "ref_url": "https://www.congresocdmx.gob.mx/marco-legal-cdmx-107-2.html",
+          "doc_url": "https://www.congresocdmx.gob.mx/marco-legal-cdmx-107-2.html",
+          "last_reform": null,
+          "scope": "state",
+          "jurisdiction": "ciudad de mexico",
+          "source_kind": "cdmx_congreso_leyes",
+          "rank_score": -5.949123276331621,
+          "hybrid_score": 8.5491
+        },
+        {
+          "law_key": "lfppi",
+          "law_name": "LEY FEDERAL DE PROTECCIÓN A LA PROPIEDAD INDUSTRIAL",
+          "article_label": "Artículo 164",
+          "snippet": "Artículo 164.- No se considerará apropiación indebida: I.- El descubrimiento o la creación independientes de la información que se reclame como un secreto industrial; II.- La observación, el estudio, el desmontaje o el e",
+          "ref_url": "https://www.diputados.gob.mx/LeyesBiblio/ref/lfppi.htm",
+          "doc_url": "https://www.diputados.gob.mx/LeyesBiblio/doc/LFPPI.doc",
+          "last_reform": "15-01-2026",
+          "scope": "federal",
+          "jurisdiction": "mexico federal",
+          "source_kind": "federal_law_doc",
+          "rank_score": -22.617513171257233,
+          "hybrid_score": 24.2175
+        }
+      ]
+    },
+    {
+      "clause_type": "intellectual_property",
+      "references": [
+        {
+          "law_key": "state::ciudad de mexico::26e0af7ea3a72267d67e",
+          "law_name": "Marco Jurídico",
+          "article_label": "Fragmento 2",
+          "snippet": "nta Pública 2023 Cuenta Pública 2024 --> Comunicación Social Organigrama Misión --> Síntesis informativa --> Comunicados de Prensa Agenda Legislativa Trabajo Legislativo --> Fotos --> Videos --> Noticias Agenda y Trasmis",
+          "ref_url": "https://www.congresocdmx.gob.mx/marco-legal-cdmx-107-2.html",
+          "doc_url": "https://www.congresocdmx.gob.mx/marco-juridico-102-1.html",
+          "last_reform": null,
+          "scope": "state",
+          "jurisdiction": "ciudad de mexico",
+          "source_kind": "cdmx_congreso_leyes",
+          "rank_score": -3.294400328227486,
+          "hybrid_score": 5.0944
+        },
+        {
+          "law_key": "cmpp",
+          "law_name": "CÓDIGO MILITAR DE PROCEDIMIENTOS PENALES",
+          "article_label": "Artículo 231",
+          "snippet": "Artículo 231. Aseguramiento de narcóticos y productos relacionados con delitos de propiedad intelectual y derechos de autor Cuando se aseguren narcóticos previstos en cualquier disposición, productos relacionados con del",
+          "ref_url": "https://www.diputados.gob.mx/LeyesBiblio/ref/cmpp.htm",
+          "doc_url": "https://www.diputados.gob.mx/LeyesBiblio/doc/CMPP.doc",
+          "last_reform": "14-11-2025",
+          "scope": "federal",
+          "jurisdiction": "mexico federal",
+          "source_kind": "federal_law_doc",
+          "rank_score": -28.223333731404303,
+          "hybrid_score": 31.4233
+        }
+      ]
+    },
+    {
+      "clause_type": "jurisdiction",
+      "references": [
+        {
+          "law_key": "state::ciudad de mexico::3056fc68b2e81929b23c",
+          "law_name": "Marco Legal de la CDMX",
+          "article_label": "Fragmento 9",
+          "snippet": "O - Última reforma publicada en la GOCDMX el 28 de abril de 2023 Fecha de publicación: 05-05-2023 | Tamaño: 787 kb. LEY DE BEBÉ SEGURO DE LA CIUDAD DE MÉXICO - Última reforma publicada en la GOCDMX el 27 de abril de 2023",
+          "ref_url": "https://www.congresocdmx.gob.mx/marco-legal-cdmx-107-2.html",
+          "doc_url": "https://www.congresocdmx.gob.mx/marco-legal-cdmx-107-2.html",
+          "last_reform": null,
+          "scope": "state",
+          "jurisdiction": "ciudad de mexico",
+          "source_kind": "cdmx_congreso_leyes",
+          "rank_score": -0.16310873643701598,
+          "hybrid_score": 0.1631
+        },
+        {
+          "law_key": "cnpcf",
+          "law_name": "CÓDIGO NACIONAL DE PROCEDIMIENTOS CIVILES Y FAMILIARES",
+          "article_label": "Artículo 78",
+          "snippet": "Artículo 78. Los Tribunales Colegiados de Circuito, Tribunales Colegiados de Apelación y Plenos Regionales, así como la Suprema Corte de Justicia de la Nación, conocerán en segunda instancia, de los procedimientos en que",
+          "ref_url": "https://www.diputados.gob.mx/LeyesBiblio/ref/cnpcf.htm",
+          "doc_url": "https://www.diputados.gob.mx/LeyesBiblio/doc/CNPCF.doc",
+          "last_reform": "15-01-2026",
+          "scope": "federal",
+          "jurisdiction": "mexico federal",
+          "source_kind": "federal_law_doc",
+          "rank_score": -14.527190977913031,
+          "hybrid_score": 18.9272
+        }
+      ]
+    },
+    {
+      "clause_type": "compliance",
+      "references": [
+        {
+          "law_key": "state::ciudad de mexico::3056fc68b2e81929b23c",
+          "law_name": "Marco Legal de la CDMX",
+          "article_label": "Fragmento 14",
+          "snippet": "MEDIANA EMPRESA DEL DISTRITO FEDERAL - Última reforma publicada en la GOCDMX el 027 de marzo de 2021 Fecha de publicación: 22-06-2022 | Tamaño: 1,536 kb. LEY PARA LA CELEBRACIÓN DE ESPECTÁCULOS PÚBLICOS EN LA CIUDAD DE M",
+          "ref_url": "https://www.congresocdmx.gob.mx/marco-legal-cdmx-107-2.html",
+          "doc_url": "https://www.congresocdmx.gob.mx/marco-legal-cdmx-107-2.html",
+          "last_reform": null,
+          "scope": "state",
+          "jurisdiction": "ciudad de mexico",
+          "source_kind": "cdmx_congreso_leyes",
+          "rank_score": -5.949123276331621,
+          "hybrid_score": 7.5491
+        },
+        {
+          "law_key": "lgpdppso",
+          "law_name": "LEY GENERAL DE PROTECCIÓN DE DATOS PERSONALES EN POSESIÓN DE SUJETOS OBLIGADOS",
+          "article_label": "Artículo 66",
+          "snippet": "Artículo 66. Para el cumplimiento de las obligaciones previstas en la presente Ley, el responsable podrá desarrollar o adoptar, en lo individual o en acuerdo con otros responsables, encargados u organizaciones, esquemas",
+          "ref_url": "https://www.diputados.gob.mx/LeyesBiblio/ref/lgpdppso.htm",
+          "doc_url": "https://www.diputados.gob.mx/LeyesBiblio/doc/LGPDPPSO.doc",
+          "last_reform": "14-11-2025",
+          "scope": "federal",
+          "jurisdiction": "mexico federal",
+          "source_kind": "federal_law_doc",
+          "rank_score": -15.935572236017997,
+          "hybrid_score": 20.3356
+        }
+      ]
+    }
+  ],
+  "federal_updates_check": {
+    "checked_at": "2026-03-04T23:34:54.444373+00:00",
+    "updates_page": "https://www.diputados.gob.mx/LeyesBiblio/actual/ultima.htm",
+    "hash_changed": false,
+    "updated_law_keys": [
+      "cnpcf",
+      "cpeum",
+      "cpeum_art",
+      "cpeum_crono",
+      "cpeum_per",
+      "lcm",
+      "lfda",
+      "lfppi",
+      "lft",
+      "lftse",
+      "lgamvlv",
+      "lgcdc",
+      "lgdnna",
+      "lgds",
+      "lge",
+      "lgec",
+      "lgeepa",
+      "lgimh",
+      "lgpgir",
+      "lgs",
+      "linm",
+      "lissfam",
+      "lissste",
+      "lmeum",
+      "lmigra",
+      "lplan",
+      "lss",
+      "lviv"
+    ],
+    "updated_law_count": 28,
+    "sync_result": null
+  },
+  "llm_review": {
+    "provider": "gemini",
+    "configured": true,
+    "model": "gemini-1.5-flash",
+    "used": false,
+    "error": "Gemini HTTP 404: {\n  \"error\": {\n    \"code\": 404,\n    \"message\": \"models/gemini-1.5-flash is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods.\",\n    \"status\": \"NO",
+    "generated_at": "2026-03-04T23:34:55.577402+00:00"
+  },
+  "lawyer_feedback": {
+    "total": 7,
+    "signals": {
+      "incumplimiento": 4,
+      "duda": 2,
+      "vo_bo": 1
+    },
+    "latest": {
+      "feedback_id": "fb_233a48b54bba",
+      "document_id": "doc_82fae7aaa59b",
+      "document_name": "CONTRATO_DE_PRESTACION_DE_SERVICIOS_PROFESIONALES_EC.docx",
+      "clause_type": "indemnification",
+      "signal": "vo_bo",
+      "corrected_risk": null,
+      "note": "",
+      "reviewer": "abogado_sr",
+      "created_at": "2026-03-05T00:16:19.171468+00:00"
+    },
+    "by_clause": {
+      "indemnification": {
+        "incumplimiento": 4,
+        "duda": 2,
+        "vo_bo": 1
+      }
+    }
+  },
+  "learning_trace": {
+    "global_feedback_count": 9,
+    "document_feedback_count": 7,
+    "adjustments": []
+  }
+}

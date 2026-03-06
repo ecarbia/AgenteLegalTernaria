@@ -1,0 +1,34 @@
+CONTRATO DE PRESTACION DE SERVICIOS
+
+PARTES
+Que celebran por una parte Comercializadora Atlas, S.A. de C.V. ("Cliente") y por otra parte Soluciones Delta, S.A. de C.V. ("Proveedor").
+
+OBJETO
+El Proveedor prestara servicios de desarrollo e implementacion de una plataforma interna de analitica para el Cliente, incluyendo configuracion, soporte inicial y transferencia de conocimiento.
+
+VIGENCIA
+La vigencia del contrato iniciara el 01/04/2026 y concluira el 31/03/2027. Podra renovarse por acuerdo escrito de ambas partes.
+
+PAGOS
+El Cliente pagara al Proveedor la cantidad de MXN 950,000 mas IVA en tres exhibiciones contra entrega de hitos definidos en el Anexo A. En caso de mora aplicara un interes mensual del 2%.
+
+TERMINACION
+Cualquiera de las partes podra terminar el contrato por incumplimiento esencial, otorgando un preaviso de 15 dias naturales para subsanar.
+
+RESPONSABILIDAD
+El Proveedor no sera responsable por danos indirectos. La responsabilidad total del Proveedor no excedera el monto total efectivamente pagado en los ultimos seis meses.
+
+INDEMNIZACION
+El Cliente indemnizara al Proveedor por cualquier reclamacion de terceros relacionada con el uso de la plataforma, sin limite de responsabilidad y sin derecho de defensa del Cliente.
+
+CONFIDENCIALIDAD
+Las partes se obligan a guardar confidencialidad respecto de informacion tecnica, comercial y financiera por un plazo de 5 anos posteriores a la terminacion.
+
+PROPIEDAD INTELECTUAL
+La titularidad del codigo fuente y entregables sera del Cliente. El Proveedor conserva metodologias preexistentes y concede licencia no exclusiva para su uso interno.
+
+JURISDICCION Y LEY APLICABLE
+Para la interpretacion y cumplimiento, las partes se someten a las leyes federales de Mexico y a los tribunales competentes de la Ciudad de Mexico, renunciando a cualquier otro fuero.
+
+CUMPLIMIENTO
+Las partes manifiestan cumplir con normativa de proteccion de datos personales y anticorrupcion aplicable.
