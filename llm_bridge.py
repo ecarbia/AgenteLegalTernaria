@@ -63,6 +63,13 @@ SPANISH_STOPWORDS = {
     "favor",
     "contrato",
 }
+REQUIRED_DIALOG_KEYS = {
+    "answer",
+    "confidence",
+    "risk_estimate",
+    "missing_evidence",
+    "human_review_required",
+}
 
 
 def normalize_for_match(text: str) -> str:
@@ -393,16 +400,18 @@ def enrich_analysis_with_gemini(analysis: dict[str, Any]) -> tuple[dict[str, Any
         ).strip()
         clause["risk"]["confidence"] = _clamp_confidence(update.get("confidence", clause["risk"].get("confidence", 0.7)))
 
+    computed = _compute_overall_from_clauses(analysis.get("clauses", []))
     overall = parsed.get("overall", {})
     overall_level = normalize_for_match(overall.get("level", ""))
-    if overall_level in RISK_LEVELS:
-        analysis["overall_risk"]["level"] = overall_level
-    analysis["overall_risk"]["score"] = _clamp_score(overall.get("score", analysis["overall_risk"].get("score", 50)))
+    overall_score = _clamp_score(overall.get("score", computed.get("score", 50)))
     rationale = (overall.get("rationale") or "").strip()
-    if rationale:
-        analysis["overall_risk"]["llm_rationale"] = rationale
 
-    analysis["overall_risk"] = _compute_overall_from_clauses(analysis.get("clauses", []))
+    analysis["overall_risk"] = {
+        "level": overall_level if overall_level in RISK_LEVELS else computed.get("level", "medium"),
+        "score": max(float(computed.get("score", 50)), float(overall_score)),
+        "critical_flags": computed.get("critical_flags", []),
+        "llm_rationale": rationale,
+    }
 
     hallazgos = parsed.get("hallazgos", {})
     analysis["llm_hallazgos"] = {
@@ -797,6 +806,11 @@ def draft_dialogue_reply_with_gemini(
                 return result, meta
         except Exception:
             pass
+        return None, meta
+
+    if not isinstance(parsed, dict) or not REQUIRED_DIALOG_KEYS.issubset(parsed.keys()):
+        return None, meta
+    if not isinstance(parsed.get("risk_estimate"), dict):
         return None, meta
 
     risk = parsed.get("risk_estimate", {}) if isinstance(parsed.get("risk_estimate"), dict) else {}

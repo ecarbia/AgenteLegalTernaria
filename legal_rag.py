@@ -713,6 +713,36 @@ class LegalRAG:
         conn = sqlite3.connect(self.db_path)
         cur = conn.cursor()
 
+        existing = cur.execute(
+            "SELECT source_id, content_hash FROM sources WHERE law_key = ?",
+            (source_key,),
+        ).fetchone()
+
+        if existing and existing[1] == content_hash:
+            cur.execute(
+                """
+                UPDATE sources
+                SET indexed_at = ?, law_name = ?, ref_url = ?, doc_url = ?, text_path = ?,
+                    last_reform = ?, scope = ?, jurisdiction = ?, source_kind = ?
+                WHERE source_id = ?
+                """,
+                (
+                    dt.datetime.now(dt.timezone.utc).isoformat(),
+                    law_name,
+                    ref_url,
+                    doc_url,
+                    text_path,
+                    last_reform,
+                    scope,
+                    jurisdiction,
+                    source_kind,
+                    existing[0],
+                ),
+            )
+            conn.commit()
+            conn.close()
+            return
+
         cur.execute(
             """
             INSERT INTO sources (
@@ -988,15 +1018,13 @@ class LegalRAG:
 
     def _open_url(self, url: str, *, timeout: float) -> Any:
         current = self._normalize_url(url)
-        use_unverified_context = False
         timeout_retries = 0
 
         for _ in range(6):
             req = urllib.request.Request(current, headers={"User-Agent": USER_AGENT})
-            context = ssl._create_unverified_context() if use_unverified_context else None
 
             try:
-                return urllib.request.urlopen(req, timeout=timeout, context=context)
+                return urllib.request.urlopen(req, timeout=timeout)
             except urllib.error.HTTPError as exc:
                 if exc.code in {301, 302, 303, 307, 308}:
                     location = exc.headers.get("Location", "").strip()
@@ -1008,9 +1036,10 @@ class LegalRAG:
                         continue
                 raise
             except urllib.error.URLError as exc:
-                if self._is_ssl_cert_error(exc) and not use_unverified_context:
-                    use_unverified_context = True
-                    continue
+                if self._is_ssl_cert_error(exc):
+                    raise RuntimeError(
+                        f"Error SSL al acceder {current}. Verifica certificado del servidor."
+                    ) from exc
                 if self._is_timeout_error(exc) and timeout_retries < 1:
                     timeout_retries += 1
                     continue
