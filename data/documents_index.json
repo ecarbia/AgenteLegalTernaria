@@ -89,6 +89,22 @@
       "text_path": "/Users/eduardocarbia/Desktop/Scripts/agente-legal/data/text/doc_82fae7aaa59b.txt",
       "uploaded_at": "2026-03-04T23:31:48.041637+00:00",
       "analyzed_at": "2026-03-04T23:34:55.693397+00:00"
+    },
+    {
+      "document_id": "doc_97c306a1c2b9",
+      "document_name": "HEXAGON-_Contrato_Marco_v1_CAMBIOS_LLAMADA_com_GCP_002.docx",
+      "project_name": "AITU",
+      "client_name": "Hexagon Media",
+      "contract_type": "Servicios",
+      "counterparty": "Televisa",
+      "expected_sign_date": "2026-03-13",
+      "objective": "",
+      "include_historical": false,
+      "source_type": "docx",
+      "repository_path": "/Users/eduardocarbia/Desktop/Scripts/agente-legal/data/uploads/doc_97c306a1c2b9.docx",
+      "text_path": "/Users/eduardocarbia/Desktop/Scripts/agente-legal/data/text/doc_97c306a1c2b9.txt",
+      "uploaded_at": "2026-03-06T19:32:52.794790+00:00",
+      "analyzed_at": "2026-03-06T19:32:54.265245+00:00"
     }
   ]
 }

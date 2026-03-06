@@ -77,7 +77,22 @@ def normalize_for_match(text: str) -> str:
     return "".join(ch for ch in normalized if unicodedata.category(ch) != "Mn")
 
 
-def _clean_llm_text(raw: str, *, max_len: int = 1600) -> str:
+def _trim_on_sentence_boundary(text: str, max_len: int) -> str:
+    if len(text) <= max_len:
+        return text
+    candidate = text[:max_len]
+    # intenta cortar en final de oración
+    last_dot = max(candidate.rfind(". "), candidate.rfind("! "), candidate.rfind("? "))
+    if last_dot >= int(max_len * 0.6):
+        return candidate[: last_dot + 1].rstrip()
+    # fallback: cortar por espacio para no romper palabra
+    last_space = candidate.rfind(" ")
+    if last_space >= int(max_len * 0.6):
+        return candidate[:last_space].rstrip() + "…"
+    return candidate.rstrip() + "…"
+
+
+def _clean_llm_text(raw: str, *, max_len: int = 2200) -> str:
     text = (raw or "").strip()
     if not text:
         return ""
@@ -90,8 +105,7 @@ def _clean_llm_text(raw: str, *, max_len: int = 1600) -> str:
     text = text.replace("```", "")
     text = re.sub(r"[\x00-\x1F\x7F]+", " ", text)
     text = re.sub(r"\s+", " ", text).strip()
-    if len(text) > max_len:
-        text = text[:max_len].rstrip()
+    text = _trim_on_sentence_boundary(text, max_len=max_len)
     return text
 
 
@@ -108,17 +122,27 @@ def _default_risk_from_analysis(analysis: dict[str, Any]) -> dict[str, Any]:
 
 
 def _summary_looks_weak(text: str) -> bool:
-    clean = _clean_llm_text(text, max_len=1400)
-    if len(clean) < 100:
+    clean = _clean_llm_text(text, max_len=1800)
+    if len(clean) < 140:
         return True
     probe = normalize_for_match(clean)
+
+    # señales de texto plantilla o concatenación mecánica
     weak_patterns = [
-        "regula la relacion entre en la ciudad de mexico",
-        "objeto principal es: objeto del contrato",
-        "hallazgo(s) critico(s)",
-        "sobre vigencia/plazo, se observa",
+        "en vigencia/plazo se observa",
+        "en pagos destaca",
+        "en jurisdiccion/ley aplicable se identifica",
+        "el alcance principal identificado es",
+        "no identificado",
     ]
-    return any(pattern in probe for pattern in weak_patterns)
+    if any(p in probe for p in weak_patterns):
+        return True
+
+    # excesiva fragmentación por dos puntos -> síntoma de pegado
+    if clean.count(":") >= 4 and len(clean) < 450:
+        return True
+
+    return False
 
 
 def _normalize_next_action(text: str) -> str:
@@ -458,21 +482,24 @@ def generate_executive_summary_with_gemini(analysis: dict[str, Any]) -> tuple[st
         "contract_context": analysis.get("contract_context", {}),
         "overall_risk": analysis.get("overall_risk", {}),
         "summary_hints": analysis.get("summary", {}),
-        "parties_text": (clause_map.get("parties") or {}).get("extracted_text", "")[:460],
-        "object_text": (clause_map.get("object") or {}).get("extracted_text", "")[:520],
-        "term_text": (clause_map.get("term") or {}).get("extracted_text", "")[:340],
-        "payments_text": (clause_map.get("payments") or {}).get("extracted_text", "")[:340],
-        "jurisdiction_text": (clause_map.get("jurisdiction") or {}).get("extracted_text", "")[:340],
-        "high_risk_clauses": high_risk_clauses[:5],
+        "parties_text": (clause_map.get("parties") or {}).get("extracted_text", "")[:2000],
+        "object_text": (clause_map.get("object") or {}).get("extracted_text", "")[:2400],
+        "term_text": (clause_map.get("term") or {}).get("extracted_text", "")[:1600],
+        "payments_text": (clause_map.get("payments") or {}).get("extracted_text", "")[:1600],
+        "jurisdiction_text": (clause_map.get("jurisdiction") or {}).get("extracted_text", "")[:1600],
+        "high_risk_clauses": high_risk_clauses[:8],
     }
 
     prompt = (
         "Eres un abogado senior LegalOps en Mexico. "
-        "Redacta un resumen ejecutivo de contrato en espanol (120 a 180 palabras), "
-        "tono profesional y natural para un despacho. "
-        "Estructura en texto corrido: contexto del contrato, foco operativo, riesgos y recomendacion concreta. "
-        "No inventes hechos. Si falta evidencia, indicalo con una frase breve. "
-        "No incluyas bullets, ni markdown, ni JSON.\n"
+        "Redacta un resumen ejecutivo contractual fluido, natural y profesional para socio de despacho. "
+        "Debe sonar humano, no plantilla. "
+        "Longitud: 160 a 260 palabras. "
+        "Estructura narrativa: contexto, obligaciones clave, riesgos concretos, recomendacion accionable. "
+        "NO uses encabezados literales tipo 'En vigencia/plazo se observa'. "
+        "NO pegues snippets crudos; parafrasea con precision juridica. "
+        "Si falta evidencia relevante, menciónalo brevemente sin romper el flujo. "
+        "No inventes hechos. Sin bullets, sin markdown, sin JSON.\n"
         f"CONTEXTO:\n{json.dumps(focused_context, ensure_ascii=False)}"
     )
     try:

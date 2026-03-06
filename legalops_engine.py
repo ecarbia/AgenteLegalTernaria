@@ -272,6 +272,36 @@ def analyze_contract(
         "generated_at": now,
         "disclaimer": DISCLAIMER,
     }
+    analysis = attach_executive_summary_llm_first(analysis)
+    return analysis
+
+
+def attach_executive_summary_llm_first(analysis: dict[str, Any]) -> dict[str, Any]:
+    summary_text = None
+    summary_meta: dict[str, Any] = {}
+
+    try:
+        from llm_bridge import generate_executive_summary_with_gemini
+
+        summary_text, summary_meta = generate_executive_summary_with_gemini(analysis)
+    except Exception:
+        summary_text, summary_meta = None, {"used": False, "error": "summary_generation_failed"}
+
+    summary_block = analysis.setdefault("summary", {})
+    if summary_text:
+        summary_block["executive"] = summary_text
+        summary_block["source"] = "llm"
+        summary_block["llm_meta"] = summary_meta
+        analysis["executive_summary"] = summary_text
+    else:
+        fallback = (
+            "No fue posible generar un resumen ejecutivo de calidad en este intento. "
+            "Se requiere reintentar con el modelo o revisar la extracción de cláusulas."
+        )
+        summary_block["executive"] = fallback
+        summary_block["source"] = "fallback_minimal"
+        summary_block["llm_meta"] = summary_meta
+        analysis["executive_summary"] = fallback
     return analysis
 
 

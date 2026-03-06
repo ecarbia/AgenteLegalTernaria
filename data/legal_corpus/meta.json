@@ -24,7 +24,7 @@
   "index_url": "https://www.diputados.gob.mx/LeyesBiblio/index.htm",
   "last_progress": 300,
   "discovered": 317,
-  "federal_updates_checked_at": "2026-03-05T20:45:28.950970+00:00",
+  "federal_updates_checked_at": "2026-03-06T19:35:05.905031+00:00",
   "federal_updates_hash": "3e45f575126f2f21c8f6df04a78ba47c9b65ad20a9154c2c25037f9c4440cc17",
   "federal_updates_keys": [
     "cnpcf",
@@ -57,7 +57,7 @@
     "lviv"
   ],
   "federal_updates_last_result": {
-    "checked_at": "2026-03-05T20:45:28.950970+00:00",
+    "checked_at": "2026-03-06T19:35:05.905031+00:00",
     "updates_page": "https://www.diputados.gob.mx/LeyesBiblio/actual/ultima.htm",
     "hash_changed": false,
     "updated_law_keys": [

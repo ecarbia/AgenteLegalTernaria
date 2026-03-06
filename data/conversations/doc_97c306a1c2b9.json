@@ -1,0 +1,38 @@
+{
+  "document_id": "doc_97c306a1c2b9",
+  "objective": "Analizar riesgos y acelerar dictamen del contrato.",
+  "summary": "",
+  "history": [
+    {
+      "role": "user",
+      "text": "resume el contrato+",
+      "created_at": "2026-03-06T19:33:42.451416+00:00"
+    },
+    {
+      "role": "assistant",
+      "text": "Con base en el texto contractual, esto responde mejor tu consulta: En partes, se observa: (b) Con independencia del inciso anterior, las partes acuerdan que el Proveedor otorga a Televisa una licencia irrevocable por todo el plazo de protección de de. En objeto, se observa: Los Servicios objeto del presente Contrato no permiten ni contemplan la puesta a disposición de manera temporal, permanente, indefinida, o periódica de Personal. Si quieres, lo convierto en acciones concretas de revision, duda o Vo.Bo.",
+      "created_at": "2026-03-06T19:33:42.451457+00:00"
+    },
+    {
+      "role": "user",
+      "text": "por qué estoy aquí?",
+      "created_at": "2026-03-06T19:34:45.640468+00:00"
+    },
+    {
+      "role": "assistant",
+      "text": "Seguimos sobre este contrato. Si me dices el objetivo de este turno, te doy una respuesta puntual y accionable.",
+      "created_at": "2026-03-06T19:34:45.640477+00:00"
+    },
+    {
+      "role": "user",
+      "text": "dame el objeto del contrato",
+      "created_at": "2026-03-06T19:35:06.336794+00:00"
+    },
+    {
+      "role": "assistant",
+      "text": "Revisando la clausula de objeto, se observa: Los Servicios objeto del presente Contrato no permiten ni contemplan la puesta a disposición de manera temporal, permanente, indefinida, o periódica de Personal. Si te sirve, puedo proponer una redaccion alternativa para negociacion.",
+      "created_at": "2026-03-06T19:35:06.336832+00:00"
+    }
+  ],
+  "updated_at": "2026-03-06T19:35:06.336842+00:00"
+}
