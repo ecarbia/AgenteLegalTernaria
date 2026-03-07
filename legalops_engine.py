@@ -295,8 +295,8 @@ def attach_executive_summary_llm_first(analysis: dict[str, Any]) -> dict[str, An
         analysis["executive_summary"] = summary_text
     else:
         fallback = (
-            "No fue posible generar un resumen ejecutivo de calidad en este intento. "
-            "Se requiere reintentar con el modelo o revisar la extracción de cláusulas."
+            "No se pudo generar el resumen ejecutivo en este intento. "
+            "Puedo reintentar de inmediato con más contexto contractual."
         )
         summary_block["executive"] = fallback
         summary_block["source"] = "fallback_minimal"

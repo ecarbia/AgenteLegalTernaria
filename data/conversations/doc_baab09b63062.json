@@ -1,0 +1,38 @@
+{
+  "document_id": "doc_baab09b63062",
+  "objective": "Analizar riesgos y acelerar dictamen del contrato.",
+  "summary": "",
+  "history": [
+    {
+      "role": "user",
+      "text": "hola",
+      "created_at": "2026-03-07T03:26:10.429287+00:00"
+    },
+    {
+      "role": "assistant",
+      "text": "Hola. Ya tengo abierto AITU. Estoy listo para ayudarte con analisis de riesgo, ley aplicable y dictamen.",
+      "created_at": "2026-03-07T03:26:10.429297+00:00"
+    },
+    {
+      "role": "user",
+      "text": "cual es el objeto?",
+      "created_at": "2026-03-07T03:26:32.369199+00:00"
+    },
+    {
+      "role": "assistant",
+      "text": "Seguimos sobre este contrato. Si me dices el objetivo de este turno, te doy una respuesta puntual y accionable.",
+      "created_at": "2026-03-07T03:26:32.369213+00:00"
+    },
+    {
+      "role": "user",
+      "text": "es sobre este turno, cuál es el objeto del contrato?",
+      "created_at": "2026-03-07T03:26:54.999361+00:00"
+    },
+    {
+      "role": "assistant",
+      "text": "Te ayudo con eso. Si quieres, reintento con más contexto del contrato para darte una respuesta más precisa.",
+      "created_at": "2026-03-07T03:26:54.999386+00:00"
+    }
+  ],
+  "updated_at": "2026-03-07T03:26:54.999395+00:00"
+}

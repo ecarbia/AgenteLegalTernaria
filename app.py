@@ -24,7 +24,7 @@ from legalops_engine import (
     save_json,
 )
 from legal_rag import LegalRAG
-from llm_bridge import answer_question_with_gemini, enrich_analysis_with_gemini, get_llm_status
+from llm_bridge import enrich_analysis_with_gemini, get_llm_status
 from llm_bridge import (
     draft_dialogue_reply_with_gemini,
     generate_executive_summary_with_gemini,
@@ -2034,22 +2034,11 @@ def ask_question() -> Any:
         research_plan=research_plan,
         conversation_context=conversation_context,
     )
-    if not llm_answer:
-        legacy_answer, legacy_meta = answer_question_with_gemini(
-            question=question,
-            analysis=analysis,
-            legal_hits=legal_hits,
-            feedback_summary=feedback_summary,
-            conversation_context=conversation_context,
-        )
-        if legacy_answer:
-            llm_answer = legacy_answer
-            llm_meta = legacy_meta
 
     if llm_answer and law_question and not is_law_focused_answer(llm_answer.get("answer", "")):
         llm_answer = None
 
-    if llm_answer:
+    if llm_answer and llm_answer.get("answer"):
         response["answer"] = llm_answer.get("answer", response["answer"])
         response["confidence"] = llm_answer.get("confidence", response.get("confidence", 0.65))
         response["risk_estimate"] = llm_answer.get("risk_estimate", response.get("risk_estimate", {}))
@@ -2060,6 +2049,11 @@ def ask_question() -> Any:
         )
         if isinstance(llm_answer.get("next_actions"), list):
             response["next_actions"] = llm_answer.get("next_actions", [])[:3]
+    else:
+        response["answer"] = (
+            "Te ayudo con eso. Si quieres, reintento con más contexto del contrato "
+            "para darte una respuesta más precisa."
+        )
 
     response["legal_citations"] = legal_hits
     response["legal_fichas"] = legal_fichas

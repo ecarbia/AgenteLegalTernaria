@@ -122,24 +122,23 @@ def _default_risk_from_analysis(analysis: dict[str, Any]) -> dict[str, Any]:
 
 
 def _summary_looks_weak(text: str) -> bool:
-    clean = _clean_llm_text(text, max_len=1800)
-    if len(clean) < 140:
+    clean = _clean_llm_text(text, max_len=2000)
+    if len(clean) < 120:
         return True
     probe = normalize_for_match(clean)
 
-    # señales de texto plantilla o concatenación mecánica
     weak_patterns = [
         "en vigencia/plazo se observa",
         "en pagos destaca",
         "en jurisdiccion/ley aplicable se identifica",
         "el alcance principal identificado es",
-        "no identificado",
+        "proximo paso sugerido",
     ]
-    if any(p in probe for p in weak_patterns):
+    if any(pattern in probe for pattern in weak_patterns):
         return True
 
-    # excesiva fragmentación por dos puntos -> síntoma de pegado
-    if clean.count(":") >= 4 and len(clean) < 450:
+    # síntoma de concatenación rígida
+    if clean.count(":") >= 5 and len(clean) < 500:
         return True
 
     return False
@@ -457,7 +456,8 @@ def generate_executive_summary_with_gemini(analysis: dict[str, Any]) -> tuple[st
         "used": False,
         "error": None,
         "generated_at": dt.datetime.now(dt.timezone.utc).isoformat(),
-        "agent": "executive_summary",
+        "agent": "executive_summary_natural",
+        "retries": 0,
     }
     if not client.configured:
         return None, meta
@@ -468,72 +468,66 @@ def generate_executive_summary_with_gemini(analysis: dict[str, Any]) -> tuple[st
         if not isinstance(clause, dict):
             continue
         risk_level = normalize_for_match((clause.get("risk") or {}).get("level", ""))
-        if risk_level not in {"high", "critical"}:
-            continue
-        high_risk_clauses.append(
-            {
-                "clause_label": clause.get("clause_label") or clause.get("clause_type"),
-                "risk_level": risk_level,
-                "rationale": ((clause.get("risk") or {}).get("rationale") or "")[:180],
-            }
-        )
+        if risk_level in {"high", "critical"}:
+            high_risk_clauses.append(
+                {
+                    "clause_label": clause.get("clause_label") or clause.get("clause_type"),
+                    "risk_level": risk_level,
+                    "rationale": ((clause.get("risk") or {}).get("rationale") or "")[:350],
+                }
+            )
 
     focused_context = {
         "contract_context": analysis.get("contract_context", {}),
         "overall_risk": analysis.get("overall_risk", {}),
         "summary_hints": analysis.get("summary", {}),
-        "parties_text": (clause_map.get("parties") or {}).get("extracted_text", "")[:2000],
-        "object_text": (clause_map.get("object") or {}).get("extracted_text", "")[:2400],
-        "term_text": (clause_map.get("term") or {}).get("extracted_text", "")[:1600],
-        "payments_text": (clause_map.get("payments") or {}).get("extracted_text", "")[:1600],
-        "jurisdiction_text": (clause_map.get("jurisdiction") or {}).get("extracted_text", "")[:1600],
+        "parties_text": (clause_map.get("parties") or {}).get("extracted_text", "")[:2200],
+        "object_text": (clause_map.get("object") or {}).get("extracted_text", "")[:2600],
+        "term_text": (clause_map.get("term") or {}).get("extracted_text", "")[:1800],
+        "payments_text": (clause_map.get("payments") or {}).get("extracted_text", "")[:1800],
+        "jurisdiction_text": (clause_map.get("jurisdiction") or {}).get("extracted_text", "")[:1800],
         "high_risk_clauses": high_risk_clauses[:8],
     }
 
-    prompt = (
-        "Eres un abogado senior LegalOps en Mexico. "
-        "Redacta un resumen ejecutivo contractual fluido, natural y profesional para socio de despacho. "
-        "Debe sonar humano, no plantilla. "
-        "Longitud: 160 a 260 palabras. "
-        "Estructura narrativa: contexto, obligaciones clave, riesgos concretos, recomendacion accionable. "
-        "NO uses encabezados literales tipo 'En vigencia/plazo se observa'. "
-        "NO pegues snippets crudos; parafrasea con precision juridica. "
-        "Si falta evidencia relevante, menciónalo brevemente sin romper el flujo. "
-        "No inventes hechos. Sin bullets, sin markdown, sin JSON.\n"
+    base_prompt = (
+        "Eres un Abogado Senior LegalOps en Mexico. "
+        "Redacta un resumen ejecutivo contractual fluido y profesional (160-260 palabras), "
+        "en parrafo corrido, tono despacho. "
+        "Estructura natural: contexto del contrato, obligaciones relevantes, riesgos concretos y recomendacion accionable. "
+        "No uses plantillas como 'En vigencia/plazo se observa'. "
+        "No pegues snippets crudos truncados; parafrasea con precision juridica. "
+        "No inventes hechos. Si falta evidencia, mencionalo en una sola frase breve. "
+        "Devuelve SOLO texto.\n"
         f"CONTEXTO:\n{json.dumps(focused_context, ensure_ascii=False)}"
     )
-    try:
-        raw = client.generate_text(prompt=prompt, temperature=0.22, max_output_tokens=650)
-    except Exception as exc:  # pragma: no cover - operativo
-        meta["error"] = str(exc)
-        return None, meta
 
-    summary = _clean_llm_text(raw, max_len=1200)
-    retries = 0
-    if _summary_looks_weak(summary):
-        retries += 1
-        retry_prompt = (
-            "Reescribe el resumen ejecutivo de forma clara y util para un abogado que decide rapido. "
-            "Evita copiar encabezados literales del contrato. "
-            "No uses frases plantilla como 'Sobre vigencia/plazo, se observa'. "
-            "No inventes informacion.\n"
-            f"TEXTO_A_MEJORAR:\n{summary}\n"
+    retry_prompts = [
+        base_prompt,
+        (
+            "Reescribe con mejor fluidez y cohesion, evitando frases mecanicas y evitando copiar literal texto fragmentado.\n"
             f"CONTEXTO:\n{json.dumps(focused_context, ensure_ascii=False)}"
-        )
+        ),
+        (
+            "Ultimo intento: entrega una version clara y ejecutiva para socio de firma, sin plantillas, sin cortes abruptos.\n"
+            f"CONTEXTO:\n{json.dumps(focused_context, ensure_ascii=False)}"
+        ),
+    ]
+
+    for idx, prompt in enumerate(retry_prompts):
         try:
-            retry_raw = client.generate_text(prompt=retry_prompt, temperature=0.2, max_output_tokens=650)
-            retry_summary = _clean_llm_text(retry_raw, max_len=1200)
-            if not _summary_looks_weak(retry_summary):
-                summary = retry_summary
-        except Exception:
-            pass
+            raw = client.generate_text(prompt=prompt, temperature=0.3, max_output_tokens=800)
+            summary = _clean_llm_text(raw, max_len=2400)
+        except Exception as exc:  # pragma: no cover
+            meta["error"] = str(exc)
+            meta["retries"] = idx
+            continue
 
-    if _summary_looks_weak(summary):
-        return None, meta
+        meta["retries"] = idx
+        if summary and len(summary) >= 120 and not _summary_looks_weak(summary):
+            meta["used"] = True
+            return summary, meta
 
-    meta["used"] = True
-    meta["retries"] = retries
-    return summary, meta
+    return None, meta
 
 
 def rewrite_clause_with_gemini(
@@ -743,6 +737,12 @@ def draft_dialogue_reply_with_gemini(
     research_plan: dict[str, Any] | None,
     conversation_context: dict[str, Any] | None = None,
 ) -> tuple[dict[str, Any] | None, dict[str, Any]]:
+    """
+    Modo conversacional REAL:
+    - No exige JSON del LLM.
+    - Devuelve texto natural en result["answer"].
+    - Mantiene metadatos mínimos para UI/riesgo.
+    """
     client = GeminiClient.from_env()
     meta = {
         "provider": "gemini",
@@ -751,11 +751,12 @@ def draft_dialogue_reply_with_gemini(
         "used": False,
         "error": None,
         "generated_at": dt.datetime.now(dt.timezone.utc).isoformat(),
-        "agent": "dialogue",
+        "agent": "dialogue_natural",
     }
     if not client.configured:
         return None, meta
 
+    # Contexto más rico y menos truncado
     relevant_clauses = []
     for clause in _select_relevant_clauses(question, analysis):
         relevant_clauses.append(
@@ -764,117 +765,71 @@ def draft_dialogue_reply_with_gemini(
                 "clause_label": clause.get("clause_label"),
                 "status": clause.get("status"),
                 "risk": clause.get("risk", {}),
-                "snippet": (clause.get("extracted_text") or "")[:360],
+                "snippet": (clause.get("extracted_text") or "")[:1800],
+            }
+        )
+
+    legal_context = []
+    for hit in (legal_fichas or [])[:8]:
+        legal_context.append(
+            {
+                "law_name": hit.get("law_name"),
+                "article_label": hit.get("article_label"),
+                "scope": hit.get("scope"),
+                "jurisdiction": hit.get("jurisdiction"),
+                "snippet": (hit.get("snippet") or "")[:600],
             }
         )
 
     payload = {
         "question": question,
-        "summary": analysis.get("summary", {}),
         "overall_risk": analysis.get("overall_risk", {}),
+        "summary_hints": analysis.get("summary", {}),
         "relevant_clauses": relevant_clauses,
-        "legal_fichas": legal_fichas[:8],
-        "feedback_summary": feedback_summary,
+        "legal_context": legal_context,
+        "feedback_summary": feedback_summary or {},
         "research_plan": research_plan or {},
         "conversation_context": conversation_context or {},
     }
 
     prompt = (
-        "Eres un abogado senior experto en LegalOps para Mexico, actuando como copiloto legal de un abogado. "
-        "Responde SIEMPRE en tono conversacional natural, cercano y profesional (no robotico). "
-        "Mantén continuidad con el historial y el objetivo actual. "
-        "Guia al usuario hacia acciones utiles del agente (analisis de riesgos, dudas/incumplimientos, dictamen). "
-        "No des asesoria legal definitiva. Si falta evidencia textual, dilo explicitamente. "
-        "Devuelve SOLO JSON valido con esta estructura exacta:\n"
-        "{\n"
-        '  "answer":"texto conversacional",\n'
-        '  "confidence":0-1,\n'
-        '  "risk_estimate":{"level":"low|medium|high|critical","impacto_probable":"texto","recomendacion_inicial":"texto"},\n'
-        '  "missing_evidence":true|false,\n'
-        '  "human_review_required":true|false,\n'
-        '  "next_actions":["texto","texto"]\n'
-        "}\n"
-        "Reglas: evita respuestas mecanicas; evita plantillas repetitivas; no inventes articulos ni datos. "
-        "Si la pregunta es sobre ley aplicable/jurisdiccion, responde eso en la primera frase y no te desvias a otras clausulas. "
-        "Si detectas frustracion o urgencia, reconocelo en una frase breve y pasa a la solucion.\n"
-        f"CONTEXTO:\n{json.dumps(payload, ensure_ascii=False)}"
+        "Eres un Abogado Senior de contratos en Mexico, actuando como copiloto legal. "
+        "Responde de forma natural, fluida y profesional, como una conversacion real entre abogados. "
+        "PRIMERO responde exactamente lo que el usuario pregunto. "
+        "DESPUES, si aporta valor, sugiere solo un siguiente paso concreto. "
+        "No uses plantillas repetitivas ni encabezados mecanicos. "
+        "No inventes hechos ni articulos. "
+        "Si falta evidencia, dilo breve y claramente.\n\n"
+        f"CONTEXTO:\n{json.dumps(payload, ensure_ascii=False)}\n\n"
+        "Devuelve SOLO texto conversacional (sin JSON, sin markdown, sin listas numeradas)."
     )
 
     try:
-        parsed, raw = client.generate_json(prompt=prompt, temperature=0.35, max_output_tokens=1700)
-    except Exception as exc:  # pragma: no cover - operativo
+        raw = client.generate_text(prompt=prompt, temperature=0.45, max_output_tokens=900)
+        answer = _clean_llm_text(raw, max_len=2200)
+    except Exception as exc:  # pragma: no cover
         meta["error"] = str(exc)
-        convo_payload = conversation_context or {}
-        fallback_prompt = (
-            "Eres un asistente legal conversacional para un despacho en Mexico. "
-            "Responde en 2-4 frases claras, naturales y utiles. "
-            "No uses listas numeradas ni respuestas roboticas. "
-            "Si falta evidencia, dilo y pide siguiente dato concreto.\n"
-            f"PREGUNTA: {question}\n"
-            f"RIESGO_GLOBAL: {json.dumps(analysis.get('overall_risk', {}), ensure_ascii=False)}\n"
-            f"CONTEXTO_CONVERSACION: {json.dumps(convo_payload, ensure_ascii=False)}\n"
-        )
-        try:
-            raw_text = client.generate_text(prompt=fallback_prompt, temperature=0.35, max_output_tokens=500)
-            cleaned = _clean_llm_text(raw_text, max_len=1000)
-            if cleaned:
-                result = {
-                    "answer": cleaned,
-                    "confidence": 0.72,
-                    "risk_estimate": _default_risk_from_analysis(analysis),
-                    "missing_evidence": False,
-                    "human_review_required": True,
-                    "next_actions": [
-                        "Puedo detallar riesgos por clausula.",
-                        "Si quieres, genero dictamen preliminar.",
-                    ],
-                }
-                meta["used"] = True
-                return result, meta
-        except Exception:
-            pass
         return None, meta
 
-    if not isinstance(parsed, dict) or not REQUIRED_DIALOG_KEYS.issubset(parsed.keys()):
-        return None, meta
-    if not isinstance(parsed.get("risk_estimate"), dict):
+    if not answer or len(answer) < 25:
         return None, meta
 
-    risk = parsed.get("risk_estimate", {}) if isinstance(parsed.get("risk_estimate"), dict) else {}
-    level = normalize_for_match(risk.get("level", ""))
+    overall = analysis.get("overall_risk", {}) if isinstance(analysis.get("overall_risk"), dict) else {}
+    level = normalize_for_match(overall.get("level", "medium"))
     if level not in RISK_LEVELS:
         level = "medium"
 
-    answer = (parsed.get("answer") or "").strip()
-    if not answer:
-        answer = _clean_llm_text(raw, max_len=1400)
-    if not answer:
-        return None, meta
-
-    next_actions = []
-    for action in parsed.get("next_actions", []):
-        text = _normalize_next_action(action)
-        if text:
-            next_actions.append(text[:150])
-        if len(next_actions) >= 3:
-            break
-
-    default_risk = _default_risk_from_analysis(analysis)
     result = {
         "answer": answer,
-        "confidence": _clamp_confidence(parsed.get("confidence", 0.72)),
+        "confidence": 0.82,
         "risk_estimate": {
             "level": level,
-            "impacto_probable": (risk.get("impacto_probable") or default_risk["impacto_probable"]).strip(),
-            "recomendacion_inicial": (risk.get("recomendacion_inicial") or default_risk["recomendacion_inicial"]).strip(),
+            "impacto_probable": "Evaluar impacto contractual con evidencia completa del expediente.",
+            "recomendacion_inicial": "Validar con abogado responsable antes de cierre.",
         },
-        "missing_evidence": bool(parsed.get("missing_evidence", False)),
-        "human_review_required": bool(parsed.get("human_review_required", level in {"high", "critical"})),
-        "next_actions": next_actions
-        or [
-            "Si quieres, te detallo incumplimientos, dudas y Vo.Bo. por clausula.",
-            "Puedo prepararte un dictamen preliminar con recomendaciones negociables.",
-        ],
+        "missing_evidence": False,
+        "human_review_required": bool(level in {"high", "critical"}),
+        "next_actions": [],
     }
     meta["used"] = True
     return result, meta

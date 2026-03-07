@@ -1,0 +1,921 @@
+{
+  "analysis_id": "analysis_doc_7c3728a8f3a1",
+  "document": {
+    "document_id": "doc_7c3728a8f3a1",
+    "document_name": "HEXAGON-_Contrato_Marco_v1_CAMBIOS_LLAMADA_com_GCP_002.docx",
+    "source_type": "docx",
+    "repository_path": "/Users/eduardocarbia/Desktop/Scripts/agente-legal/data/uploads/doc_7c3728a8f3a1.docx",
+    "ingestion_timestamp": "2026-03-06T19:55:08.244389+00:00"
+  },
+  "summary": {
+    "parties": [
+      "Declara Televisa, por conducto de sus apoderados, que: Es una sociedad legalmente constituida y existente de conformidad con las leyes de los Estados Unidos Mexicanos (“ México ”),",
+      "PRIMERA . Objeto. (a) Por virtud del presente Contrato el Proveedor otorga a Televisa una licencia no exclusiva irrevocable durante la vigencia del Contrato, para acceder, usar y b"
+    ],
+    "object": "CONTRATO MARCO DE PRESTACIÓN DE SERVICIOS (EN LO SUCESIVO EL “CONTRATO ”), QUE CELEBRAN POR UNA PARTE LA SOCIEDAD DENOMINADA TELEVISA, S. DE R.L. DE C.V., (EN LO SUCESIVO “TELEVISA”) REPRESENTADA EN ESTE ACTO POR VLADIMI",
+    "term": {
+      "status": "found",
+      "duration_text": "Es decir, Televisa podrá seguir teniendo ingestada su información en la Plataforma por toda la Vigencia y las renovaciones y/o contratos que de igual o similar naturaleza se celebr"
+    },
+    "governing_law": "No identificado",
+    "jurisdiction": "No identificado",
+    "executive": "No fue posible generar un resumen ejecutivo de calidad en este intento. Se requiere reintentar con el modelo o revisar la extracción de cláusulas.",
+    "source": "fallback_minimal",
+    "llm_meta": {
+      "provider": "gemini",
+      "configured": true,
+      "model": "gemini-1.5-flash",
+      "used": false,
+      "error": "Gemini HTTP 404: {\n  \"error\": {\n    \"code\": 404,\n    \"message\": \"models/gemini-1.5-flash is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods.\",\n    \"status\": \"NO",
+      "generated_at": "2026-03-06T19:55:08.244420+00:00",
+      "agent": "executive_summary"
+    }
+  },
+  "clauses": [
+    {
+      "clause_type": "parties",
+      "clause_label": "Partes",
+      "status": "found",
+      "extracted_text": "(b) Con independencia del inciso anterior, las partes acuerdan que el Proveedor otorga a Televisa una licencia irrevocable por todo el plazo de protección de derechos patrimoniales de autor sobre la versión de la Plataforma tal cual se encuentre en posesión de Televisa al momento del término de la Vigencia para la prestación de los Servicios. (b) Ambas partes acuerdan sostener reuniones a través de medios electrónicos, en caso de considerarlo necesario, a las que asistan el Personal del Proveedor y los Contactos de las partes, con fines de revisar el avance de los Servicios y tomar decisiones que en su momento sean necesarias o convenientes para la correcta y satisfactoria prestación de los Servicios, así como la elaboración y entrega de los Materiales.",
+      "normalized_data": {},
+      "evidence": [
+        {
+          "document_id": "doc_7c3728a8f3a1",
+          "document_name": "HEXAGON-_Contrato_Marco_v1_CAMBIOS_LLAMADA_com_GCP_002.docx",
+          "section": "CLÁUSULAS",
+          "snippet": "(b) Con independencia del inciso anterior, las partes acuerdan que el Proveedor otorga a Televisa una licencia irrevocable por todo el plazo de protección de derechos patrimoniales de autor sobre la versión de la Plataforma tal cual se encuentre en posesión de Televisa al momento del término de la Vigencia para la prestación de los Servicios."
+        },
+        {
+          "document_id": "doc_7c3728a8f3a1",
+          "document_name": "HEXAGON-_Contrato_Marco_v1_CAMBIOS_LLAMADA_com_GCP_002.docx",
+          "section": "CLÁUSULAS",
+          "snippet": "(b) Ambas partes acuerdan sostener reuniones a través de medios electrónicos, en caso de considerarlo necesario, a las que asistan el Personal del Proveedor y los Contactos de las partes, con fines de revisar el avance de los Servicios y tomar decisiones que en su momento sean necesarias o convenientes para la correcta y satisfactoria prestación de los Servicios, así como la elaboración y entrega de los Materiales."
+        },
+        {
+          "document_id": "doc_7c3728a8f3a1",
+          "document_name": "HEXAGON-_Contrato_Marco_v1_CAMBIOS_LLAMADA_com_GCP_002.docx",
+          "section": "CLÁUSULAS",
+          "snippet": "a) Las partes reconocen y aceptan que el presente Contrato es de naturaleza mercantil, donde el Proveedor presta a Televisa un servicio independiente bajo su absoluta autonomía de gestión y responsabilidad, por lo que bajo ninguna circunstancia existirá relación laboral ni de subordinación entre las Partes, así como el Personal, siendo las únicas relaciones jurídicas existentes las derivadas del presente Contrato."
+        }
+      ],
+      "risk": {
+        "level": "low",
+        "score": 18,
+        "rationale": "Clausula localizada sin senales fuertes de riesgo inmediato.",
+        "probable_impact": "Riesgo acotado sujeto a revision juridica final.",
+        "recommendation_initial": "Confirmar nombres legales completos, representante y facultades.",
+        "confidence": 0.74
+      },
+      "feedback_signals": {}
+    },
+    {
+      "clause_type": "object",
+      "clause_label": "Objeto",
+      "status": "found",
+      "extracted_text": "Los Servicios objeto del presente Contrato no permiten ni contemplan la puesta a disposición de manera temporal, permanente, indefinida, o periódica de Personal (según dicho término se define más adelante) del Proveedor en favor de Televisa. i) cuenta con activos, personal, infraestructura y/o capacidad material para prestar los Servicios objeto de este Contrato y que se encuentra localizado en el domicilio fiscal que se informó ante las autoridades fiscales correspondientes;",
+      "normalized_data": {},
+      "evidence": [
+        {
+          "document_id": "doc_7c3728a8f3a1",
+          "document_name": "HEXAGON-_Contrato_Marco_v1_CAMBIOS_LLAMADA_com_GCP_002.docx",
+          "section": "DECLARACIONES",
+          "snippet": "Los Servicios objeto del presente Contrato no permiten ni contemplan la puesta a disposición de manera temporal, permanente, indefinida, o periódica de Personal (según dicho término se define más adelante) del Proveedor en favor de Televisa."
+        },
+        {
+          "document_id": "doc_7c3728a8f3a1",
+          "document_name": "HEXAGON-_Contrato_Marco_v1_CAMBIOS_LLAMADA_com_GCP_002.docx",
+          "section": "DECLARACIONES",
+          "snippet": "i) cuenta con activos, personal, infraestructura y/o capacidad material para prestar los Servicios objeto de este Contrato y que se encuentra localizado en el domicilio fiscal que se informó ante las autoridades fiscales correspondientes;"
+        },
+        {
+          "document_id": "doc_7c3728a8f3a1",
+          "document_name": "HEXAGON-_Contrato_Marco_v1_CAMBIOS_LLAMADA_com_GCP_002.docx",
+          "section": "DECLARACIONES",
+          "snippet": "Su objeto social le permite la celebración del presente Contrato, así como el cumplimiento de las obligaciones que adquiere en virtud de la celebración del mismo. El Proveedor declara que los Materiales (según dicho termino se define más adelante), que se generen por la prestación de los Servicios, serán creados bajo la figura de colaboración remunerada en favor de Televisa."
+        }
+      ],
+      "risk": {
+        "level": "low",
+        "score": 18,
+        "rationale": "Clausula localizada sin senales fuertes de riesgo inmediato.",
+        "probable_impact": "Riesgo acotado sujeto a revision juridica final.",
+        "recommendation_initial": "Delimitar alcance, entregables y criterios de aceptacion.",
+        "confidence": 0.74
+      },
+      "feedback_signals": {}
+    },
+    {
+      "clause_type": "term",
+      "clause_label": "Vigencia",
+      "status": "found",
+      "extracted_text": "Es decir, Televisa podrá seguir teniendo ingestada su información en la Plataforma por toda la Vigencia y las renovaciones y/o contratos que de igual o similar naturaleza se celebren con el Proveedor, queda entendido que en caso de que Televisa no renueve relación contractual alguna con el Proveedor por la Plataforma, Televisa podrá seguir usando la Plataforma por el plazo mencionado en este inciso sin el beneficio d Su objeto social le permite la celebración del presente Contrato, así como el cumplimiento de las obligaciones que adquiere en virtud de la celebración del mismo. El Proveedor declara que los Materiales (según dicho termino se define más adelante), que se generen por la prestación de los Servicios, serán creados bajo la figura de colaboración remunerada en favor de Televisa.",
+      "normalized_data": {},
+      "evidence": [
+        {
+          "document_id": "doc_7c3728a8f3a1",
+          "document_name": "HEXAGON-_Contrato_Marco_v1_CAMBIOS_LLAMADA_com_GCP_002.docx",
+          "section": "CLÁUSULAS",
+          "snippet": "Es decir, Televisa podrá seguir teniendo ingestada su información en la Plataforma por toda la Vigencia y las renovaciones y/o contratos que de igual o similar naturaleza se celebren con el Proveedor, queda entendido que en caso de que Televisa no renueve relación contractual alguna con el Proveedor por la Plataforma, Televisa podrá seguir usando la Plataforma por el plazo mencionado en este inciso sin el beneficio d"
+        },
+        {
+          "document_id": "doc_7c3728a8f3a1",
+          "document_name": "HEXAGON-_Contrato_Marco_v1_CAMBIOS_LLAMADA_com_GCP_002.docx",
+          "section": "DECLARACIONES",
+          "snippet": "Su objeto social le permite la celebración del presente Contrato, así como el cumplimiento de las obligaciones que adquiere en virtud de la celebración del mismo. El Proveedor declara que los Materiales (según dicho termino se define más adelante), que se generen por la prestación de los Servicios, serán creados bajo la figura de colaboración remunerada en favor de Televisa."
+        },
+        {
+          "document_id": "doc_7c3728a8f3a1",
+          "document_name": "HEXAGON-_Contrato_Marco_v1_CAMBIOS_LLAMADA_com_GCP_002.docx",
+          "section": "DECLARACIONES",
+          "snippet": "Su objeto social le permite la celebración del presente Contrato, así como el cumplimiento de las obligaciones que adquiere en virtud de la celebración del mismo. El Proveedor declara que los Materiales (según dicho termino se define más adelante), que se generen por la prestación de los Servicios, serán creados bajo la figura de colaboración remunerada en favor de Televisa. Los Servicios objeto del presente Contrato"
+        }
+      ],
+      "risk": {
+        "level": "low",
+        "score": 18,
+        "rationale": "Clausula localizada sin senales fuertes de riesgo inmediato.",
+        "probable_impact": "Riesgo acotado sujeto a revision juridica final.",
+        "recommendation_initial": "Definir fecha de inicio/termino y reglas de renovacion.",
+        "confidence": 0.74
+      },
+      "feedback_signals": {}
+    },
+    {
+      "clause_type": "payments",
+      "clause_label": "Pagos",
+      "status": "found",
+      "extracted_text": "En caso de que la factura sea incorrecta, esta será rechazada, se tendrá por no recibida y el Proveedor tendrá que reingresarla correctamente en el portal, por lo cual se entenderá que el plazo de pago señalado en éste párrafo volverá a comenzar. aciones en materia de trabajo y seguridad social para con su Personal, impuestos por la LFT, incluyendo, sin limitación, el pago de salarios, prestaciones de ley, aportaciones al Instituto Mexicano del Seguro Social (“ IMSS ”), al Instituto del Fondo Nacional para la Vivienda de los Trabajadores (“ INFONAVIT ”), cuotas sindicales, Impuesto Sobre la Renta, y en general, todos los impuestos, derechos y obligaciones que",
+      "normalized_data": {},
+      "evidence": [
+        {
+          "document_id": "doc_7c3728a8f3a1",
+          "document_name": "HEXAGON-_Contrato_Marco_v1_CAMBIOS_LLAMADA_com_GCP_002.docx",
+          "section": "CLÁUSULAS",
+          "snippet": "En caso de que la factura sea incorrecta, esta será rechazada, se tendrá por no recibida y el Proveedor tendrá que reingresarla correctamente en el portal, por lo cual se entenderá que el plazo de pago señalado en éste párrafo volverá a comenzar."
+        },
+        {
+          "document_id": "doc_7c3728a8f3a1",
+          "document_name": "HEXAGON-_Contrato_Marco_v1_CAMBIOS_LLAMADA_com_GCP_002.docx",
+          "section": "DECLARACIONES",
+          "snippet": "aciones en materia de trabajo y seguridad social para con su Personal, impuestos por la LFT, incluyendo, sin limitación, el pago de salarios, prestaciones de ley, aportaciones al Instituto Mexicano del Seguro Social (“ IMSS ”), al Instituto del Fondo Nacional para la Vivienda de los Trabajadores (“ INFONAVIT ”), cuotas sindicales, Impuesto Sobre la Renta, y en general, todos los impuestos, derechos y obligaciones que"
+        },
+        {
+          "document_id": "doc_7c3728a8f3a1",
+          "document_name": "HEXAGON-_Contrato_Marco_v1_CAMBIOS_LLAMADA_com_GCP_002.docx",
+          "section": "DECLARACIONES",
+          "snippet": "Se encuentra al corriente en el pago de todas las obligaciones en materia de trabajo y seguridad social para con su Personal, impuestos por la LFT, incluyendo, sin limitación, el pago total de salarios, prestaciones de ley, aportaciones al IMSS, al INFONAVIT, cuotas sindicales, Impuesto Sobre la Renta, y en general todos los impuestos, derechos y obligaciones que se hayan generado hasta la fecha de celebración de est"
+        }
+      ],
+      "risk": {
+        "level": "low",
+        "score": 18,
+        "rationale": "Clausula localizada sin senales fuertes de riesgo inmediato.",
+        "probable_impact": "Riesgo acotado sujeto a revision juridica final.",
+        "recommendation_initial": "Aclarar montos, hitos de pago, mora y condiciones de facturacion.",
+        "confidence": 0.74
+      },
+      "feedback_signals": {}
+    },
+    {
+      "clause_type": "termination",
+      "clause_label": "Terminacion",
+      "status": "found",
+      "extracted_text": "(c) En caso de incumplimiento a la prestación de Servicios por parte de El Proveedor, Televisa podrá suspender los Servicios de forma temporal o definitiva, sin incurrir en responsabilidad alguna y sin estar sujeto a penalización alguna, en el supuesto de que así lo desee, bastando para ello notificar por escrito al Proveedor (por correo electrónico será suficiente) en el entendido, que en caso de que Televisa suspen d) Por lo anterior, cada parte se obliga a mantener en paz y a salvo a la otra parte de cualquier requerimiento, multa, sanción o penalidad que cualquier autoridad gubernamental le pudiera imponer a dicha otra parte como resultado del incumplimiento de la otra parte al pago de sus impuestos y cubrirá los gastos y costos (incluyendo honorarios de abogados) en que hubiere incurrido la parte afectada como consecuencia d",
+      "normalized_data": {},
+      "evidence": [
+        {
+          "document_id": "doc_7c3728a8f3a1",
+          "document_name": "HEXAGON-_Contrato_Marco_v1_CAMBIOS_LLAMADA_com_GCP_002.docx",
+          "section": "CLÁUSULAS",
+          "snippet": "(c) En caso de incumplimiento a la prestación de Servicios por parte de El Proveedor, Televisa podrá suspender los Servicios de forma temporal o definitiva, sin incurrir en responsabilidad alguna y sin estar sujeto a penalización alguna, en el supuesto de que así lo desee, bastando para ello notificar por escrito al Proveedor (por correo electrónico será suficiente) en el entendido, que en caso de que Televisa suspen"
+        },
+        {
+          "document_id": "doc_7c3728a8f3a1",
+          "document_name": "HEXAGON-_Contrato_Marco_v1_CAMBIOS_LLAMADA_com_GCP_002.docx",
+          "section": "CLÁUSULAS",
+          "snippet": "d) Por lo anterior, cada parte se obliga a mantener en paz y a salvo a la otra parte de cualquier requerimiento, multa, sanción o penalidad que cualquier autoridad gubernamental le pudiera imponer a dicha otra parte como resultado del incumplimiento de la otra parte al pago de sus impuestos y cubrirá los gastos y costos (incluyendo honorarios de abogados) en que hubiere incurrido la parte afectada como consecuencia d"
+        },
+        {
+          "document_id": "doc_7c3728a8f3a1",
+          "document_name": "HEXAGON-_Contrato_Marco_v1_CAMBIOS_LLAMADA_com_GCP_002.docx",
+          "section": "CLÁUSULAS",
+          "snippet": "y/o tercero, derivados del incumplimiento y/o violación a los términos y condiciones del presente Contrato y/o a la falsedad o inexactitud de las declaraciones del mismo, con motivo de la prestación de los Servicios y a la elaboración y entrega de los Materiales."
+        }
+      ],
+      "risk": {
+        "level": "low",
+        "score": 18,
+        "rationale": "Clausula localizada sin senales fuertes de riesgo inmediato.",
+        "probable_impact": "Riesgo acotado sujeto a revision juridica final.",
+        "recommendation_initial": "Equilibrar causales y periodos de preaviso para ambas partes.",
+        "confidence": 0.74
+      },
+      "feedback_signals": {}
+    },
+    {
+      "clause_type": "liability",
+      "clause_label": "Responsabilidad",
+      "status": "found",
+      "extracted_text": "(a) El Proveedor se obliga a indemnizar y a sacar en paz y a salvo a Televisa su empresa controladora, filiales, subsidiarias, accionistas, socios de negocio, directores, funcionarios y/o empleados (las “ Partes Afectadas ”) de cualesquier reclamaciones, demandas, daños, perjuicios, responsabilidades, acciones, quejas, costos y gastos, incluyendo honorarios razonables de abogados, provenientes de cualquier autoridad   no lo subsane dentro del término antes mencionado, la otra parte podrá exigir el cumplimiento forzoso del Contrato o podrá rescindirlos sin responsabilidad alguna y sin necesidad de declaración judicial, debiendo pagar en ambos casos, la parte incumplida, los daños y perjuicios que su incumplimiento hay provocando la otra parte .",
+      "normalized_data": {},
+      "evidence": [
+        {
+          "document_id": "doc_7c3728a8f3a1",
+          "document_name": "HEXAGON-_Contrato_Marco_v1_CAMBIOS_LLAMADA_com_GCP_002.docx",
+          "section": "CLÁUSULAS",
+          "snippet": "(a) El Proveedor se obliga a indemnizar y a sacar en paz y a salvo a Televisa su empresa controladora, filiales, subsidiarias, accionistas, socios de negocio, directores, funcionarios y/o empleados (las “ Partes Afectadas ”) de cualesquier reclamaciones, demandas, daños, perjuicios, responsabilidades, acciones, quejas, costos y gastos, incluyendo honorarios razonables de abogados, provenientes de cualquier autoridad "
+        },
+        {
+          "document_id": "doc_7c3728a8f3a1",
+          "document_name": "HEXAGON-_Contrato_Marco_v1_CAMBIOS_LLAMADA_com_GCP_002.docx",
+          "section": "CLÁUSULAS",
+          "snippet": " no lo subsane dentro del término antes mencionado, la otra parte podrá exigir el cumplimiento forzoso del Contrato o podrá rescindirlos sin responsabilidad alguna y sin necesidad de declaración judicial, debiendo pagar en ambos casos, la parte incumplida, los daños y perjuicios que su incumplimiento hay provocando la otra parte ."
+        },
+        {
+          "document_id": "doc_7c3728a8f3a1",
+          "document_name": "HEXAGON-_Contrato_Marco_v1_CAMBIOS_LLAMADA_com_GCP_002.docx",
+          "section": "CLÁUSULAS",
+          "snippet": "c) v isualizar, exportar y descargar reportes derivados de los aplicativos de la Plataforma; d) p ermitir el acceso a u suarios a utorizados bajo su responsabilidad ; e) i ntegrar la Plataforma con aplicaciones de terceros mediante las APIs documentadas cuyo uso es garantizado por el Proveedor en favor de Televisa."
+        }
+      ],
+      "risk": {
+        "level": "low",
+        "score": 18,
+        "rationale": "Clausula localizada sin senales fuertes de riesgo inmediato.",
+        "probable_impact": "Riesgo acotado sujeto a revision juridica final.",
+        "recommendation_initial": "Definir limite de responsabilidad y exclusiones razonables.",
+        "confidence": 0.74
+      },
+      "feedback_signals": {}
+    },
+    {
+      "clause_type": "indemnification",
+      "clause_label": "Indemnizacion",
+      "status": "found",
+      "extracted_text": "unicación pública, difusión, sublicencia y puesta a disposición, en todo el mundo, por el tiempo y los Medios de Uso y Explotación que Televisa determine y las veces que a esta última convenga, de l os elementos de la Plataforma y las Herramientas que la componen para su correcto funcionamiento de acuerdo a las necesidades y requerimientos de Televisa y se obliga a indemnizar y sacar en paz y a salvo a Televisa y a l En consecuencia, el Proveedor se obliga a indemnizar y a sacar en paz y a salvo a Televisa de cualquier reclamación, queja, demanda u otro acto similar iniciado en contra de todos y/o cualquiera de ellos, así como de los daños, perjuicios y/o sanciones que, en su caso, se les llegaren a imponer, con motivo de los Servicios que el Proveedor preste conforme a este Contrato y, en particular, aquellas derivadas de la sus",
+      "normalized_data": {},
+      "evidence": [
+        {
+          "document_id": "doc_7c3728a8f3a1",
+          "document_name": "HEXAGON-_Contrato_Marco_v1_CAMBIOS_LLAMADA_com_GCP_002.docx",
+          "section": "CLÁUSULAS",
+          "snippet": "unicación pública, difusión, sublicencia y puesta a disposición, en todo el mundo, por el tiempo y los Medios de Uso y Explotación que Televisa determine y las veces que a esta última convenga, de l os elementos de la Plataforma y las Herramientas que la componen para su correcto funcionamiento de acuerdo a las necesidades y requerimientos de Televisa y se obliga a indemnizar y sacar en paz y a salvo a Televisa y a l"
+        },
+        {
+          "document_id": "doc_7c3728a8f3a1",
+          "document_name": "HEXAGON-_Contrato_Marco_v1_CAMBIOS_LLAMADA_com_GCP_002.docx",
+          "section": "CLÁUSULAS",
+          "snippet": "En consecuencia, el Proveedor se obliga a indemnizar y a sacar en paz y a salvo a Televisa de cualquier reclamación, queja, demanda u otro acto similar iniciado en contra de todos y/o cualquiera de ellos, así como de los daños, perjuicios y/o sanciones que, en su caso, se les llegaren a imponer, con motivo de los Servicios que el Proveedor preste conforme a este Contrato y, en particular, aquellas derivadas de la sus"
+        },
+        {
+          "document_id": "doc_7c3728a8f3a1",
+          "document_name": "HEXAGON-_Contrato_Marco_v1_CAMBIOS_LLAMADA_com_GCP_002.docx",
+          "section": "CLÁUSULAS",
+          "snippet": "(d) El Proveedor se obliga a indemnizar y sacar en paz y a salvo a los Televisa de cualquier reclamación, responsabilidad, daño, perjuicio, demanda, queja, procedimiento, acción y/o proceso, relacionados con el Material y los Servicios, incluyendo, sin limitar, aquellas reclamaciones que en su caso llegasen a presentar el Personal o cualquier tercero que haya o no participado en la creación de los Materiales y/o la p"
+        }
+      ],
+      "risk": {
+        "level": "low",
+        "score": 18,
+        "rationale": "Clausula localizada sin senales fuertes de riesgo inmediato.",
+        "probable_impact": "Riesgo acotado sujeto a revision juridica final.",
+        "recommendation_initial": "Establecer reciprocidad y mecanismo de defensa ante reclamos.",
+        "confidence": 0.74
+      },
+      "feedback_signals": {}
+    },
+    {
+      "clause_type": "confidentiality",
+      "clause_label": "Confidencialidad",
+      "status": "found",
+      "extracted_text": "Reconocer adicionalmente que los códigos fuente y demás información necesaria para la operación de la Plataforma constituyen Secretos Industriales, al otorgar una ventaja competitiva al Proveedor frente a sus terceros competidores por lo que debe mantenerse como confidencial Declara el Proveedor , por su conducto de su apoderado, que: Reconocer adicionalmente que los códigos fuente y demás información necesaria para la operación de la Plataforma constituyen Secretos Industriales, al otorgar una ventaja competitiva al Proveedor frente a sus terceros competidores por lo que debe mantenerse como confidencial Declara el Proveedor , por su conducto de su apoderado, que: Es una sociedad legalmente constituida y existente de conformidad con las leyes de ",
+      "normalized_data": {},
+      "evidence": [
+        {
+          "document_id": "doc_7c3728a8f3a1",
+          "document_name": "HEXAGON-_Contrato_Marco_v1_CAMBIOS_LLAMADA_com_GCP_002.docx",
+          "section": "DECLARACIONES",
+          "snippet": "Reconocer adicionalmente que los códigos fuente y demás información necesaria para la operación de la Plataforma constituyen Secretos Industriales, al otorgar una ventaja competitiva al Proveedor frente a sus terceros competidores por lo que debe mantenerse como confidencial Declara el Proveedor , por su conducto de su apoderado, que:"
+        },
+        {
+          "document_id": "doc_7c3728a8f3a1",
+          "document_name": "HEXAGON-_Contrato_Marco_v1_CAMBIOS_LLAMADA_com_GCP_002.docx",
+          "section": "DECLARACIONES",
+          "snippet": "Reconocer adicionalmente que los códigos fuente y demás información necesaria para la operación de la Plataforma constituyen Secretos Industriales, al otorgar una ventaja competitiva al Proveedor frente a sus terceros competidores por lo que debe mantenerse como confidencial Declara el Proveedor , por su conducto de su apoderado, que: Es una sociedad legalmente constituida y existente de conformidad con las leyes de "
+        },
+        {
+          "document_id": "doc_7c3728a8f3a1",
+          "document_name": "HEXAGON-_Contrato_Marco_v1_CAMBIOS_LLAMADA_com_GCP_002.docx",
+          "section": "CLÁUSULAS",
+          "snippet": "El Prestador se obliga a preservar la confidencialidad de la información de Televisa, así como observar los procedimientos de seguridad de la información apropiados, asegurando: Al término de la vigencia del Contrato, Televisa podrá solicitar la información que deberá ser transmitida bajo controles estrictos de seguridad de la información determinados por el área de Seguridad de la Información de Televisa."
+        }
+      ],
+      "risk": {
+        "level": "low",
+        "score": 18,
+        "rationale": "Clausula localizada sin senales fuertes de riesgo inmediato.",
+        "probable_impact": "Riesgo acotado sujeto a revision juridica final.",
+        "recommendation_initial": "Incluir alcance, excepciones y vigencia post-terminacion.",
+        "confidence": 0.74
+      },
+      "feedback_signals": {}
+    },
+    {
+      "clause_type": "intellectual_property",
+      "clause_label": "Propiedad intelectual",
+      "status": "found",
+      "extracted_text": "(a) El Proveedor reconoce expresamente y se obliga a reconocer y acreditar en todo momento y ante cualquier persona, autoridad e instancia, que pertenecen a Televisa, o a quien esta última designe, la titularidad de los derechos de autor (incluyendo derechos patrimoniales, de divulgación, integridad, colección y/o derechos residuales), derechos de propiedad intelectual e industrial, derechos de exclusividad, reservas (e) Tomando en cuenta lo anterior, el Proveedor se obliga a no utilizar ni explotar los Materiales y/o Obras Derivadas, de manera alguna, ni a otorgar licencias ni autorizaciones de uso o explotación de los Materiales y/o las Obras Derivadas en favor de terceros, toda vez que los Materiales y las Obras Derivadas están y seguirán estando bajo la titularidad de Televisa, o de la persona que Televisa designe. TERCERA.",
+      "normalized_data": {},
+      "evidence": [
+        {
+          "document_id": "doc_7c3728a8f3a1",
+          "document_name": "HEXAGON-_Contrato_Marco_v1_CAMBIOS_LLAMADA_com_GCP_002.docx",
+          "section": "CLÁUSULAS",
+          "snippet": "(a) El Proveedor reconoce expresamente y se obliga a reconocer y acreditar en todo momento y ante cualquier persona, autoridad e instancia, que pertenecen a Televisa, o a quien esta última designe, la titularidad de los derechos de autor (incluyendo derechos patrimoniales, de divulgación, integridad, colección y/o derechos residuales), derechos de propiedad intelectual e industrial, derechos de exclusividad, reservas"
+        },
+        {
+          "document_id": "doc_7c3728a8f3a1",
+          "document_name": "HEXAGON-_Contrato_Marco_v1_CAMBIOS_LLAMADA_com_GCP_002.docx",
+          "section": "CLÁUSULAS",
+          "snippet": "(e) Tomando en cuenta lo anterior, el Proveedor se obliga a no utilizar ni explotar los Materiales y/o Obras Derivadas, de manera alguna, ni a otorgar licencias ni autorizaciones de uso o explotación de los Materiales y/o las Obras Derivadas en favor de terceros, toda vez que los Materiales y las Obras Derivadas están y seguirán estando bajo la titularidad de Televisa, o de la persona que Televisa designe. TERCERA."
+        },
+        {
+          "document_id": "doc_7c3728a8f3a1",
+          "document_name": "HEXAGON-_Contrato_Marco_v1_CAMBIOS_LLAMADA_com_GCP_002.docx",
+          "section": "DECLARACIONES",
+          "snippet": "En virtud de los conocimientos, capacidad, experiencia y cualidades con los que cuenta el Proveedor , es su deseo documentar bajo este Contrato la licencia de uso de Software como Servicio ( Software as a Service) , así como la colaboración remunerada, a fin de contratar los Servicios (según se define dicho término más adelante) que tengan como fin la creación y producción de los Materiales (según dicho término se de"
+        }
+      ],
+      "risk": {
+        "level": "low",
+        "score": 18,
+        "rationale": "Clausula localizada sin senales fuertes de riesgo inmediato.",
+        "probable_impact": "Riesgo acotado sujeto a revision juridica final.",
+        "recommendation_initial": "Definir titularidad y alcance de licencia/cesion.",
+        "confidence": 0.74
+      },
+      "feedback_signals": {}
+    },
+    {
+      "clause_type": "jurisdiction",
+      "clause_label": "Jurisdiccion",
+      "status": "not_found",
+      "extracted_text": "",
+      "normalized_data": {},
+      "evidence": [
+        {
+          "document_id": "doc_7c3728a8f3a1",
+          "document_name": "HEXAGON-_Contrato_Marco_v1_CAMBIOS_LLAMADA_com_GCP_002.docx",
+          "section": "Texto general",
+          "snippet": "CONTRATO MARCO DE PRESTACIÓN DE SERVICIOS (EN LO SUCESIVO EL “CONTRATO ”), QUE CELEBRAN POR UNA PARTE LA SOCIEDAD DENOMINADA TELEVISA, S. DE R.L. DE C.V., (EN LO SUCESIVO “TELEVISA”) REPRESENTADA EN ESTE ACTO POR VLADIMIR MARTIN RIVAS FONSECA Y MARÍA DEL CARMEN ALVA SANTANDER , Y POR LA OTRA PARTE L"
+        }
+      ],
+      "risk": {
+        "level": "high",
+        "score": 68,
+        "rationale": "No se encontro la clausula y puede generar incertidumbre material.",
+        "probable_impact": "Riesgo operativo y de exigibilidad contractual.",
+        "recommendation_initial": "Definir foro competente y ley aplicable.",
+        "confidence": 0.81
+      },
+      "feedback_signals": {}
+    },
+    {
+      "clause_type": "compliance",
+      "clause_label": "Cumplimiento",
+      "status": "found",
+      "extracted_text": "y sus subsidiarias (el cual se encuentra disponible para su consulta en la página electrónica https://corporate.televisaunivision.com/suppliers/), que identifica las obligaciones de cumplimiento en materia de anticorrupción, contra el lavado de dinero, antimonopolio, prevención de financiamiento al terrorismo y en contra de la evasión fiscal, mismas que Proveedor reconoce y cumple a la fecha de la presente Orden de C Su objeto social le permite la celebración del presente Contrato, así como el cumplimiento de las obligaciones que adquiere en virtud de la celebración del mismo. El Proveedor declara que los Materiales (según dicho termino se define más adelante), que se generen por la prestación de los Servicios, serán creados bajo la figura de colaboración remunerada en favor de Televisa.",
+      "normalized_data": {},
+      "evidence": [
+        {
+          "document_id": "doc_7c3728a8f3a1",
+          "document_name": "HEXAGON-_Contrato_Marco_v1_CAMBIOS_LLAMADA_com_GCP_002.docx",
+          "section": "CLÁUSULAS",
+          "snippet": "y sus subsidiarias (el cual se encuentra disponible para su consulta en la página electrónica https://corporate.televisaunivision.com/suppliers/), que identifica las obligaciones de cumplimiento en materia de anticorrupción, contra el lavado de dinero, antimonopolio, prevención de financiamiento al terrorismo y en contra de la evasión fiscal, mismas que Proveedor reconoce y cumple a la fecha de la presente Orden de C"
+        },
+        {
+          "document_id": "doc_7c3728a8f3a1",
+          "document_name": "HEXAGON-_Contrato_Marco_v1_CAMBIOS_LLAMADA_com_GCP_002.docx",
+          "section": "DECLARACIONES",
+          "snippet": "Su objeto social le permite la celebración del presente Contrato, así como el cumplimiento de las obligaciones que adquiere en virtud de la celebración del mismo. El Proveedor declara que los Materiales (según dicho termino se define más adelante), que se generen por la prestación de los Servicios, serán creados bajo la figura de colaboración remunerada en favor de Televisa."
+        },
+        {
+          "document_id": "doc_7c3728a8f3a1",
+          "document_name": "HEXAGON-_Contrato_Marco_v1_CAMBIOS_LLAMADA_com_GCP_002.docx",
+          "section": "DECLARACIONES",
+          "snippet": "El Proveedor reconoce y acepta que el presente Contrato, se encuentra sujeto al cumplimiento de la Regulación Anticorrupción (según dicho término se define más adelante) y que, a la fecha de firma, se encuentra en cumplimiento con los términos de dicha Regulación Anticorrupción. La plataforma (l a solución de software como servicio, incluidos módulos, interfaces, APIs - Interfaces de Programación de Aplicaciones -;"
+        }
+      ],
+      "risk": {
+        "level": "low",
+        "score": 18,
+        "rationale": "Clausula localizada sin senales fuertes de riesgo inmediato.",
+        "probable_impact": "Riesgo acotado sujeto a revision juridica final.",
+        "recommendation_initial": "Alinear obligaciones regulatorias y derecho de auditoria.",
+        "confidence": 0.74
+      },
+      "feedback_signals": {}
+    }
+  ],
+  "overall_risk": {
+    "level": "high",
+    "score": 68.0,
+    "critical_flags": [
+      "Jurisdiccion: No se encontro la clausula y puede generar incertidumbre material."
+    ]
+  },
+  "compliance_checks": [
+    {
+      "check_id": "CHK_CONF",
+      "status": "pass",
+      "message": "Confidencialidad presente: Evidencia localizada.",
+      "evidence": [
+        {
+          "document_id": "doc_7c3728a8f3a1",
+          "document_name": "HEXAGON-_Contrato_Marco_v1_CAMBIOS_LLAMADA_com_GCP_002.docx",
+          "section": "DECLARACIONES",
+          "snippet": "Reconocer adicionalmente que los códigos fuente y demás información necesaria para la operación de la Plataforma constituyen Secretos Industriales, al otorgar una ventaja competitiva al Proveedor frente a sus terceros competidores por lo que debe mantenerse como confidencial Declara el Proveedor , por su conducto de su apoderado, que:"
+        }
+      ]
+    },
+    {
+      "check_id": "CHK_JUR",
+      "status": "warn",
+      "message": "Jurisdiccion y ley aplicable: Requiere validacion manual.",
+      "evidence": [
+        {
+          "document_id": "doc_7c3728a8f3a1",
+          "document_name": "HEXAGON-_Contrato_Marco_v1_CAMBIOS_LLAMADA_com_GCP_002.docx",
+          "section": "Texto general",
+          "snippet": "CONTRATO MARCO DE PRESTACIÓN DE SERVICIOS (EN LO SUCESIVO EL “CONTRATO ”), QUE CELEBRAN POR UNA PARTE LA SOCIEDAD DENOMINADA TELEVISA, S. DE R.L. DE C.V., (EN LO SUCESIVO “TELEVISA”) REPRESENTADA EN ESTE ACTO POR VLADIMIR MARTIN RIVAS FONSECA Y MARÍA DEL CARMEN ALVA SANTANDER , Y POR LA OTRA PARTE L"
+        }
+      ]
+    },
+    {
+      "check_id": "CHK_COMP",
+      "status": "pass",
+      "message": "Clausula de cumplimiento: Evidencia localizada.",
+      "evidence": [
+        {
+          "document_id": "doc_7c3728a8f3a1",
+          "document_name": "HEXAGON-_Contrato_Marco_v1_CAMBIOS_LLAMADA_com_GCP_002.docx",
+          "section": "CLÁUSULAS",
+          "snippet": "y sus subsidiarias (el cual se encuentra disponible para su consulta en la página electrónica https://corporate.televisaunivision.com/suppliers/), que identifica las obligaciones de cumplimiento en materia de anticorrupción, contra el lavado de dinero, antimonopolio, prevención de financiamiento al terrorismo y en contra de la evasión fiscal, mismas que Proveedor reconoce y cumple a la fecha de la presente Orden de C"
+        }
+      ]
+    }
+  ],
+  "human_review": {
+    "required": true,
+    "reason": "Existe riesgo high/critical.",
+    "review_status": "pending"
+  },
+  "generated_at": "2026-03-06T19:55:08.244389+00:00",
+  "disclaimer": "Analisis tecnico automatizado. No constituye asesoria legal definitiva; requiere validacion de abogado responsable.",
+  "executive_summary": "No fue posible generar un resumen ejecutivo de calidad en este intento. Se requiere reintentar con el modelo o revisar la extracción de cláusulas.",
+  "contract_context": {
+    "project_name": "AITU",
+    "client_name": "Hexagon Media",
+    "contract_type": "Servicios",
+    "counterparty": "Televisa",
+    "expected_sign_date": "2026-03-13",
+    "objective": "",
+    "include_historical": false
+  },
+  "legal_grounding": [
+    {
+      "clause_type": "parties",
+      "references": [
+        {
+          "law_key": "ccf",
+          "law_name": "CÓDIGO CIVIL FEDERAL",
+          "article_label": "Artículo 1795",
+          "snippet": "Artículo 1795.- El contrato puede ser invalidado: I. Por incapacidad legal de las partes o de una de ellas; II. Por vicios del consentimiento; III. Porque su objeto, o su motivo o fin sea ilícito; IV. Porque el consentim",
+          "ref_url": "https://www.diputados.gob.mx/LeyesBiblio/ref/ccf.htm",
+          "doc_url": "https://www.diputados.gob.mx/LeyesBiblio/doc/CCF.doc",
+          "last_reform": "14-11-2025",
+          "scope": "federal",
+          "jurisdiction": "mexico federal",
+          "source_kind": "federal_law_doc",
+          "rank_score": -18.50428249512084,
+          "hybrid_score": 23.7043
+        },
+        {
+          "law_key": "ccom",
+          "law_name": "CÓDIGO DE COMERCIO",
+          "article_label": "Artículo 328",
+          "snippet": "Artículo 328.- Si el contrato entre los principales y sus dependientes no tuviere tiempo señalado, cualquiera de las partes podrá darlo por fenecido, avisando con un mes de anticipación. Si se hubiere celebrado por tiemp",
+          "ref_url": "https://www.diputados.gob.mx/LeyesBiblio/ref/ccom.htm",
+          "doc_url": "https://www.diputados.gob.mx/LeyesBiblio/doc/CCom.doc",
+          "last_reform": "14-11-2025",
+          "scope": "federal",
+          "jurisdiction": "mexico federal",
+          "source_kind": "federal_law_doc",
+          "rank_score": -17.458516273644783,
+          "hybrid_score": 21.8585
+        }
+      ]
+    },
+    {
+      "clause_type": "object",
+      "references": [
+        {
+          "law_key": "ccom",
+          "law_name": "CÓDIGO DE COMERCIO",
+          "article_label": "Artículo 338",
+          "snippet": "Artículo 338.- Siempre que con asentimiento del depositante dispusiese el depositario de las cosas que fuesen objeto del depósito, ya para sí o sus negocios, ya para operaciones que aquel le encomendare, cesarán los dere",
+          "ref_url": "https://www.diputados.gob.mx/LeyesBiblio/ref/ccom.htm",
+          "doc_url": "https://www.diputados.gob.mx/LeyesBiblio/doc/CCom.doc",
+          "last_reform": "14-11-2025",
+          "scope": "federal",
+          "jurisdiction": "mexico federal",
+          "source_kind": "federal_law_doc",
+          "rank_score": -14.48040570700374,
+          "hybrid_score": 18.8804
+        },
+        {
+          "law_key": "laassp",
+          "law_name": "LEY DE ADQUISICIONES, ARRENDAMIENTOS Y SERVICIOS DEL SECTOR PÚBLICO",
+          "article_label": "Artículo 75",
+          "snippet": "Artículo 75. Las dependencias y entidades deberán pactar penas convencionales a cargo del proveedor por atraso en el cumplimiento de las fechas pactadas de entrega o de la prestación del servicio o cumplimiento de obliga",
+          "ref_url": "https://www.diputados.gob.mx/LeyesBiblio/ref/laassp.htm",
+          "doc_url": "https://www.diputados.gob.mx/LeyesBiblio/doc/LAASSP.doc",
+          "last_reform": "16-04-2025",
+          "scope": "federal",
+          "jurisdiction": "mexico federal",
+          "source_kind": "federal_law_doc",
+          "rank_score": -14.121423233908601,
+          "hybrid_score": 18.5214
+        }
+      ]
+    },
+    {
+      "clause_type": "term",
+      "references": [
+        {
+          "law_key": "lfppi",
+          "law_name": "LEY FEDERAL DE PROTECCIÓN A LA PROPIEDAD INDUSTRIAL",
+          "article_label": "Artículo 301",
+          "snippet": "Artículo 301.- Los efectos de la autorización para usar una denominación de origen o indicación geográfica durarán diez años, contados a partir de la fecha de presentación de la solicitud en el Instituto y podrán renovar",
+          "ref_url": "https://www.diputados.gob.mx/LeyesBiblio/ref/lfppi.htm",
+          "doc_url": "https://www.diputados.gob.mx/LeyesBiblio/doc/LFPPI.doc",
+          "last_reform": "15-01-2026",
+          "scope": "federal",
+          "jurisdiction": "mexico federal",
+          "source_kind": "federal_law_doc",
+          "rank_score": -20.979074999370113,
+          "hybrid_score": 23.3791
+        },
+        {
+          "law_key": "lfppi",
+          "law_name": "LEY FEDERAL DE PROTECCIÓN A LA PROPIEDAD INDUSTRIAL",
+          "article_label": "Artículo 237",
+          "snippet": "Artículo 237.- La renovación del registro de una marca deberá solicitarse por el titular, dentro de los seis meses anteriores al vencimiento de su vigencia. Sin embargo, el Instituto dará trámite a aquellas solicitudes q",
+          "ref_url": "https://www.diputados.gob.mx/LeyesBiblio/ref/lfppi.htm",
+          "doc_url": "https://www.diputados.gob.mx/LeyesBiblio/doc/LFPPI.doc",
+          "last_reform": "15-01-2026",
+          "scope": "federal",
+          "jurisdiction": "mexico federal",
+          "source_kind": "federal_law_doc",
+          "rank_score": -20.13010568031563,
+          "hybrid_score": 22.5301
+        }
+      ]
+    },
+    {
+      "clause_type": "payments",
+      "references": [
+        {
+          "law_key": "lih",
+          "law_name": "LEY DE INGRESOS SOBRE HIDROCARBUROS",
+          "article_label": "Artículo 11",
+          "snippet": "Artículo 11.- Los Contratos de utilidad compartida establecerán las siguientes Contraprestaciones: I. A favor del Estado Mexicano: a) La Cuota Contractual para la Fase Exploratoria; b) Las Regalías determinadas conforme",
+          "ref_url": "https://www.diputados.gob.mx/LeyesBiblio/ref/lih.htm",
+          "doc_url": "https://www.diputados.gob.mx/LeyesBiblio/doc/LIH.doc",
+          "last_reform": "18-03-2025",
+          "scope": "federal",
+          "jurisdiction": "mexico federal",
+          "source_kind": "federal_law_doc",
+          "rank_score": -19.085106957077457,
+          "hybrid_score": 20.6851
+        },
+        {
+          "law_key": "lih",
+          "law_name": "LEY DE INGRESOS SOBRE HIDROCARBUROS",
+          "article_label": "Artículo 12",
+          "snippet": "Artículo 12.- Los Contratos de producción compartida establecerán las siguientes Contraprestaciones: I. A favor del Estado Mexicano: a) La Cuota Contractual para la Fase Exploratoria; b) Las Regalías determinadas conform",
+          "ref_url": "https://www.diputados.gob.mx/LeyesBiblio/ref/lih.htm",
+          "doc_url": "https://www.diputados.gob.mx/LeyesBiblio/doc/LIH.doc",
+          "last_reform": "18-03-2025",
+          "scope": "federal",
+          "jurisdiction": "mexico federal",
+          "source_kind": "federal_law_doc",
+          "rank_score": -18.062436284760466,
+          "hybrid_score": 19.6624
+        }
+      ]
+    },
+    {
+      "clause_type": "termination",
+      "references": [
+        {
+          "law_key": "laassp",
+          "law_name": "LEY DE ADQUISICIONES, ARRENDAMIENTOS Y SERVICIOS DEL SECTOR PÚBLICO",
+          "article_label": "Artículo 77",
+          "snippet": "Artículo 77. Las dependencias y entidades podrán en cualquier momento rescindir administrativamente los contratos cuando el proveedor incurra en incumplimiento de sus obligaciones, conforme al procedimiento siguiente: I.",
+          "ref_url": "https://www.diputados.gob.mx/LeyesBiblio/ref/laassp.htm",
+          "doc_url": "https://www.diputados.gob.mx/LeyesBiblio/doc/LAASSP.doc",
+          "last_reform": "16-04-2025",
+          "scope": "federal",
+          "jurisdiction": "mexico federal",
+          "source_kind": "federal_law_doc",
+          "rank_score": -21.91534834601064,
+          "hybrid_score": 27.1153
+        },
+        {
+          "law_key": "lopsrm",
+          "law_name": "LEY DE OBRAS PÚBLICAS Y SERVICIOS RELACIONADOS CON LAS MISMAS",
+          "article_label": "Artículo 61",
+          "snippet": "Artículo 61.- Las dependencias y entidades podrán rescindir administrativamente los contratos en caso de incumplimiento de las obligaciones a cargo del contratista. El procedimiento de rescisión se llevará a cabo conform",
+          "ref_url": "https://www.diputados.gob.mx/LeyesBiblio/ref/lopsrm.htm",
+          "doc_url": "https://www.diputados.gob.mx/LeyesBiblio/doc/LOPSRM.doc",
+          "last_reform": "14-11-2025",
+          "scope": "federal",
+          "jurisdiction": "mexico federal",
+          "source_kind": "federal_law_doc",
+          "rank_score": -21.44605018684817,
+          "hybrid_score": 24.6461
+        }
+      ]
+    },
+    {
+      "clause_type": "liability",
+      "references": [
+        {
+          "law_key": "lncm",
+          "law_name": "LEY DE NAVEGACIÓN Y COMERCIO MARÍTIMOS",
+          "article_label": "Artículo 305",
+          "snippet": "Artículo 305.- Cualquier acción para intentar la limitación de responsabilidad quedará sujeta al Convenio sobre Limitación de la Responsabilidad Civil nacida de Reclamaciones en Derecho Marítimo y en su caso, por el Conv",
+          "ref_url": "https://www.diputados.gob.mx/LeyesBiblio/ref/lncm.htm",
+          "doc_url": "https://www.diputados.gob.mx/LeyesBiblio/doc/LNCM.doc",
+          "last_reform": "14-11-2025",
+          "scope": "federal",
+          "jurisdiction": "mexico federal",
+          "source_kind": "federal_law_doc",
+          "rank_score": -25.770456307338208,
+          "hybrid_score": 28.9705
+        },
+        {
+          "law_key": "lrcdn",
+          "law_name": "LEY DE RESPONSABILIDAD CIVIL POR DAÑOS NUCLEARES",
+          "article_label": "ARTICULO 6",
+          "snippet": "ARTICULO 6.- El operador de una instalación será responsable de los daños causados por un accidente nuclear, por la remesa de substancias nucleares: I.- Hasta que dichas substancias hubiesen sido descargadas del medio de",
+          "ref_url": "https://www.diputados.gob.mx/LeyesBiblio/ref/lrcdn.htm",
+          "doc_url": "https://www.diputados.gob.mx/LeyesBiblio/doc/LRCDN.doc",
+          "last_reform": "14-11-2025",
+          "scope": "federal",
+          "jurisdiction": "mexico federal",
+          "source_kind": "federal_law_doc",
+          "rank_score": -24.563765322103915,
+          "hybrid_score": 26.9638
+        }
+      ]
+    },
+    {
+      "clause_type": "indemnification",
+      "references": [
+        {
+          "law_key": "lvgc",
+          "law_name": "LEY DE VÍAS GENERALES DE COMUNICACIÓN",
+          "article_label": "Artículo 112",
+          "snippet": "Artículo 112.- En caso de guerra internacional, de grave alteración del orden público o cuando se tema algún peligro inminente para la paz interior del país o para la economía nacional, el Gobierno tendrá derecho de hace",
+          "ref_url": "https://www.diputados.gob.mx/LeyesBiblio/ref/lvgc.htm",
+          "doc_url": "https://www.diputados.gob.mx/LeyesBiblio/doc/LVGC.doc",
+          "last_reform": "14-11-2025",
+          "scope": "federal",
+          "jurisdiction": "mexico federal",
+          "source_kind": "federal_law_doc",
+          "rank_score": -22.54912482145463,
+          "hybrid_score": 25.7491
+        },
+        {
+          "law_key": "lraf",
+          "law_name": "LEY PARA REGULAR LAS AGRUPACIONES FINANCIERAS",
+          "article_label": "Artículo 53",
+          "snippet": "Artículo 53.- La responsabilidad consistente en indemnizar los daños y perjuicios ocasionados con motivo de los actos, hechos u omisiones a que hace referencia esta Sección, será solidaria entre las personas que hayan ej",
+          "ref_url": "https://www.diputados.gob.mx/LeyesBiblio/ref/lraf.htm",
+          "doc_url": "https://www.diputados.gob.mx/LeyesBiblio/doc/LRAF.doc",
+          "last_reform": "14-11-2025",
+          "scope": "federal",
+          "jurisdiction": "mexico federal",
+          "source_kind": "federal_law_doc",
+          "rank_score": -22.873741428885538,
+          "hybrid_score": 25.2737
+        }
+      ]
+    },
+    {
+      "clause_type": "confidentiality",
+      "references": [
+        {
+          "law_key": "lfppi",
+          "law_name": "LEY FEDERAL DE PROTECCIÓN A LA PROPIEDAD INDUSTRIAL",
+          "article_label": "Artículo 164",
+          "snippet": "Artículo 164.- No se considerará apropiación indebida: I.- El descubrimiento o la creación independientes de la información que se reclame como un secreto industrial; II.- La observación, el estudio, el desmontaje o el e",
+          "ref_url": "https://www.diputados.gob.mx/LeyesBiblio/ref/lfppi.htm",
+          "doc_url": "https://www.diputados.gob.mx/LeyesBiblio/doc/LFPPI.doc",
+          "last_reform": "15-01-2026",
+          "scope": "federal",
+          "jurisdiction": "mexico federal",
+          "source_kind": "federal_law_doc",
+          "rank_score": -22.617513171257233,
+          "hybrid_score": 24.2175
+        },
+        {
+          "law_key": "lgpdppso",
+          "law_name": "LEY GENERAL DE PROTECCIÓN DE DATOS PERSONALES EN POSESIÓN DE SUJETOS OBLIGADOS",
+          "article_label": "Artículo 76",
+          "snippet": "Artículo 76. Los responsables de las bases de datos a que se refiere este Capítulo deberán establecer medidas de seguridad de nivel alto, para garantizar la integridad, disponibilidad y confidencialidad de la información",
+          "ref_url": "https://www.diputados.gob.mx/LeyesBiblio/ref/lgpdppso.htm",
+          "doc_url": "https://www.diputados.gob.mx/LeyesBiblio/doc/LGPDPPSO.doc",
+          "last_reform": "14-11-2025",
+          "scope": "federal",
+          "jurisdiction": "mexico federal",
+          "source_kind": "federal_law_doc",
+          "rank_score": -18.278117468282353,
+          "hybrid_score": 22.6781
+        }
+      ]
+    },
+    {
+      "clause_type": "intellectual_property",
+      "references": [
+        {
+          "law_key": "cmpp",
+          "law_name": "CÓDIGO MILITAR DE PROCEDIMIENTOS PENALES",
+          "article_label": "Artículo 231",
+          "snippet": "Artículo 231. Aseguramiento de narcóticos y productos relacionados con delitos de propiedad intelectual y derechos de autor Cuando se aseguren narcóticos previstos en cualquier disposición, productos relacionados con del",
+          "ref_url": "https://www.diputados.gob.mx/LeyesBiblio/ref/cmpp.htm",
+          "doc_url": "https://www.diputados.gob.mx/LeyesBiblio/doc/CMPP.doc",
+          "last_reform": "14-11-2025",
+          "scope": "federal",
+          "jurisdiction": "mexico federal",
+          "source_kind": "federal_law_doc",
+          "rank_score": -28.223333731404303,
+          "hybrid_score": 31.4233
+        },
+        {
+          "law_key": "lgmhcti",
+          "law_name": "LEY GENERAL EN MATERIA DE HUMANIDADES, CIENCIAS, TECNOLOGÍAS E INNOVACIÓN",
+          "article_label": "Artículo 36",
+          "snippet": "Artículo 36. Los derechos de autor y propiedad industrial sobre las obras e invenciones derivados de procesos de investigación humanística y científica, desarrollo tecnológico e innovación financiados con recursos públic",
+          "ref_url": "https://www.diputados.gob.mx/LeyesBiblio/ref/lgmhcti.htm",
+          "doc_url": "https://www.diputados.gob.mx/LeyesBiblio/doc/LGMHCTI.doc",
+          "last_reform": "08-05-2023",
+          "scope": "federal",
+          "jurisdiction": "mexico federal",
+          "source_kind": "federal_law_doc",
+          "rank_score": -25.2730092885104,
+          "hybrid_score": 29.273
+        }
+      ]
+    },
+    {
+      "clause_type": "jurisdiction",
+      "references": [
+        {
+          "law_key": "cnpcf",
+          "law_name": "CÓDIGO NACIONAL DE PROCEDIMIENTOS CIVILES Y FAMILIARES",
+          "article_label": "Artículo 78",
+          "snippet": "Artículo 78. Los Tribunales Colegiados de Circuito, Tribunales Colegiados de Apelación y Plenos Regionales, así como la Suprema Corte de Justicia de la Nación, conocerán en segunda instancia, de los procedimientos en que",
+          "ref_url": "https://www.diputados.gob.mx/LeyesBiblio/ref/cnpcf.htm",
+          "doc_url": "https://www.diputados.gob.mx/LeyesBiblio/doc/CNPCF.doc",
+          "last_reform": "15-01-2026",
+          "scope": "federal",
+          "jurisdiction": "mexico federal",
+          "source_kind": "federal_law_doc",
+          "rank_score": -14.527190977913031,
+          "hybrid_score": 18.9272
+        },
+        {
+          "law_key": "lnep",
+          "law_name": "LEY NACIONAL DE EJECUCIÓN PENAL",
+          "article_label": "Artículo 57",
+          "snippet": "Artículo 57. Competencia de controversias con motivo de traslados nacionales Las controversias con motivo de los traslados nacionales podrán ser conocidas por el Juez de Ejecución del Centro Penitenciario de origen o por",
+          "ref_url": "https://www.diputados.gob.mx/LeyesBiblio/ref/lnep.htm",
+          "doc_url": "https://www.diputados.gob.mx/LeyesBiblio/doc/LNEP.doc",
+          "last_reform": "01-04-2024",
+          "scope": "federal",
+          "jurisdiction": "mexico federal",
+          "source_kind": "federal_law_doc",
+          "rank_score": -16.334802781545193,
+          "hybrid_score": 18.7348
+        }
+      ]
+    },
+    {
+      "clause_type": "compliance",
+      "references": [
+        {
+          "law_key": "lgpdppso",
+          "law_name": "LEY GENERAL DE PROTECCIÓN DE DATOS PERSONALES EN POSESIÓN DE SUJETOS OBLIGADOS",
+          "article_label": "Artículo 66",
+          "snippet": "Artículo 66. Para el cumplimiento de las obligaciones previstas en la presente Ley, el responsable podrá desarrollar o adoptar, en lo individual o en acuerdo con otros responsables, encargados u organizaciones, esquemas",
+          "ref_url": "https://www.diputados.gob.mx/LeyesBiblio/ref/lgpdppso.htm",
+          "doc_url": "https://www.diputados.gob.mx/LeyesBiblio/doc/LGPDPPSO.doc",
+          "last_reform": "14-11-2025",
+          "scope": "federal",
+          "jurisdiction": "mexico federal",
+          "source_kind": "federal_law_doc",
+          "rank_score": -15.935572236017997,
+          "hybrid_score": 20.3356
+        },
+        {
+          "law_key": "lacp",
+          "law_name": "LEY DE AHORRO Y CRÉDITO POPULAR",
+          "article_label": "Artículo 100",
+          "snippet": "Artículo 100.- El Fondo de Protección, para el cumplimiento de sus fines se apoyará en un Comité Técnico, así como en un Comité de Protección al Ahorro. Dichos comités se organizarán y contarán con las funciones que esta",
+          "ref_url": "https://www.diputados.gob.mx/LeyesBiblio/ref/lacp.htm",
+          "doc_url": "https://www.diputados.gob.mx/LeyesBiblio/doc/LACP.doc",
+          "last_reform": "14-11-2025",
+          "scope": "federal",
+          "jurisdiction": "mexico federal",
+          "source_kind": "federal_law_doc",
+          "rank_score": -17.241918670960604,
+          "hybrid_score": 19.6419
+        }
+      ]
+    }
+  ],
+  "federal_updates_check": {
+    "checked_at": "2026-03-06T19:55:08.100881+00:00",
+    "updates_page": "https://www.diputados.gob.mx/LeyesBiblio/actual/ultima.htm",
+    "hash_changed": false,
+    "updated_law_keys": [
+      "cnpcf",
+      "cpeum",
+      "cpeum_art",
+      "cpeum_crono",
+      "cpeum_per",
+      "lcm",
+      "lfda",
+      "lfppi",
+      "lft",
+      "lftse",
+      "lgamvlv",
+      "lgcdc",
+      "lgdnna",
+      "lgds",
+      "lge",
+      "lgec",
+      "lgeepa",
+      "lgimh",
+      "lgpgir",
+      "lgs",
+      "linm",
+      "lissfam",
+      "lissste",
+      "lmeum",
+      "lmigra",
+      "lplan",
+      "lss",
+      "lviv"
+    ],
+    "updated_law_count": 28,
+    "sync_result": null
+  },
+  "llm_review": {
+    "risk_enrichment": {
+      "provider": "gemini",
+      "configured": true,
+      "model": "gemini-1.5-flash",
+      "used": false,
+      "error": "Gemini HTTP 404: {\n  \"error\": {\n    \"code\": 404,\n    \"message\": \"models/gemini-1.5-flash is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods.\",\n    \"status\": \"NO",
+      "generated_at": "2026-03-06T19:55:09.522765+00:00"
+    },
+    "executive_summary": {
+      "provider": "gemini",
+      "configured": true,
+      "model": "gemini-1.5-flash",
+      "used": false,
+      "error": "Gemini HTTP 404: {\n  \"error\": {\n    \"code\": 404,\n    \"message\": \"models/gemini-1.5-flash is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods.\",\n    \"status\": \"NO",
+      "generated_at": "2026-03-06T19:55:09.718673+00:00",
+      "agent": "executive_summary"
+    }
+  },
+  "lawyer_feedback": {
+    "total": 0,
+    "signals": {
+      "incumplimiento": 0,
+      "duda": 0,
+      "vo_bo": 0
+    },
+    "latest": null,
+    "by_clause": {}
+  },
+  "learning_trace": {
+    "global_feedback_count": 10,
+    "document_feedback_count": 0,
+    "adjustments": []
+  }
+}
